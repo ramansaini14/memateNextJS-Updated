@@ -9,7 +9,7 @@ const nextConfig = {
   
   images: {
     domains: ['memate-website.s3.ap-southeast-2.amazonaws.com'],
-    unoptimized: true,
+    unoptimized: false,
   },
   
   /**

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import style from './less-busyness.module.scss'
 import './videostyles.css'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import PlayIconVideo from '../../svg/PlayIconVideo';

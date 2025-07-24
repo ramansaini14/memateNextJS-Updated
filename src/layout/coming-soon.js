@@ -1,6 +1,6 @@
 import React from "react";
 import Images from "../assests/images";
-import style from "./coming-soon-module.css";
+// import style from "./coming-soon-module.css";
 import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
@@ -60,6 +60,7 @@ const ComingSoon = () => {
             srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/comingSoon3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/comingSoon2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/comingSoon1x.png'} 1800w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
             src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/comingSoon3x.png'}
+            alt="coming soon"
             // alt="contact us main image"
             // width={400} height={400}
           />

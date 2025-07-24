@@ -1,7 +1,7 @@
 import Layout from "../../layout";
 import React from "react";
 import CategoryComponents from '../../components/single-page/category-page'
-const CategoryPage = ({postsSingle,postsLatest,PostsCategories}) => {
+const CategoryPage = ({postsSingle,postsLatest}) => {
 
   return (
     <Layout>

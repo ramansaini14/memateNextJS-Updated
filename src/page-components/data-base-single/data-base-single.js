@@ -23,14 +23,14 @@ const DatabasePageSingle = () => {
            router.push('/404')
         }
       } catch (err) {
-        setError("Failed to fetch supplier data.");
+        setError("Failed to fetch supplier data.", err);
       } finally {
         setLoadingSinge(false);
       }
     };
 
     fetchSupplierData();
-  }, [slug]);
+  }, [slug, router]);
 
   if (loadingsingle) return <p></p>;
   if (error) return <p>{error}</p>;

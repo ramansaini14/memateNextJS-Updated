@@ -1,7 +1,8 @@
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, animateScroll as scroll } from "react-scroll";
+// import { Link, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 import StickyBox from "react-sticky-box";
 import NewsSchema from "../blog/news-schema";
 
@@ -216,14 +217,14 @@ const article =  {
                 <div className="conditionWrrapperF">
               <div className="pageBreadcrumbs">
               <ul>
-                <li><a href="/">Home</a></li>/
+                <li><Link href="/">Home</Link></li>/
                 <li>
-                  <a className="MainPageLink" href="/terms">Terms of use</a>
+                  <Link className="MainPageLink" href="/terms">Terms of use</Link>
                 </li>
               </ul>
-              <a href="/" className="backButStories">
+              <Link href="/" className="backButStories">
                 <img src={arrowIconBack} alt="Arrow" /> Back
-              </a>
+              </Link>
             </div>
 
            <div className="tmsheadF">
@@ -244,10 +245,10 @@ const article =  {
                 }`}
               >
                 <Link
-                  to={`section-${item.id}`}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
+                  href={`#section-${item.id}`}
+                  // smooth={true}
+                  // offset={-100}
+                  // duration={500}
                   onSetActive={() => setActiveItem(item.id)}
                 >
                   <span>{item.name}</span>

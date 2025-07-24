@@ -12,7 +12,7 @@ import {
   fetchServicesByIndustryId,
 } from "../../../api/supplierApi";
 import WhiteButtonBammer from "../../../layout/hover-button/WhiteButtonBammer";
-import Link from "next/link";
+// import Link from "next/link";
 import CustomUpload from "../custom-upload";
 
 const RequestToEdit = ({ supplierData }) => {
@@ -67,7 +67,7 @@ const RequestToEdit = ({ supplierData }) => {
       });
       initLogo();
     }
-  }, [supplierData]);
+  }, [supplierData, reset, upload_file]);
 
   useEffect(() => {
     const fetchAndSetIndustries = async () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BigHeaderButtonWithGradient.css";
-import { Button } from "react-scroll";
+// import { Button } from "react-scroll";
 
 const BigHeaderButtonWithGradient = (props) => {
   return (

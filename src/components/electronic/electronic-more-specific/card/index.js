@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css';
+import Image from "next/image";
 
 const MoreSpecificCard = (props) => {
   return (
@@ -7,7 +8,7 @@ const MoreSpecificCard = (props) => {
       className="more-specific-card"
     >
         <div className="more-specific-card-logo" style={{background:props.background}}>
-            <img src={props.card_image}/>
+            <Image src={props.card_image} width={32} height={32} alt="img"/>
         </div>
 
         <p className="more-specific-card-heading">{props.heading}</p>

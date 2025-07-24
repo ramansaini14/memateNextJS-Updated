@@ -25,8 +25,9 @@
     position: relative;
     text-align: left;
     vertical-align: middle;
-    border-radius: 41px !important;
+    border-radius: 50px !important;
 }
+
 .react-responsive-modal-closeButton svg {
     fill: #000;
     width: 17px;

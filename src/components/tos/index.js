@@ -1,7 +1,9 @@
+
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, animateScroll as scroll } from "react-scroll";
+// import { Link, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 import StickyBox from "react-sticky-box";
 
 

@@ -3,7 +3,7 @@ import { useParams, useRouter } from "next/navigation";
 import style from './wiki.module.scss';
 import { useQuery } from "@tanstack/react-query";
 import { wikiBaseDtails,wikiBase } from "../../api/wikiApi";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import { Helmet } from 'react-helmet-async';
 import StickyBox from "react-sticky-box";
 import { scroller } from "react-scroll";
@@ -179,14 +179,14 @@ const article = wikiBaseIdData ? {
             <div className="parent-blog">
                 <div className="pageBreadcrumbs">
                     <ul className={style.linkstyleDisable}>
-                        <li><a href="/" className={style.linkstyleDisable}>Home</a></li>/
-                        <li><a href="/memate-wiki" className={style.linkstyleDisable}>meMate wiki</a></li>/
-                        <li><a href={`/memate-wiki/${selectedCategory?.slug}`} className={style.linkstyleDisable}>{selectedCategory?.name}</a></li>/
+                        <li><Link href="/" className={style.linkstyleDisable}>Home</Link></li>/
+                        <li><Link href="/memate-wiki" className={style.linkstyleDisable}>meMate wiki</Link></li>/
+                        <li><Link href={`/memate-wiki/${selectedCategory?.slug}`} className={style.linkstyleDisable}>{selectedCategory?.name}</Link></li>/
                         <li>{wikiBaseIdData[0]?.title}</li>
                     </ul>
-                    <a href="/memate-wiki" className="backButStories">
+                    <Link href="/memate-wiki" className="backButStories">
                         <img src={arrowIconBack} alt="Arrow" /> Back
-                    </a>
+                    </Link>
                 </div>
                 <div className={`${style.wikimainwrap}`}>
                     <div className={style.wikimainhead}>

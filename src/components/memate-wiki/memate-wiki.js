@@ -116,7 +116,7 @@ const MemateWiki = () => {
              {item.subdata && item.subdata.length > 0 && (
   <div className={style.mainGridwtapFlex}>
     {item.subdata.map((subcategory) => (
-      <div className={`itemFlex ${subcategory.id} ${style.itemFlex}`}>
+      <div className={`itemFlex ${subcategory.id} ${style.itemFlex}`} key={subcategory.id}>
       <Link
         key={subcategory.id}
         href={{

@@ -62,20 +62,20 @@ const article =  {
         <div className="pageBreadcrumbsF">
           <ul className={style.linkstyleDisable}>
             <li>
-              <a href="/" className={style.linkstyleDisable}>
+              <Link href="/" className={style.linkstyleDisable}>
                 Home
-              </a>
+              </Link>
             </li>
             /
             <li>
-              <a href="/" >
+              <Link href="/" >
                 meMate FAQs
-              </a>
+              </Link>
             </li>
           </ul>
-          <a href="/" className="backButStories">
+          <Link href="/" className="backButStories">
             <img src={arrowIconBack} alt="Arrow" /> Back
-          </a>
+          </Link>
         </div>
         <div className={`${style.mainMenuPagesF}`}>
           <div className={`titleHead ${style.mainHeadTitleF}`}>

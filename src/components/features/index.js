@@ -211,7 +211,9 @@ const FeaturesComponent = () => {
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos-once="false"
-              data-aos-anchor-placement="top-bottom" href={item.link}>
+              data-aos-anchor-placement="top-bottom" href={item.link}
+              key={itemIndex}
+              >
                 <div key={itemIndex} className={`itemFlex  ${style.itemFlex}`}>
                   <div className={style.itemicon}>
                     <img

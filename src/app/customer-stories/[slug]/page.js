@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import AppWrapper from '../../../components/AppWrapper';
 import CustomerStoriesPageSingle from '../../../page-components/customer-stories-single';

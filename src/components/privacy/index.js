@@ -2,11 +2,11 @@
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+// import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
-import StickyBox from "react-sticky-box";
+// import StickyBox from "react-sticky-box";
 import MiddleSection from "./privacy-middle-section";
-import style from './privacy-module.module.scss';
+// import style from './privacy-module.module.scss';
 import NewsSchema from "../blog/news-schema";
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 // import '../App.css'
@@ -54,9 +54,9 @@ const article =  {
          <div className="conditionWrrapperF">
                      <div className="pageBreadcrumbs">
                           <ul>
-                            <li><a href="/">Home</a></li>/<li> <a className="MainPageLink" href="/privacy">Privacy</a></li>
+                            <li><Link href="/">Home</Link></li>/<li> <Link className="MainPageLink" href="/privacy">Privacy</Link></li>
                           </ul>
-                          <a href="/" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</a>
+                          <Link href="/" className="backButStories"><img src={arrowIconBack} alt="Arrow"/> Back</Link>
                         </div>
                 <div className="tmsheadF">
                  <p className="tos-section-headingF" id="section1">

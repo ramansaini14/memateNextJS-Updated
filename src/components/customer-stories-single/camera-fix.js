@@ -80,7 +80,7 @@ function CameraFix() {
           <div className="pageBreadcrumbs">
             <ul>
               <li>
-                <a href="/">Home</a>
+                <Link href="/">Home</Link>
               </li>
               /
               <li>

@@ -45,7 +45,7 @@ const MiddleSection = () => {
     };
 
     fetchSearchResults();
-  }, [searchTerm]);
+  }, [searchTerm, knowledge]);
 
   const handleClick = (id) => {
     setActiveItem(id);

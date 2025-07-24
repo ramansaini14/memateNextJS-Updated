@@ -223,7 +223,7 @@ function SliderTabMobile() {
 
       <Slider {...mainSettings} ref={slider1}>
         {tabs.map((tab, index) => (
-             <div 
+        <div 
         className="large-image-container "
          role="group"
         aria-roledescription="slide"
@@ -235,6 +235,7 @@ function SliderTabMobile() {
         data-aos-mirror="true"
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom"
+        key={index}
       >
           <div key={index}>
             <img

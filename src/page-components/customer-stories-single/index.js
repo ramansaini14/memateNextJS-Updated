@@ -1,7 +1,7 @@
+'use client'
 import CameraFix from "../../components/customer-stories-single/camera-fix";
 import ProVinyl from "../../components/customer-stories-single/pro-vinyl";
 import EliteLife from "../../components/customer-stories-single/elite-life";
-
 import Layout from "../../layout";
 import React from "react";
 import { usePathname } from "next/navigation";

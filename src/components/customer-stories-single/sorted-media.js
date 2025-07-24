@@ -61,7 +61,7 @@ const article =  {
         <div className="parent-blog">
           <div className="pageBreadcrumbs">
             <ul>
-              <li><a href="/">Home</a></li>/<li> <Link className="MainPageLink" href="/customer-stories"> Customer Stories</Link></li>/<li> <Link href="customer-stories/sorted-media">Sorted Media</Link></li>
+              <li><Link href="/">Home</Link></li>/<li> <Link className="MainPageLink" href="/customer-stories"> Customer Stories</Link></li>/<li> <Link href="customer-stories/sorted-media">Sorted Media</Link></li>
             </ul>
             <Link href="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>

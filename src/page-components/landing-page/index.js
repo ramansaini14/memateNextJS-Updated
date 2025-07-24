@@ -19,7 +19,7 @@ import Layout from "../../layout"
 import { Helmet } from 'react-helmet-async';
 import LessBusyness from "./less-busyness";
 
-const LandingPage = ({postsLatest, updates}) => {
+const LandingPage = ({postsLatest}) => {
   return (
    <>
   <Helmet>

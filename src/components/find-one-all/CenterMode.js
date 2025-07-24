@@ -254,7 +254,8 @@ function  CenterMode() {
         data-aos-duration="1400"
         data-aos-mirror="true"
         data-aos-once="false"
-        data-aos-anchor-placement="top-bottom">
+        data-aos-anchor-placement="top-bottom"
+        key={index}>
           <div key={index}>
              <LazyLoadImage
               alt={tab.label}

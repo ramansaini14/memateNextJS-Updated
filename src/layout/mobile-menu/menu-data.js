@@ -7,7 +7,7 @@ import './style.css';
 import PanelMenu from './panel-menu';
 import menuImages from "../../assests/menu-images";
 // import { useLocation } from "react-router-dom";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 
 
 
@@ -44,7 +44,7 @@ const MenuData = () => {
   
   
     // const location = useLocation();
-    const pathname = usePathname();
+    // const pathname = usePathname();
   return (
     <div className={`burger-menu-wrapper active ${show && 'hidden'}`}>
       <Menu 

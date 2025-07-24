@@ -15,6 +15,7 @@ const PhotoHeader = () => {
             srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/photographersAndVideo3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/photographersAndVideo2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/photographersAndVideo1x.png'} 1800w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
             src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/photographersAndVideo3x.png'}
+            alt=''
             // alt="contact us main image"
             // width={400} height={400}
           />

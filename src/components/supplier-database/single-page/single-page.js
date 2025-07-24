@@ -6,7 +6,7 @@ import EmailIcon from "../../../svg/EmailIcon";
 import WebsiteUrlIcon from "../../../svg/WebsiteUrlIcon";
 import AddressIcon from "../../../svg/AddressIcon";
 import RequestToEdit from "./requesttoedit";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import NewsSchema from "../../blog/news-schema";
 const googlemap =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/googlemap.svg";
