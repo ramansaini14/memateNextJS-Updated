@@ -7,8 +7,11 @@ const nextConfig = {
   
   output: 'standalone',
   
+  /**
+   * @config {image domains and optimizations}
+   */
   images: {
-    domains: ['memate-website.s3.ap-southeast-2.amazonaws.com'],
+    domains: ['memate-website.s3.ap-southeast-2.amazonaws.com', 'res.cloudinary.com'],
     unoptimized: false,
   },
   
