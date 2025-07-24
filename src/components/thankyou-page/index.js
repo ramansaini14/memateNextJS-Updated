@@ -31,7 +31,7 @@ const ThankYouComponents  = () => {
         <p className='fontAndText'>Your support means the world to us. We’re excited to continue this journey together!</p>
         <div className={`${style.button}`}>
         <Link href="#" onClick={() => router.back()} ><img src={arrowIconBack} alt="Arrow" /> <span className='ssMDFont'>Back</span></Link>
-        <Link href="/" ><span className='ssMDFontBlack'>Home</span></Link>
+        <Link className='ssMDFontWhite' href="/" ><span>Home</span></Link>
       </div>
       </div>
       </div> 

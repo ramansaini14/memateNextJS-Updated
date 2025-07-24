@@ -1891,6 +1891,19 @@ display: inline-block;
   margin-left: -15px !important;
 }
 @media screen and (max-width: 767px) {
+.NewsflexWrap .Newsitem .imgBox a img {
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
   .tos-header {
     height: auto;
     width: 100%;
