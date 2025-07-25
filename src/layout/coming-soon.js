@@ -1,6 +1,6 @@
 import React from "react";
 import Images from "../assests/images";
-// import style from "./coming-soon-module.css";
+import style from "./coming-soon-module.css";
 import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
