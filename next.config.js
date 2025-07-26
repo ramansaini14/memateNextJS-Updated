@@ -5,14 +5,20 @@ const nextConfig = {
   // Ensure proper page extensions are handled
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   
-  output: 'standalone',
-  
   /**
    * @config {image domains and optimizations}
    */
   images: {
-    domains: ['memate-website.s3.ap-southeast-2.amazonaws.com', 'res.cloudinary.com'],
-    unoptimized: false,
+    remotePatterns: [
+    {
+      protocol: 'https',
+      hostname: 'memate-website.s3.ap-southeast-2.amazonaws.com',
+    },
+    {
+      protocol: 'https',
+      hostname: 'res.cloudinary.com',
+    },
+  ],
   },
   
   /**

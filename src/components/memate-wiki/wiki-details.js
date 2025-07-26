@@ -213,13 +213,8 @@ const article = wikiBaseIdData ? {
                                                 className={`kb-list-itemF ${activeItem === sectionId ? 'kb-list-item-activeF' : ''}`}
                                             >
                                                 <Link
-                                                  
-                                                    to={sectionId}
-                                                    spy={true}
-                                                    smooth={true}
-                                                    offset={-70}
-                                                    duration={500}
-                                                    onSetActive={() => setActiveItem(sectionId)}
+                                                    href={`#${sectionId}`}
+                                                    onClick={() => setActiveItem(sectionId)}
                                                 >
                                                     <span>{heading.textContent}</span>
                                                 </Link>
