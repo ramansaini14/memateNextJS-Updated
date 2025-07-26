@@ -171,6 +171,15 @@
   font-family: 'sequel_sans_roman_head';
 }
 @media screen and (max-width: 767px) {
+  .sliderSection1News {
+    padding: 0 15px 17px;
+}
+.newsandUpdates .NewsflexWrap .itemHead span {
+    font-size: 18px !important;
+}
+.NewsflexWrap .itemHead a {
+    font-size: 14px!important;
+}
   .section-header h2 {
     font-size: 28px !important;
   }

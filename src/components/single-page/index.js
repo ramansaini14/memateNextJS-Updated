@@ -17,7 +17,6 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
   const slug = propSlug || params.slug;
   const router = useRouter();
   const [post, setPost] = useState(null);
-  console.log('post: ', post);
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
@@ -27,15 +26,12 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const scrollHeight = document.documentElement.scrollHeight;
       const clientHeight = document.documentElement.clientHeight;
-
       setIsScrolled(scrollTop > 100); 
-
       const nearBottomThreshold = 2800;
       const isNearBottom =
         scrollTop + clientHeight >= scrollHeight - nearBottomThreshold;
       setIsNearBottom(isNearBottom);
     };
-
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -196,7 +192,10 @@ const breadcrumbList = post ? {
         <div className="accounting-text-A categoryLinkTitle "><Link href={`/news/category/${post.category?.id}`}>{post.category?.title}</Link></div>
         <h1 className="singlePageheading">{post.title}</h1>
         <div className="singlePageDate">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
-       <div className="stickySocialWrap  ">
+   
+         <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
+        isNearBottom ? 'hide' : ''
+      }`} >
        <div className="stickySocial">
           <p>Share</p>
           <ShareComponent
@@ -206,28 +205,8 @@ const breadcrumbList = post ? {
             description={post.meta_description}
           />
         </div>
-        </div>
-        <div className={`stickySocialWrap ${isScrolled ? 'scrolled' : ''} ${
-        isNearBottom ? 'hide' : ''
-      }`} >
-
-        
       </div>
 
-       {/* <div className="img-1-container-A img-1-container-singlenews">
-        {post.featured_img_url ? (
-          <img className="img-1" src={post.featured_img_url} alt={post.title} />
-        ) : post.thumbnail_img ? (
-          <img className="img-1" src={post.thumbnail_img} alt={post.title} />
-        ) : post.video_url ? (
-          <video className="img-1" autoPlay loop muted playsInline>
-            <source src={post.video_url} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <img className="img-1" src={Images.blogImgempty} alt={post.title} />
-        )}
-      </div> */}
       <div className="img-1-container-A img-1-container-singlenews">
         {post.video_url ? (
             <video className="img-1" autoPlay loop muted playsInline>
@@ -242,8 +221,6 @@ const breadcrumbList = post ? {
             <img className="img-1" src={Images.blogImgempty} alt={post.title} />
           )}
         </div>
- 
-
         <div className="heading-2-A single-page-heading"></div>
         <div className="heading-2-text-A single-page-heading-text parentSingleBlogMemate">
           <div dangerouslySetInnerHTML={{ __html: post.description }} />

@@ -1474,37 +1474,10 @@ body::-webkit-scrollbar-thumb ,
 }
 
 
-.stickySocialWrap {
-  position: fixed;
-  margin-left: -97px;
-  margin-top: 145px;
-  animation-name: scroll;
-  top: 50px;
-  transition: top 0.7s cubic-bezier(0.68,-0.13, 0.04, 1.01), background-color 0.5s ease, box-shadow 0.5s ease;
-}
-.stickySocialWrap.scrolled {
-  top: -67px;
-  position: fixed;
-}
-.stickySocial:before {
-  content: "";
-  position: absolute;
-  border-radius: 2px;
-  background: linear-gradient(90deg, #1AB2FF -4.23%, #FFB258 64.39%);
-  height: 4px;
-  align-self: stretch;
-  width: 62px;
-  left: -9px !important;
-  right: 0;
-  margin: 0 auto;
-}
 
-.stickySocial {
-  position: relative;
-}
-.stickySocialWrap.scrolled.hide {
-  opacity: 0;
-}
+
+
+
 
 .stickySocial p {
   color: #344054;

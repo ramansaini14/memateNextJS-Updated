@@ -75,7 +75,7 @@ const NewsAndUpdate = ({ postsLatest }) => {
   const latestNews = postsLatest?.slice(0, 3) || [];
 
   return (
-    <div className="slider-section1 sliderSectionShadowl bottom-management bottom-managementw" >
+    <div className="slider-section1 sliderSection1News sliderSectionShadowl bottom-management bottom-managementw" >
       <div className="success-stories-section">
         <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
           <h2 style={{ 

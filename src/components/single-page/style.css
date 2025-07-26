@@ -213,9 +213,7 @@
   padding-left: 0;
   margin-bottom: 37px;
 }
-.stickySocialWrap.scrolled.hide {
-  opacity: 0;
-}
+
 .blogMetstags {
   margin: 56px 0;
   display: flex;
@@ -388,7 +386,7 @@
   margin: 60px 0 67px;
 }
 .stickySocialWrap {
-  position: fixed;
+  position: absolute;
   margin-left: -97px;
   margin-top: 48px;
   animation-name: scroll;
@@ -398,6 +396,12 @@
 .stickySocialWrap.scrolled {
   top: -67px;
   position: fixed;
+}
+.stickySocialWrap.scrolled.hide {
+  opacity: 0;
+}
+.socialStickyWrap {
+    position: relative;
 }
 .stickySocial:before {
   content: "";
