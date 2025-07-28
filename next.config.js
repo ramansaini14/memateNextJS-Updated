@@ -845,6 +845,10 @@ const nextConfig = {
           source: '/:path*',
           destination: '/404',
         },
+        {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
       ],
     };
   },
