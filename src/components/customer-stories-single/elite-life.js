@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Link from "next/link";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import SuccessStories from "../success-stories";
 import NewsSchema from "../blog/news-schema";
 
@@ -50,13 +50,6 @@ const article =  {
 } 
   return (
     <>
-     <Helmet>
-    <title>Elite Life Case Study | Software for Private Asset Management Clubs</title>
-    <meta name="description" content="See how Elite Life, an exclusive asset management club, uses MeMate to manage private clients, streamline internal operations, and deliver high-touch service." />
-    <meta property="og:title" content="Elite Life Case Study | Software for Private Asset Management Clubs" />
-      <meta property="og:description" content="See how Elite Life, an exclusive asset management club, uses MeMate to manage private clients, streamline internal operations, and deliver high-touch service.
-    " />
-</Helmet>
 {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
       <div className="parent-blog-page customerstoriespage">
 

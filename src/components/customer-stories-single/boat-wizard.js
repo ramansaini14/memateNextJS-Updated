@@ -50,13 +50,7 @@ const article =  {
 } 
   return (
     <>
-    <Helmet>
-    <title>Boat Wizard Case Study | Marine Service Business Software Success</title>
-    <meta name="description" content="Discover how Boat Wizard streamlined their marine service operations using MeMate's business management software. Real-world success story for marine service businesses." />
-    <meta property="og:title" content="Boat Wizard Case Study | Marine Service Business Software Success" />
-      <meta property="og:description" content="Discover how Boat Wizard streamlined their marine service operations using MeMate's business management software. Real-world success story for marine service businesses.
-    " />
-</Helmet>
+
 {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
       <div className="parent-blog-page customerstoriespage">
 

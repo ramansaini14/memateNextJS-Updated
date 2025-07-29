@@ -1,3 +1,4 @@
+'use client'
 import Layout from "../../layout";
 import {
   QuestionAnswer,
@@ -5,18 +6,13 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/invoicing";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
+import AppWrapper from "../../components/AppWrapper";
 
 const ProjectManagementPage = () => {
   return (
     <>
-      <Helmet>
-    <title>Invoicing Software for Your Business | MeMate</title>
-    <meta name="description" content="Create and send invoices in seconds. Aussie-made invoicing software to help you run your business — simple, automated, and all-in-one." />
-    <meta property="og:title" content="Invoicing Software for Your Business | MeMate" />
-      <meta property="og:description" content="Create and send invoices in seconds. Aussie-made invoicing software to help you run your business — simple, automated, and all-in-one.
-    " />
-</Helmet>
+  <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
       <SalesComponent />
@@ -25,6 +21,7 @@ const ProjectManagementPage = () => {
       <QuestionAnswer />
       </div>
     </Layout>
+    </AppWrapper>
     </>
   );
 };

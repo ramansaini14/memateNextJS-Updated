@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import BoatWizard from "../../components/customer-stories-single/boat-wizard";
 import SortedMedia from "../../components/customer-stories-single/sorted-media";
 import { notFound } from "next/navigation";
+import AppWrapper from "../../components/AppWrapper";
 
 const CustomerStoriesPageSingle = ({ params }) => {
   const pathname = usePathname();
@@ -20,8 +21,17 @@ const CustomerStoriesPageSingle = ({ params }) => {
   if (slug && !validSlugs.includes(slug)) {
     notFound();
   }
-  
+
+// const metadata = getMetadata()
   return (
+    <>
+      {/* <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+      </Head> */}
+    <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
         {(pathname === "/customer-stories/camera-fix" || slug === "camera-fix") && <CameraFix />}
@@ -35,6 +45,8 @@ const CustomerStoriesPageSingle = ({ params }) => {
         )}
       </div>
     </Layout>
+    </AppWrapper>
+    </>
   );
 };
 export default CustomerStoriesPageSingle;

@@ -1,3 +1,4 @@
+'use client'
 import Layout from "../../layout";
 import {
   QuestionAnswer,
@@ -5,18 +6,13 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/profitability-and-budgeting";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
+import AppWrapper from "../../components/AppWrapper";
 
 const ProfitabilityAndBudgetingPage = () => {
   return (
     <>
-      <Helmet>
-    <title>Budgeting & Profitability Software for Aussie Businesses | MeMate</title>
-    <meta name="description" content="See where you’re making money — and where you’re not. MeMate helps you budget smarter and track job profitability in real time." />
-    <meta property="og:title" content="Budgeting & Profitability Software for Aussie Businesses | MeMate" />
-      <meta property="og:description" content="See where you’re making money — and where you’re not. MeMate helps you budget smarter and track job profitability in real time.
-    " />
-</Helmet>
+    <AppWrapper>
     <Layout>
         <div className="bgshadowwrapper">
       <SalesComponent />
@@ -25,6 +21,7 @@ const ProfitabilityAndBudgetingPage = () => {
       <QuestionAnswer />
       </div>
     </Layout>
+    </AppWrapper>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Link from "next/link";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import SuccessStories from "../success-stories";
 import NewsSchema from "../blog/news-schema";
 
@@ -56,22 +56,6 @@ function CameraFix() {
 
   return (
     <>
-      <Helmet>
-        <title>Camera Repair Software in Action | MeMate Case Study</title>
-        <meta
-          name="description"
-          content="See how Camera Fix streamlined repairs, quoting, and team coordination using MeMate — real software results for electronics repair business owners."
-        />
-        <meta
-          property="og:title"
-          content="Camera Repair Software in Action | MeMate Case Study"
-        />
-        <meta
-          property="og:description"
-          content="See how Camera Fix streamlined repairs, quoting, and team coordination using MeMate — real software results for electronics repair business owners.
-    "
-        />
-      </Helmet>
       {article && breadcrumbList && (
         <NewsSchema article={article} breadcrumbList={breadcrumbList} />
       )}

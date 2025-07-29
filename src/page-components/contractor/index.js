@@ -1,3 +1,4 @@
+'use client'
 import Layout from "../../layout";
 import {
   QuestionAnswer,
@@ -5,17 +6,13 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/contractor";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
+import AppWrapper from "../../components/AppWrapper";
 
 const ContractorPage = () => {
   return (
     <>
-      <Helmet>
-    <title>Contractor Management Software for Aussie Businesses | MeMate</title>
-    <meta name="description" content="Assign jobs, track progress and manage contractors all in one place. MeMate’s contractor management software is built for Aussie service businesses." />
-    <meta property="og:title" content="Contractor Management Software for Aussie Businesses | MeMate" />
-      <meta property="og:description" content="Assign jobs, track progress and manage contractors all in one place. MeMate’s contractor management software is built for Aussie service businesses." />
-</Helmet>
+    <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
       <SalesComponent />
@@ -24,6 +21,7 @@ const ContractorPage = () => {
       <QuestionAnswer />
       </div>
     </Layout>
+    </AppWrapper>
     </>
   );
 };

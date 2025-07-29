@@ -57,13 +57,6 @@ const article =  {
 
   return (
     <>
-    <Helmet>
-    <title>Pro Vinyl Case Study | Car Wrap Business Software Success</title>
-    <meta name="description" content="Discover how Pro Vinyl streamlined their automotive wrapping operations using MeMate's business management software. Real-world success story for car wrap businesses." />
-    <meta property="og:title" content="Pro Vinyl Case Study | Car Wrap Business Software Success" />
-      <meta property="og:description" content="Discover how Pro Vinyl streamlined their automotive wrapping operations using MeMate's business management software. Real-world success story for car wrap businesses.
-    " />
-</Helmet>
 {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
       <div className="parent-blog-page customerstoriespage">
 

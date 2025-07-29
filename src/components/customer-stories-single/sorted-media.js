@@ -49,13 +49,6 @@ const article =  {
 } 
   return (
     <>
-    <Helmet>
-    <title>Sorted Media Case Study | Photography Business Software</title>
-    <meta name="description" content="Discover how Sorted Media manages 40+ shoots a day with MeMate’s software. Booking, scheduling, contractors — all streamlined for creative agencies." />
-    <meta property="og:title" content="Sorted Media Case Study | Photography Business Software" />
-      <meta property="og:description" content="Discover how Sorted Media manages 40+ shoots a day with MeMate’s software. Booking, scheduling, contractors — all streamlined for creative agencies.
-    " />
-</Helmet>
 {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
       <div className="parent-blog-page customerstoriespage">
         <div className="parent-blog">

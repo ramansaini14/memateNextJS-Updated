@@ -1,3 +1,4 @@
+'use client'
 import Layout from "../../layout";
 import {
   QuestionAnswer,
@@ -5,18 +6,13 @@ import {
   SalesComponentFeature,
   SmartInvestment
 } from "../../components/schedule-jobs";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
+import AppWrapper from "../../components/AppWrapper";
 
 const CommunicationPage = () => {
   return (
     <>
-     <Helmet>
-    <title>Schedule, Assign & Track Jobs | Job Management with MeMate</title>
-    <meta name="description" content="Assign, schedule and track jobs with ease. MeMate’s job management software helps Aussie businesses stay on top of every task, team and deadline." />
-    <meta property="og:title" content="Schedule, Assign & Track Jobs | Job Management with MeMate" />
-      <meta property="og:description" content="Assign, schedule and track jobs with ease. MeMate’s job management software helps Aussie businesses stay on top of every task, team and deadline.
-    " />
-</Helmet>
+    <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
       <SalesComponent />
@@ -25,6 +21,7 @@ const CommunicationPage = () => {
       <QuestionAnswer />
       </div>
     </Layout>
+    </AppWrapper>
     </>
   );
 };
