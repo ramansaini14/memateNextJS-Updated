@@ -2,14 +2,14 @@ import React from "react";
 import "./style.css";
 import Images from "../../assests/blog-images";
 import Link from 'next/link';
-// import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 import NewsSchema from "./news-schema";
 
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
 
   
-  //  data availability
+  // Safety checks for data availability
   if (!postsLatest || !Array.isArray(postsLatest) || !PostsCategories || !Array.isArray(PostsCategories)) {
     return <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%'}}>Loading blog content...</div>;
   }
@@ -67,12 +67,12 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
 
     return (
     <div id="blogGrid">
-      {/* <Helmet>
+      <Helmet>
         <title>Latest in Business Tech & Software | MeMate Newsroom</title>
         <meta name="description" content="Stay updated with the latest in business software, tech trends and Aussie regulations. News and insights from the team behind MeMate." />
         <meta property="og:title" content="Latest in Business Tech & Software | MeMate Newsroom" />
         <meta property="og:description" content="Stay updated with the latest in business software, tech trends and Aussie regulations. News and insights from the team behind MeMate." />
-      </Helmet> */}
+      </Helmet>
       {article && <NewsSchema article={article} />}
       <div className="parent-blog-page ">
         <div className="parent-blog">

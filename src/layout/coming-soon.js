@@ -1,15 +1,15 @@
 import React from "react";
 import Images from "../assests/images";
 import style from "./coming-soon-module.css";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 
 const ComingSoon = () => {
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Coming Soon</title>
         
-      </Helmet>
+      </Helmet> */}
       <div
         className={`ComingSonnBg`}
         style={{ backgroundImage: `url(${Images.backgroundPattern})` }}
