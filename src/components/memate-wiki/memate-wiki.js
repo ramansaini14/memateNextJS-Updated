@@ -44,7 +44,7 @@ const MemateWiki = () => {
     }, 300); 
 
     return () => clearTimeout(debounceTimer);
-  }, [searchQuery, wikiData]);
+  }, [searchQuery, wikiData, fetchFilteredData]);
 
 
   return (

@@ -21,7 +21,7 @@ const BussinessManagement = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <div className="home-platform">
-            <h1>Business management software.</h1>
+            <h1>Business Management Software</h1>
             <h2>All-in-One Platform</h2>
           </div>
           <div

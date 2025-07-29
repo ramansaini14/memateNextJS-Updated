@@ -68,7 +68,7 @@ const SliderStories = () => {
     data-aos-anchor-placement="top-bottom">
       <Slider {...settings}>
         <div className="slider-item">
-          <Link href='/customer-stories/camera-fix'>
+          <Link title="electronics repair business software example" href='/customer-stories/camera-fix'>
            <LazyLoadImage
                                 alt="electronics repair business software example"
                                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-camera-fix-min.jpg"
@@ -85,7 +85,7 @@ const SliderStories = () => {
         </div>
         </div>
         <div className="slider-item">
-        <Link href='/customer-stories/pro-vinyl'>
+        <Link title="car wrap business management software" href='/customer-stories/pro-vinyl'>
         <LazyLoadImage
                                 alt="car wrap business management software"
                                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-pro-min.jpg"
@@ -102,7 +102,7 @@ const SliderStories = () => {
         </div>
         </div>
         <div className="slider-item">
-        <Link href='/customer-stories/elite-life'>
+        <Link title="software for exclusive membership services" href='/customer-stories/elite-life'>
         <LazyLoadImage
               alt="software for exclusive membership services"
               src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-elite-min.jpg"
@@ -119,7 +119,7 @@ const SliderStories = () => {
         </div>
         </div>
         <div className="slider-item">
-        <Link href='/customer-stories/boat-wizard'>
+        <Link title="marine service business software case study" href='/customer-stories/boat-wizard'>
         <LazyLoadImage
               alt="marine service business software case study"
               src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-boat-min.jpg"
@@ -136,7 +136,7 @@ const SliderStories = () => {
         </div>
         </div>
         <div className="slider-item">
-        <Link href='/customer-stories/sorted-media'>
+        <Link title="photography business management software case study" href='/customer-stories/sorted-media'>
          <LazyLoadImage
               alt="photography business management software case study"
               src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-sorted-min.jpg"

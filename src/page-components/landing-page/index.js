@@ -23,12 +23,10 @@ const LandingPage = ({postsLatest}) => {
   return (
    <>
   <Helmet>
-    
   <title>Business Management Software, ERP system, CRM & Project Management in One</title>
-  <meta name="description" content="All-in-one business management software and ERP software for Australian SMEs, with built-in CRM and project management tools." />
+  <meta name="description" content="Cloud-based business management and ERP software for Australian SMEs, with built-in CRM and project management tools." />
   <meta property="og:title" content="Business Management Software, ERP system, CRM & Project Management in One" />
-  <meta property="og:description" content="All-in-one business management software and ERP software for Australian SMEs, with built-in CRM and project management tools." />
-
+  <meta property="og:description" content="Cloud-based business management and ERP software for Australian SMEs, with built-in CRM and project management tools." />
 </Helmet>
     <Layout>
       <BussinessManagement/>

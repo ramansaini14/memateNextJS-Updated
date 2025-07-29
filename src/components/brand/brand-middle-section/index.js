@@ -2563,48 +2563,193 @@ const knowledgeData = [
             </div>
        </div>
    </div>
-
-   <div class="logofile-fonts">
-      <div class="logofile-fonts-img logofile-fonts-imgWrap">
-        <img
-          srcSet="
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-6.png 600w,
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-6.png 1200w,
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-6.png  1800w"
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-6.png"
-            alt="zeroScreenShot" />
-            <div class="downloadFileGrid">
-            <div class="DownloadFileList">
-            <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+08.fig" download target="_blank">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
-            <p>Download</p>
-            </a>
-            </div>
-       </div>
-   </div>
-
-   <div class="logofile-fonts">
-      <div class="logofile-fonts-img logofile-fonts-imgWrap">
-        <img
-          srcSet="
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-7.png 600w,
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-7.png 1200w,
-            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-7.png  1800w"
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-7.png"
-            alt="zeroScreenShot" />
-            <div class="downloadFileGrid">
-            <div class="DownloadFileList">
-            <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+09.fig" download target="_blank">
-            <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
-            <p>Download</p>
-            </a>
-            </div>
-       </div>
-   </div>
-
         `},
+    //     {
+    //       id: 93,
+    //       name: "Banners",
+    //       description: `
+    // <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/banners-logo-brand3x.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/banners-logo-brand2x.png 1200w,
+    //            https://memate-website.s3.ap-southeast-2.amazonaws.com/media/banners-logo-brand1x.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/banners-logo-brand3x.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+01.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    // <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/allinoneplateformbrand3x.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/allinoneplateformbrand2x.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/allinoneplateformbrand1x.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/allinoneplateformbrand3x.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+02.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //    <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-1.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-1.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-1.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-1.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+03.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //       <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-2.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-2.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-2.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-2.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+04.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //   <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-3.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-3.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-3.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-3.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+05.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //  <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-4.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-4.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-4.png 1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-4.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+06.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //   <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-5.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-5.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-5.png  1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-4.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+07.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //  <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-6.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-6.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-6.png  1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-6.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+08.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //  <div class="logofile-fonts">
+    //     <div class="logofile-fonts-img logofile-fonts-imgWrap">
+    //       <img
+    //         srcSet="
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-7.png 600w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark2x-7.png 1200w,
+    //           https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark1x-7.png  1800w"
+    //           sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
+    //           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/bannerdark3x-7.png"
+    //           alt="zeroScreenShot" />
+    //           <div class="downloadFileGrid">
+    //           <div class="DownloadFileList">
+    //           <a href="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/MeMate+Banner+09.fig" download target="_blank">
+    //           <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1744963180/PDF_ln4p1m.svg" type="image/svg+xml"  width="75%" alt="frame39531">
+    //           <p>Download</p>
+    //           </a>
+    //           </div>
+    //      </div>
+    //  </div>
+  
+    //       `},
+
         {
           id: 94,
           name: "Social Templates",

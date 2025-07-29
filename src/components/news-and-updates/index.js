@@ -128,7 +128,7 @@ const NewsAndUpdate = ({ postsLatest }) => {
                             {post.title}
                           </Link>
                         </h3>
-                        <Link href={`/news/${post.slug}`}>Read More</Link>
+                        {/* <Link href={`/news/${post.slug}`} aria-label={`Read More about ${post.title}`}>Read More</Link> */}
                       </div>
                     </li>
                   )) : (

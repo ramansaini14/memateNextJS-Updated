@@ -41,7 +41,16 @@ export default function RootLayout({ children }) {
             gtag("config", "G-GTVNNDD15Z");
           `}
         </Script>
+        {/* Google Ads  */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17393005307" id="ga-script" strategy="afterInteractive">
+        </Script>
+        <Script id="ga-script" strategy="afterInteractive">
+         {` window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'AW-17393005307');`}
+        </Script>
         {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`

@@ -89,7 +89,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'} alt="Dog" />
             </div>
             <div className="blog-description-smallb">
-          <p>Latest Small Business Technology News and Software Updates</p> 
+                <p>Latest Small Business Technology News and Software Updates</p> 
             </div>
           </div>
           <div className="categoriesMainWrap">
