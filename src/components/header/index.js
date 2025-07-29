@@ -27,7 +27,7 @@ import FAQSVG from "../../svg/FAQSVG";
 import ContactSalesSVG from "../../svg/ContactSalesSVG";
 import WatchDemoSVG from "../../svg/WatchDemoSVG";
 import HeaderButtonWithGradient from "../../layout/hover-button/HeaderButtonWithGradient";
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+// import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 
 const DownBlackArrow =

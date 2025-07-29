@@ -85,7 +85,7 @@ const article =  {
               <div className="customerstoriesDetails">
                 <div>
                   <div className="category">PROvinyl</div>
-                  <div className="date-heading-title"><span>Running a Car Wrapping Company on meMate</span></div>
+                  <div className="date-heading-title"><span className="textCustomerStories">Running a Car Wrapping Company on meMate</span></div>
                   <Link href="/customer-stories/pro-vinyl" className="readMoreBut">Read More</Link>
                 </div>
               </div>

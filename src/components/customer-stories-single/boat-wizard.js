@@ -78,7 +78,7 @@ const article =  {
               <div className="customerstoriesDetails">
                 <div>
                   <div className="category">Boat Wizard</div>
-                  <div className="date-heading-title"><span>We quote and invoice all our marine engineering services.</span></div>
+                  <div className="date-heading-title"><span className="textCustomerStories">We quote and invoice all our marine engineering services.</span></div>
                   <Link href="/customer-stories/boat-wizard" className="readMoreBut">Read More</Link>
                 </div>
               </div>

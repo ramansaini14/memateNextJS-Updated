@@ -12,13 +12,13 @@ const BussinessManagement = () => {
       <div className="home-container-wrapper">
         <div
           className="home-page-section"
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-delay="50"
-          data-aos-duration="500"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-bottom"
+          // data-aos="fade-up"
+          // data-aos-offset="50"
+          // data-aos-delay="50"
+          // data-aos-duration="500"
+          // data-aos-mirror="true"
+          // data-aos-once="false"
+          // data-aos-anchor-placement="top-bottom"
         >
           <div className="home-platform">
             <h1>Business Management Software</h1>

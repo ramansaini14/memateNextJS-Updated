@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./style.css";
-import TronButton from "../../../layout/hover-button/tourn-but";
+// import TronButton from "../../../layout/hover-button/tourn-but";
 import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (

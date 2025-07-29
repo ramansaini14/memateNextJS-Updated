@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react';  
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 // import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 // import StickyBox from "react-sticky-box";
@@ -44,12 +44,6 @@ const article =  {
 
   return (
     <>
-     <Helmet>
-    <title>Privacy Policy | MeMate Business Management Software</title>
-    <meta name="description" content="Learn how MeMate collects, stores, and protects your data. Our privacy policy explains your rights and how we keep your business information safe." />
-    <meta property="og:title" content="Privacy Policy | MeMate Business Management Software" />
-      <meta property="og:description" content="Learn how MeMate collects, stores, and protects your data. Our privacy policy explains your rights and how we keep your business information safe." />
-</Helmet>
  {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
          <div className="conditionWrrapperF">
                      <div className="pageBreadcrumbs">

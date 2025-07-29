@@ -198,21 +198,6 @@ const article =  {
 
   return (
     <>
-      <Helmet>
-        <title>Terms of Use | MeMate Business Software Australia</title>
-        <meta
-          name="description"
-          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
-        />
-        <meta
-          property="og:title"
-          content="Terms of Use | MeMate Business Software Australia"
-        />
-        <meta
-          property="og:description"
-          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
-        />
-         </Helmet>
          {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
                 <div className="conditionWrrapperF">
               <div className="pageBreadcrumbs">

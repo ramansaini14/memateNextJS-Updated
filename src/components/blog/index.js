@@ -2,14 +2,14 @@ import React from "react";
 import "./style.css";
 import Images from "../../assests/blog-images";
 import Link from 'next/link';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 import NewsSchema from "./news-schema";
 
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
 
   
-  // Safety checks for data availability
+  //  data availability
   if (!postsLatest || !Array.isArray(postsLatest) || !PostsCategories || !Array.isArray(PostsCategories)) {
     return <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%'}}>Loading blog content...</div>;
   }
@@ -67,12 +67,12 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
 
     return (
     <div id="blogGrid">
-      <Helmet>
-        <title>MeMate News | Business Software, Tech & Regulation Updates for SMEs</title>
-        <meta name="description" content="Stay updated with the latest business software news, tech trends, and regulation updates for Australian SMEs. New MeMate features, tools & tips inside." />
-        <meta property="og:title" content="MeMate News | Business Software, Tech & Regulation Updates for SMEs" />
-        <meta property="og:description" content="Stay updated with the latest business software news, tech trends, and regulation updates for Australian SMEs. New MeMate features, tools & tips inside." />
-      </Helmet>
+      {/* <Helmet>
+        <title>Latest in Business Tech & Software | MeMate Newsroom</title>
+        <meta name="description" content="Stay updated with the latest in business software, tech trends and Aussie regulations. News and insights from the team behind MeMate." />
+        <meta property="og:title" content="Latest in Business Tech & Software | MeMate Newsroom" />
+        <meta property="og:description" content="Stay updated with the latest in business software, tech trends and Aussie regulations. News and insights from the team behind MeMate." />
+      </Helmet> */}
       {article && <NewsSchema article={article} />}
       <div className="parent-blog-page ">
         <div className="parent-blog">
@@ -86,7 +86,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
               className="dog-img"
             srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'} 600w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage2x.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage1x.png'} 1800w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'} alt="Dog" />
+            src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/media/DogImage3x.png'} alt="" />
             </div>
             <div className="blog-description-smallb">
                 <p>Latest Small Business Technology News and Software Updates</p> 

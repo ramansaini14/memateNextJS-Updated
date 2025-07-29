@@ -115,7 +115,7 @@ function CameraFix() {
                 <div>
                   <div className="category">Camera Fix</div>
                   <div className="date-heading-title">
-                    <span>
+                    <span className="textCustomerStories">
                       Empowering a Boutique Camera Repair Shop to Manage
                       Business and Serve Over 100 Clients Monthly
                     </span>

@@ -9,7 +9,6 @@ const DeleteRequestComponent = () => {
   return (
     <>
     <ComingSoon />
-    
     </>
   );
 };

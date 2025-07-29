@@ -235,9 +235,7 @@ const QuestionAnswer = () => {
         </div>
       </div>
       <div className={style.faqmaintitle}>
-               <h1 className="h1tagsseo h1tagsseof fontWeight">
-                      Frequently Asked Questions About MeMate
-                    </h1>
+        <h1 className="h1tagsseo h1tagsseof fontWeight">Frequently Asked Questions About MeMate</h1>
         <h4>
          Discover answers to the most commonly asked questions about managing your business efficiently. 
         </h4>

@@ -1,11 +1,15 @@
+'use client'
 import React from 'react'
 import Layout from '../../layout';
 import KnowledgeBaseComponent from '../../components/knowledge-base'
+import AppWrapper from '../../components/AppWrapper';
 const KnowledgeBasePage = () => {
   return (
-    <Layout>
+    <AppWrapper>
+      <Layout>
         <KnowledgeBaseComponent/>
-    </Layout>
+      </Layout>
+    </AppWrapper>
   )
 }
 

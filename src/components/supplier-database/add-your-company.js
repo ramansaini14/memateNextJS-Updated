@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import style from './supplier-module.module.scss';
 import Link from 'next/link';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 import { useForm, Controller } from 'react-hook-form';
 import Select from "react-select";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -194,14 +194,6 @@ const supplier_services_id = data.supplied_services?.value || '';
 
   return (
     <>
-      <Helmet>
-        <title>Add Your Company | List Your Business in MeMate’s Supplier Directory</title>
-        <meta name="description" content="Register your company in MeMate’s supplier directory to connect with businesses looking for trusted suppliers. 
-        Join the leading Australian business directory today." />
-        <meta property="og:title" content="Add Your Company | List Your Business in MeMate’s Supplier Directory" />
-        <meta property="og:description" content="Register your company in MeMate’s supplier directory to connect with businesses looking for trusted suppliers. 
-        Join the leading Australian business directory today." />
-      </Helmet>
       <div className="parent-blog-page customerstoriespage">
         <div className="parent-blog">
           <div className="pageBreadcrumbs">

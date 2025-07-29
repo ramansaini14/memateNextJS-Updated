@@ -69,24 +69,6 @@ const SupplierDatabase = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>
-          List Your Business in the MeMate Supplier Directory | Get Seen by
-          Aussie SMEs
-        </title>
-        <meta
-          name="description"
-          content="Submit your business to the MeMate Supplier Directory and get discovered by thousands of Aussie businesses. Free listings for trusted local vendors."
-        />
-        <meta
-          property="og:title"
-          content="List Your Business in the MeMate Supplier Directory | Get Seen by Aussie SMEs"
-        />
-        <meta
-          property="og:description"
-          content="Submit your business to the MeMate Supplier Directory and get discovered by thousands of Aussie businesses. Free listings for trusted local vendors."
-        />
-      </Helmet>
       <div
         className={`main-section ${style.mainSection}`}
         data-aos="fade-up"
@@ -111,9 +93,7 @@ const SupplierDatabase = () => {
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         >
-          <h1 className="supplierText supdatabaseHeadFS">
-            Get Your Business Listed in the MeMate Supplier Directory
-          </h1>
+          <h1 className="supplierText supdatabaseHeadFS">Get Your Business Listed in the MeMate Supplier Directory</h1>
         </div>
         <div
           className={style.smallheading}

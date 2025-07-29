@@ -2,7 +2,7 @@ import style from './features.module.scss';
 import './style.css';
 import Iconsdata from "../../assests/icons";
 import Link from 'next/link';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 
 
 
@@ -177,12 +177,6 @@ const FeaturesComponent = () => {
 
   return (
     <>
-     <Helmet>
-    <title>Features | Business Management Software and Workflow Automation Tools in Australia</title>
-    <meta name="description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
-    <meta property="og:title" content="Features | Business Management Software and Workflow Automation Tools in Australia" />
-      <meta property="og:description" content="Discover the comprehensive features of MeMate, Australia’s top business management software. From CRM for small businesses to project management features and workflow automation tools, we have it all." />
-</Helmet>
       <div className={style.mainMenuPages}>
         <div className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}>
          <h1 className="h1tagsseo h1tagsseof fontWeight">Technology from the future, solving today’s problems.</h1>
@@ -197,12 +191,12 @@ const FeaturesComponent = () => {
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>
             <h2 data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
+              data-aos-offset="50"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
             <div className={style.mainGridwtapFlex}>
               {featureCategory.items.map((item, itemIndex) => (
               <Link data-aos="fade-up"

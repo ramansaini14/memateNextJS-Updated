@@ -1,7 +1,7 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
 import { updateList } from "../../api/software-update";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import Link from "next/link";
 import NewsSchema from "../blog/news-schema";
 const arrowIconBack =
@@ -84,21 +84,6 @@ const SoftwareUpdate = () => {
 
   return (
     <>
-      <Helmet>
-        <title>MeMate Software Updates | Latest Features & Improvements</title>
-        <meta
-          name="description"
-          content="See the latest MeMate software updates — new features, improvements, and fixes designed to help Aussie businesses run better every day."
-        />
-        <meta
-          property="og:title"
-          content="MeMate Software Updates | Latest Features & Improvements"
-        />
-        <meta
-          property="og:description"
-          content="See the latest MeMate software updates — new features, improvements, and fixes designed to help Aussie businesses run better every day."
-        />
-      </Helmet>
       {article && breadcrumbList && (
         <NewsSchema article={article} breadcrumbList={breadcrumbList} />
       )}

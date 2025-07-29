@@ -10,7 +10,6 @@ export async function generateMetadata({ params }) {
     
     console.log('🔍 Generating metadata for slug:', slug);
     
-    // Fetch post data for metadata
     const post = await blogSingle(slug);
     
     console.log('📡 API response:', post ? 'Found post' : 'No post found');
@@ -49,28 +48,24 @@ export async function generateMetadata({ params }) {
     const baseUrl = 'https://memate.com.au';
     const postUrl = `${baseUrl}/news/${slug}`;
     
-    // Ensure we have a valid, absolute image URL
     let imageUrl = post.featured_img_url || post.thumbnail_img_url;
     
-    // Make sure image URL is absolute
     if (imageUrl) {
       if (!imageUrl.startsWith('http')) {
         imageUrl = imageUrl.startsWith('/') ? `${baseUrl}${imageUrl}` : `${baseUrl}/${imageUrl}`;
       }
     } else {
-      // Fallback to default image
       imageUrl = `${baseUrl}/images/og-default.jpg`;
     }
     
-    // Clean description for meta tags (remove HTML and limit length)
     let cleanDescription = post.meta_description;
     
     if (!cleanDescription && post.description) {
       cleanDescription = post.description
-        .replace(/<[^>]*>/g, '') // Remove HTML tags
-        .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+        .replace(/<[^>]*>/g, '') 
+        .replace(/\s+/g, ' ') 
         .trim()
-        .substring(0, 155) + '...'; // Limit to 155 chars for optimal display
+        .substring(0, 155) + '...'; 
     }
     
     if (!cleanDescription) {
@@ -119,7 +114,6 @@ export async function generateMetadata({ params }) {
         tags: post.meta_keyword ? post.meta_keyword.split(',').map(tag => tag.trim()).filter(Boolean) : [],
       },
       
-      // Twitter Card for Twitter sharing
       twitter: {
         card: 'summary_large_image',
         title: socialTitle,
@@ -129,7 +123,6 @@ export async function generateMetadata({ params }) {
         site: '@memateapp',
       },
       
-      // Additional metadata for better SEO
       alternates: {
         canonical: postUrl,
       },
@@ -146,13 +139,12 @@ export async function generateMetadata({ params }) {
         },
       },
       
-      // Additional meta tags that some platforms use
       other: {
         'article:author': post.author || 'MeMate',
         'article:published_time': post.publish_date,
         'article:modified_time': post.updated_at || post.publish_date,
         'article:section': post.category?.title || 'News',
-        'og:image:secure_url': imageUrl, // Some platforms prefer secure_url
+        'og:image:secure_url': imageUrl, 
       },
     };
     

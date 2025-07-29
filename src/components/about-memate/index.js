@@ -1,25 +1,23 @@
-
+'use client';
 
 import style from './about.module.scss';
 import './about.style.css';
 import Images from "../../assests/images";
-import { Helmet } from 'react-helmet-async';
 import Link from 'next/link';
 import Linkdin from '../../svg/Linkdin';
+// import { Helmet } from 'react-helmet-async';
 const AboutMemateComponent = () => {
-
-
   return (
     <>
-    <Helmet>
+    {/* <Helmet>
     <title>About MeMate | Simplifying Business Management for Australian SMEs</title>
-    <meta name="description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
+    <meta titlename="description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
     <meta property="og:title" content="About MeMate | Simplifying Business Management for Australian SMEs" />
-      <meta property="og:description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
-</Helmet>
+    <meta property="og:description" content="Discover MeMate’s mission to empower Australian small and medium businesses with integrated CRM, ERP, and project management tools in one platform." />
+    </Helmet> */}
+
     <div id="aboutPage">
-    
-      <div className={`${style.aboutBanner} ${style.mainContaner}`} data-aos="fade-up"
+    <div className={`${style.aboutBanner} ${style.mainContaner}`} data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="500"

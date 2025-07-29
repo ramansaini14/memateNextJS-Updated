@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        {/* <link rel="icon" type="image/png" href="/favicon.png" /> */}
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
+        {/* <link rel="apple-touch-icon" href="/favicon.png" /> */}
 
         {/* Google Analytics */}
         <Script

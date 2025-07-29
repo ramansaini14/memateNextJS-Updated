@@ -41,7 +41,7 @@ const article =  {
   return (
     <>
  
-      <Helmet>
+      {/* <Helmet>
         <title>MeMate FAQs | Business Management Software Questions</title>
         <meta
           name="description"
@@ -56,7 +56,7 @@ const article =  {
           content="Everything you want to know about MeMate — from features to onboarding. Quick answers for Aussie businesses making the switch.
     "
         />
-      </Helmet>
+      </Helmet> */}
       {article && breadcrumbList && <NewsSchema article={article} breadcrumbList={breadcrumbList} />}
       <div className="parent-blog">
         <div className="pageBreadcrumbsF">

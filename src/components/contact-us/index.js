@@ -1,11 +1,11 @@
 
 import "./style.css";
-import { Helmet } from 'react-helmet-async';
-import style from './contactus.module.scss';
+// import { Helmet } from 'react-helmet-async';
+// import style from './contactus.module.scss';
 import React, { useState } from 'react';
 import 'react-phone-number-input/style.css';
 import Link from 'next/link';
-import TronButton from "../../layout/hover-button/tourn-but";
+// import TronButton from "../../layout/hover-button/tourn-but";
 import CallbackNow from "./callbacknow";
 import EmailNow from "./emailnow";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
@@ -17,12 +17,6 @@ const ContactUsComponent = () => {
 
   return (
     <div id="contactUsPage">
-    <Helmet>
-    <title>Contact MeMate | Business Software Support & Demo Requests Australia</title>
-    <meta name="description" content="Contact MeMate for support, demo bookings, or sales enquiries. Speak with real people in Australia — we’re here to help your business get sorted, fast." />
-    <meta property="og:title" content="Contact MeMate | Business Software Support & Demo Requests Australia" />
-      <meta property="og:description" content="Contact MeMate for support, demo bookings, or sales enquiries. Speak with real people in Australia — we’re here to help your business get sorted, fast." />
-    </Helmet>
       <div className="main-section contact-section" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"

@@ -5,13 +5,13 @@ import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 const SalesComponent = () => {
   return (
   <>
-    <div className="sales-component-wrapper salesfeaturesWrapper" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+        <div className="sales-component-wrapper salesfeaturesWrapper" data-aos="fade-up"
+        data-aos-offset="50"
+        data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom">
           <h1 className="h1tagsseo h1tagsseof fontWeight">Manage Staff, Shifts & Tasks in One Place</h1>
        <div className="sales-headingF">employee<br></br>management </div>
       <div className="sales-componet-content-wrapperF client-component-para">

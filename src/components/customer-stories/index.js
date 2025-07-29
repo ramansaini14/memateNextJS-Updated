@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Link from 'next/link';
-import { Helmet } from 'react-helmet-async';
+// import { Helmet } from 'react-helmet-async';
 
 const CustomerStoriesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png";
 const customersoriesProImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesPro.png";
@@ -12,13 +12,6 @@ const customersoriesSortedImage = "https://memate-website.s3.ap-southeast-2.amaz
 function CustomerStories() {
   return (
 <>
-<Helmet>
-    <title>How Aussie Businesses Use MeMate | Customer Stories & Results</title>
-    <meta name="description" content="Real stories from Aussie businesses using MeMate to run smoother. See how SMEs in trades, services, and more use MeMate to get results." />
-    <meta property="og:title" content="How Aussie Businesses Use MeMate | Customer Stories & Results" />
-      <meta property="og:description" content="Real stories from Aussie businesses using MeMate to run smoother. See how SMEs in trades, services, and more use MeMate to get results.
-    " />
-</Helmet>
 <div className="parent-blog-page customerstoriespage">
       <div className="parent-blog">
         <div className="heading-container">

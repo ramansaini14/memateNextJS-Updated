@@ -76,7 +76,7 @@ const article =  {
               <div className="customerstoriesDetails">
                 <div>
                   <div className="category">Sorted Media</div>
-                  <div className="date-heading-title"><span>Photography and Videography on Demand</span></div>
+                  <div className="date-heading-title"><span className="textCustomerStories">Photography and Videography on Demand</span></div>
                   <Link href="/customer-stories/sorted-media" className="readMoreBut">Read More</Link>
                 </div>
               </div>

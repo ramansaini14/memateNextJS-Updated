@@ -4,7 +4,7 @@ import { wikiBase, wikiBaseBSearch } from "../../api/wikiApi";
 import "./style.css";
 import style from './wiki.module.scss';
 import Link from "next/link";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import { Oval } from 'react-loader-spinner';
 const FilterIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
 
@@ -49,18 +49,10 @@ const MemateWiki = () => {
 
   return (
     <>
-    <Helmet>
-      <title>MeMate Wiki | Business Tips & Insights for Aussie SMEs</title>
-      <meta name="description" content="Practical business advice, growth tips and industry insights for Australian businesses. The MeMate Wiki helps you build, run and grow smarter." />
-      <meta property="og:title" content='MeMate Wiki | Business Tips & Insights for Aussie SMEs' />
-      <meta property="og:description" content='Practical business advice, growth tips and industry insights for Australian businesses. The MeMate Wiki helps you build, run and grow smarter.' />  
-     </Helmet>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={`titleHead ${style.mainHeadTitle}`}>
           <h2>meMate <br />wiki</h2>
-          <h1 className="h1tagsseow">
-          Business Tips & Insights for Aussie SMEs</h1>
-          <span>
+          <h1 className="h1tagsseow">Business Tips & Insights for Aussie SMEs</h1><span>
           </span>
           <h4>
           Here, we gather valuable knowledge about general business<br/> management practices and tools, from job scheduling to<br/> invoicing and quote calculations.

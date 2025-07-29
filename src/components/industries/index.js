@@ -69,12 +69,12 @@ const IndustriesComponent = () => {
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>
             <h2 data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
+            data-aos-offset="50"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
             <div className={style.mainGridwtapFlex}>
               {featureCategory.items.map((item, itemIndex) => (
                  <Link data-aos="fade-up"

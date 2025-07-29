@@ -78,7 +78,7 @@ const article =  {
               <div className="customerstoriesDetails">
                 <div>
                   <div className="category">Elite Life</div>
-                  <div className="date-heading-title"><span>Using meMate to Run a Private Membership Club</span></div>
+                  <div className="date-heading-title"><span className="textCustomerStories">Using meMate to Run a Private Membership Club</span></div>
                   <Link href="/customer-stories/elite-life" className="readMoreBut">Read More</Link>
                 </div>
               </div>

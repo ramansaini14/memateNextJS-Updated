@@ -11,24 +11,6 @@ import Link from "next/link";
 const PricingComponent = () => {
   return (
     <>
-      <Helmet>
-        <title>
-        MeMate Pricing | Affordable Business Management Software
-        </title>
-        <meta
-          name="description"
-          content="Explore MeMate’s transparent pricing plans tailored for Australian small and medium businesses. Discover affordable ERP, CRM, and project management solutions with no hidden fees."
-        />
-        <meta
-          property="og:title"
-          content="MeMate Pricing | Affordable Business Management Software"
-        />
-        <meta
-          property="og:description"
-          content="Explore MeMate’s transparent pricing plans tailored for Australian small and medium businesses. Discover affordable ERP, CRM, and project management solutions with no hidden fees.
-    "
-        />
-      </Helmet>
       <div
         className={`main-section ${style.mainsectionspace} ${style.mainSection}`}
       >
