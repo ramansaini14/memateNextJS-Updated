@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import style from "./supplier-module.module.scss";
 import DataBase from "./database-filter";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import { supplierListApi } from "../../api/supplierApi";
 import Link from "next/link";
 import { useDebounce } from "primereact/hooks";

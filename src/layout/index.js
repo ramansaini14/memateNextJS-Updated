@@ -59,6 +59,7 @@ const Layout = ({ children }) => {
 
         animationInstances.push(tl);
       }
+      console.log("ANIMATION INSTANCES", animationInstances)
     }, 100);
 
     let refreshCount = 0;
@@ -69,7 +70,7 @@ const Layout = ({ children }) => {
         try {
           ScrollTrigger.refresh();
           
-          // Also refresh AOS to ensure animations work properly
+
           if (typeof window !== 'undefined' && window.AOS) {
             window.AOS.refresh();
           }
@@ -101,6 +102,8 @@ const Layout = ({ children }) => {
       
       window.scrollTo(0, 0);
     };
+
+
   }, [pathname]);
 
   return (

@@ -147,7 +147,7 @@ const DataBase = ({
                       )}
                       <div className={style.roundimg}>
                         {" "}
-                        <Link href={item.website} target="_blank">
+                        <Link href={item.website || ''} target="_blank">
                           <img src={GlobIcon} alt={`${GlobIcon}`} />
                         </Link>
                       </div>
@@ -187,7 +187,7 @@ const DataBase = ({
                         <Link href={`mailto:${item.email}`}><EmailIcon /> {item.email}</Link>
                       </li>
                       <li>
-                        <Link href={item.website} target="_blank">
+                        <Link href={item.website || ''} target="_blank">
                         <WebsiteUrlIcon /> {item.website}
                         </Link>
                       </li>

@@ -841,6 +841,17 @@ font-size:14px;
  letter-spacing: -1.44px;
  font-family: 'sequel_sans' !important;
 }
+
+.parent-blog {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1201px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
 @media screen and (max-width: 767px) {
 .customerstoriesGrid {
  width: 100%;

@@ -27,7 +27,6 @@ export default function AppWrapper({ children }) {
 
   const pathname = usePathname();
 
-  // Blog state management - Initialize with empty array to prevent hydration mismatch
   const [postsLatest, setPostsLatest] = useState([]);
   const [PostsCategories, setPostsCategories] = useState();
   const [posts, setPosts] = useState([]);
@@ -38,7 +37,6 @@ export default function AppWrapper({ children }) {
   const [error, setError] = useState(null);
   const limit = 12;
 
-  // Add page class to body
   useEffect(() => {
     if (typeof document !== 'undefined') {
       const pathClass = pathname === "/"
