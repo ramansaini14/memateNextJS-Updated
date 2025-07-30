@@ -1,3 +1,45 @@
+
+.industrySectionHead{
+  text-align: center;
+}
+
+.industrySectionHead h5 {
+    color: #29292B;
+    text-align: center;
+    font-family: "sequel_sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+}
+
+.industrySectionHead p {
+   font-family: 'sequel_sans_roman_head' !important;
+    color: #29292B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .industry-bussiness-management-wrapper {
   max-width: 1200px;
   display: flex;

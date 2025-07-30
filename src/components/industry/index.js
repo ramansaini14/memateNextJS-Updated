@@ -1,11 +1,15 @@
+'use client'
 import React from 'react'
 import './style.css';
 import IndustryHeader from './industry-header';
 import IndustryBussinessManagement from './industry-bussiness-managment';
 import IndustryCrousel from './industry-crousel';
-import IndustryMoreSpecific from './industry-more-specific';
+// import IndustryMoreSpecific from './industry-more-specific';
 import IndustyQuesitonAndAns from './industry-question-ans';
-import ReadMoreData from './industry-read-more';
+// import ReadMoreData from './industry-read-more';
+import AppWrapper from '../../components/AppWrapper';
+import Layout from '../../layout';
+import NewsAndUpdate from "../../components/news-and-updates";
 
 
 const IndustryPageContent = ({postsLatestMainIndustry}) => {
@@ -17,8 +21,13 @@ const IndustryPageContent = ({postsLatestMainIndustry}) => {
         <IndustryHeader/>
         <IndustryBussinessManagement/>
         <IndustryCrousel/>
-        <IndustryMoreSpecific/>
-        <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/>
+        {/* <IndustryMoreSpecific/> */}
+        {/* <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/> */}
+        <AppWrapper>
+          <Layout>
+          <NewsAndUpdate postsLatest={postsLatest} />
+          </Layout>
+        </AppWrapper>
         <IndustyQuesitonAndAns/>
       </div>
     </div>

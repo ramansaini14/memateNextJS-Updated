@@ -1,3 +1,123 @@
+/* New Changes Design */
+.NextHeaderWrap{
+  
+}
+.NextHeaderWrap h1{
+  color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: 'sequel_sans' !important;
+}
+
+.NextHeaderWrap h2{
+      color: transparent;
+    text-align: center;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    letter-spacing: -1px;
+    padding-right: 0;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: -2.16px;
+    padding-bottom: 27px;
+}
+.NextHeaderWrap p{
+    text-align: center;
+    font-family: 'sequel_sans_roman_head' !important;
+    color: #757B8A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px;
+    letter-spacing: -.48px;
+}
+.NextHeaderWrapper{
+    border-radius: 30px;
+    background: #F7F8FA;
+    padding: 48px;
+    margin-top: 71px;
+}
+.industryNewHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.industryNewHead .LeftSide {
+    width: 57%;
+}
+.industryNewHead .LeftSide span {
+    color: #29292B;
+    font-size: 32px;
+     font-family: "sequel_sans";
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px; 
+}
+.industryNewHead .LeftSide h4 {
+    color: #29292B;
+    font-family: "sequel_sans_semi_bold_disp";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px; 
+    letter-spacing: -2.16px;
+}
+.industryNewHead .LeftSide p {
+    font-family: 'sequel_sans_roman_head' !important;
+    color: #29292B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+}
+.industryNewHead .RightSide {
+    width: 44%;
+    text-align: right;
+}
+.dubleButtonLeft {
+    display: flex;
+    margin-top: 32px;
+}
+.dubleButtonLeft .request-btn {
+    margin-right: 30px;
+    width: 168px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .industry-header-wrapper {
   width: 100%;
   border-radius: 30px;
