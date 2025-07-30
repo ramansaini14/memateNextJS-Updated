@@ -12,7 +12,7 @@ import Layout from '../../layout';
 import NewsAndUpdate from "../../components/news-and-updates";
 
 
-const IndustryPageContent = ({postsLatestMainIndustry}) => {
+const IndustryPageContent = ({postsLatest}) => {
  
   return (
     <>
@@ -21,13 +21,7 @@ const IndustryPageContent = ({postsLatestMainIndustry}) => {
         <IndustryHeader/>
         <IndustryBussinessManagement/>
         <IndustryCrousel/>
-        {/* <IndustryMoreSpecific/> */}
-        {/* <ReadMoreData postsLatestReadMore={postsLatestMainIndustry}/> */}
-        <AppWrapper>
-          <Layout>
-          <NewsAndUpdate postsLatest={postsLatest} />
-          </Layout>
-        </AppWrapper>
+        <NewsAndUpdate postsLatest={postsLatest} />
         <IndustyQuesitonAndAns/>
       </div>
     </div>

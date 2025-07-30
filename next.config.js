@@ -414,6 +414,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/5-top-business-management-software-solutions-in-australia-2023',
+        destination: '/news/5-top-business-management-software-solutions-in-australia-2023',
+        permanent: true,
+      },
+      {
+        source: '/the-simple-way-to-create-faster-more-accurate-sales-quotes',
+        destination: '/news/the-simple-way-to-create-faster-more-accurate-sales-quotes',
+        permanent: true,
+      },
+      {
         source: '/news/page/5/',
         destination: '/news',
         permanent: true,
