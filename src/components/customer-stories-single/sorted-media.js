@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Link from 'next/link';
 import SuccessStories from "../success-stories";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 import NewsSchema from "../blog/news-schema";
 
 const SortedMedia01 = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/SortedMedia01.jpg";
@@ -54,7 +54,7 @@ const article =  {
         <div className="parent-blog">
           <div className="pageBreadcrumbs">
             <ul>
-              <li><Link href="/">Home</Link></li>/<li> <Link className="MainPageLink" href="/customer-stories"> Customer Stories</Link></li>/<li> <Link href="customer-stories/sorted-media">Sorted Media</Link></li>
+              <li><Link href="/">Home</Link></li>/<li> <Link className="MainPageLink" href="/customer-stories"> Customer Stories</Link></li>/<li> <Link href="/customer-stories/sorted-media">Sorted Media</Link></li>
             </ul>
             <Link href="/customer-stories" className="backButStories"><img src={arrowIconBack} alt="Arrow" /> Back</Link>
           </div>

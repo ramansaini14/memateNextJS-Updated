@@ -1,13 +1,14 @@
-import Layout from "../../layout";
+'use client'
+// import Layout from "../../layout";
 import React from "react";
-import Blog from "../../components/blog";
+// import Blog from "../../components/blog";
+import AppWrapper from "../../components/AppWrapper";
+import NewsPageFullWithMeta from '../news-page-component'
 const BlogPage = ({ posts, PostsCategories, activeCategory, handleTabClick, postsLatest, totalPosts, loading, handleNext }) => {
   return (
-    <Layout>
-      <div className="bgshadowwrapper">
-      <Blog PostsCategories={PostsCategories} activeCategory={activeCategory} handleTabClick={handleTabClick} posts={posts} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />
-    </div>
-    </Layout>
+    <AppWrapper>
+      <NewsPageFullWithMeta posts={posts} PostsCategories={PostsCategories} activeCategory={activeCategory} handleTabClick={handleTabClick} postsLatest={postsLatest} totalPosts={totalPosts} loading={loading} handleNext={handleNext} />
+    </AppWrapper>
   );
 };
 

@@ -8,8 +8,6 @@ import NewsSchema from "./news-schema";
 
 function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPosts, loading, postsLatest, handleNext }) {
 
-  
-  // Safety checks for data availability
   if (!postsLatest || !Array.isArray(postsLatest) || !PostsCategories || !Array.isArray(PostsCategories)) {
     return <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%'}}>Loading blog content...</div>;
   }

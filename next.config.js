@@ -79,6 +79,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/how-a-digital-agency-benefitted-from-memate',
+        destination: '/news/how-a-digital-agency-benefitted-from-memate',
+        permanent: true,
+      },
+      {
         source: '/news/category/11',
         destination: '/news',
         permanent: true,

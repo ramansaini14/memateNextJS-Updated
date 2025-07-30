@@ -3,7 +3,7 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://memate.com.au/</loc>
+    <loc>https://memate.com.au</loc>
   </url>
   <url>
     <loc>https://memate.com.au/features</loc>
@@ -102,9 +102,6 @@ export async function GET() {
     <loc>https://memate.com.au/industries/software-for-photo-video-agencies</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/features/business-quote-calculator</loc>
-  </url>
-  <url>
     <loc>https://memate.com.au/industries/business-software-for-automotive-industry</loc>
   </url>
   <url>
@@ -150,22 +147,7 @@ export async function GET() {
     <loc>https://memate.com.au/features/time-tracking-software</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/features/calendar-timeline-management-software</loc>
-  </url>
-  <url>
     <loc>https://memate.com.au/features/business-quote-calculator</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/features/business-statistics-tools</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/features/client-management-software</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/features/profitability-and-budgeting-software</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/industries/business-software-for-construction-industry</loc>
   </url>
   <url>
     <loc>https://memate.com.au/features/time-tracking-tools</loc>
@@ -330,7 +312,7 @@ export async function GET() {
     <loc>https://memate.com.au/news/revealed--top-4-project-management-systems-to-drive-profitability-in-2023</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/the-future-of-business-process-management-software-solutions/</loc>
+    <loc>https://memate.com.au/the-future-of-business-process-management-software-solutions</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/tags/project-management-systems</loc>
@@ -384,9 +366,6 @@ export async function GET() {
     <loc>https://memate.com.au/news/keep-your-team-s-productivity-in-check-with-workforce-management-system</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/contact-us/</loc>
-  </url>
-  <url>
     <loc>https://memate.com.au/news/tags/employee-productivity</loc>
   </url>
   <url>
@@ -432,19 +411,19 @@ export async function GET() {
     <loc>https://memate.com.au/news/unlocking-business-potential-in-2024-the-power-of-business-management-software-in-australia</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/everything-you-need-to-know-about-the-impact-of-management-software-on-small-businesses/</loc>
+    <loc>https://memate.com.au/everything-you-need-to-know-about-the-impact-of-management-software-on-small-businesses</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/everything-you-need-to-know-about-the-impact-of-management-software-on-small-businesses</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/mastering-efficiency-how-to-effectively-manage-business-software-solutions/</loc>
+    <loc>https://memate.com.au/news/mastering-efficiency-how-to-effectively-manage-business-software-solutions</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/streamline-your-operations-choosing-the-right-business-management-software-in-australia/</loc>
+    <loc>https://memate.com.au/news/streamline-your-operations-choosing-the-right-business-management-software-in-australia</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/elevate-efficiency-finding-the-right-software-for-business-management/</loc>
+    <loc>https://memate.com.au/news/elevate-efficiency-finding-the-right-software-for-business-management</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/tags/impact-of-management-software</loc>
@@ -489,7 +468,7 @@ export async function GET() {
     <loc>https://memate.com.au/news/elevate-efficiency-finding-the-right-software-for-business-management</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/business-process-management-software-2/</loc>
+    <loc>https://memate.com.au/news/business-process-management-software-2</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/tags/business-management-software</loc>
@@ -498,16 +477,10 @@ export async function GET() {
     <loc>https://memate.com.au/news/choosing-the-right-business-management-software--a-comprehensive-review</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/unlocking-business-potential-in-2024-the-power-of-business-management-software-in-australia/</loc>
+    <loc>https://memate.com.au/news/unlocking-efficiency-the-power-of-business-process-management-software</loc>
   </url>
   <url>
-    <loc>https://memate.com.au/news/streamline-your-operations-in-2024-with-the-best-business-management-software-solutions/</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/news/unlocking-efficiency-the-power-of-business-process-management-software/</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/news/5-top-business-management-software-solutions-in-australia-2023/</loc>
+    <loc>https://memate.com.au/news/5-top-business-management-software-solutions-in-australia-2023</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/5-top-business-management-software-solutions-in-australia-2023</loc>
@@ -703,9 +676,6 @@ export async function GET() {
   </url>
   <url>
     <loc>https://memate.com.au/news/streamline-your-operations--choosing-the-right-business-management-software-in-australia</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/news/revolutionize-your-digital-agency-with-memate/</loc>
   </url>
   <url>
     <loc>https://memate.com.au/news/tags/australian-business-software</loc>

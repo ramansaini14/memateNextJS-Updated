@@ -73,6 +73,7 @@ const NewsAndUpdate = ({ postsLatest }) => {
 
   // Get latest 3 news posts
   const latestNews = postsLatest?.slice(0, 3) || [];
+  
 
   return (
     <div className="slider-section1 sliderSection1News sliderSectionShadowl bottom-management bottom-managementw" >
