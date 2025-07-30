@@ -803,6 +803,11 @@ const nextConfig = {
         destination: '/news',
         permanent: true,
       },
+      {
+        source: '/the-future-of-business-process-management-software-solutions',
+        destination: '/news/the-future-of-business-process-management-software-solutions',
+        permanent: true,
+      },
 
 
       // Pattern-based redirects

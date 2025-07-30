@@ -178,7 +178,6 @@ export function middleware(request) {
     '/get-better-returns-in-2023-by-switching-to-a-project-management-software?ref=aftership': '/news/get-better-returns-in-2023-by-switching-to-a-project-management-software'
   };
 
-  // Check query parameter redirects first
   if (queryRedirects[pathWithQuery]) {
     const destination = queryRedirects[pathWithQuery];
     if (destination.startsWith('http')) {
@@ -189,52 +188,43 @@ export function middleware(request) {
     return NextResponse.redirect(url, 301);
   }
 
-  // Check if the current pathname matches any redirect
   if (redirects[pathname]) {
     const destination = redirects[pathname];
     
-    // Check if it's an external redirect
     if (destination.startsWith('http')) {
       return NextResponse.redirect(destination, 301);
     }
     
-    // Internal redirect
     url.pathname = destination;
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle pagination redirects
   if (pathname.match(/^\/news\/page\/\d+\/$/)) {
     url.pathname = '/news';
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle author page redirects
   if (pathname.match(/^\/author\/.*$/)) {
     url.pathname = '/news';
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle category redirects
   if (pathname.match(/^\/category\/.*$/)) {
     url.pathname = '/news';
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle tag redirects not covered above
   if (pathname.match(/^\/tag\/.*$/)) {
     url.pathname = '/news';
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle product category redirects with various query parameters
   if (pathname.startsWith('/product-category/device/')) {
     url.pathname = '/pricing';
     url.search = '';
     return NextResponse.redirect(url, 301);
   }
 
-  // Handle feed redirects
   if (pathname.endsWith('/feed/') || pathname.endsWith('/feed')) {
     const basePath = pathname.replace(/\/feed\/?$/, '');
     if (basePath === '' || basePath === '/') {

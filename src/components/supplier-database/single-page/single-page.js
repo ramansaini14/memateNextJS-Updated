@@ -134,7 +134,7 @@ function DataSingle({ slug, supplierData }) {
                         </Link>
                       </div>
                       <div className={style.roundimg}>
-                        <Link href={supplierData.website} target="_blank">
+                        <Link href={supplierData.website || ''} target="_blank">
                           <img src={GlobIcon} alt={`Website`} />
                         </Link>
                       </div>
@@ -176,7 +176,7 @@ function DataSingle({ slug, supplierData }) {
                         </Link>
                       </li>
                       <li>
-                        <Link href={supplierData.website} target="_blank">
+                        <Link href={supplierData.website || ''} target="_blank">
                           <WebsiteUrlIcon /> {supplierData.website}
                         </Link>
                       </li>
