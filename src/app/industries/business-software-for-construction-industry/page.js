@@ -1,6 +1,6 @@
 // 'use client';
 
-// import AppWrapper from '../../../components/AppWrapper';
+import AppWrapper from '../../../components/AppWrapper';
 import ConstructionPage from '../../../page-components/construction';
 
 export const metadata = {
@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function Construction() {
   return (
-    // <AppWrapper>
+    <AppWrapper>
       <ConstructionPage />
-    // </AppWrapper>
+    </AppWrapper>
   );
 }

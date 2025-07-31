@@ -1,6 +1,6 @@
 // 'use client';
 
-// import AppWrapper from '../../../components/AppWrapper';
+import AppWrapper from '../../../components/AppWrapper';
 import StartupsPage from '../../../page-components/startups';
 
 export const metadata = {
@@ -22,8 +22,8 @@ export const metadata = {
 
 export default function Startups() {
   return (
-    // <AppWrapper>
+    <AppWrapper>
       <StartupsPage />
-    // </AppWrapper>
+    </AppWrapper>
   );
 }

@@ -16,11 +16,10 @@ const AutomotiveBussinessManagement = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-      <p className="industry-bussiness-management-heading">Business Management </p>
-      <span className='industry-bussinees-content automotive-bussinees-content-wd gradientAnimenate'>software for auto detailing shops</span>
-      <span className='industry-bussinees-content-2 gradientAnimenate'>MeMate is your solution.</span>
-      <p className='industry-bussinees-content-2-description'>Here’s the solution for car wrapping and detailing businesses. We’ve designed and tested meMate specifically for you—robust, simple to use, and proven in the field.</p>
-  
+      <div className='industrySectionHead'>
+     <h5>meMate is your solution.</h5>
+     <p>Manage your car wrapping and detailing business with ease. meMate helps you<br/> streamline workflows, track projects, manage teams, and deliver outstanding<br/> results, all through a simple and reliable platform built for your industry.</p>
+      </div>
       <div className='industry-bussiness-category-wrapper'>
             <AutomotiveEfficient/>
             <AutomotiveIntuitive/>

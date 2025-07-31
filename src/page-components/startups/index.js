@@ -2,17 +2,17 @@
 import React from 'react'
 import Layout from '../../layout'
 import StartupsPageContent from '../../components/startups'
-import AppWrapper from '../../components/AppWrapper'
+// import AppWrapper from '../../components/AppWrapper'
 // import { Helmet } from 'react-helmet-async'
 
 const StartupsPage = ({postsLatest}) => {
   return (
     <>
-    <AppWrapper>
+    {/* <AppWrapper> */}
     <Layout>
-      <StartupsPageContent postsLatestMainIndustry={postsLatest}/>
+      <StartupsPageContent postsLatest={postsLatest}/>
     </Layout>
-    </AppWrapper>
+    {/* </AppWrapper> */}
     </>
   )
 }

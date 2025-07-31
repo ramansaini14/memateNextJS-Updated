@@ -3,7 +3,7 @@ import "./style.css";
 import Link from "next/link";
 import TronRequestADemo from "@/layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
-const AutomotiveHeader = () => {
+const ConstructionHeader = () => {
   return (
     // <div className='automotive-header-wrapper' data-aos="fade-up"
     // data-aos-offset="50"
@@ -29,18 +29,19 @@ const AutomotiveHeader = () => {
 
     <>
       <div className="NextHeaderWrap">
-        <h1>Business Management </h1>
-        <h2>software for auto detailing shops</h2>
+        <h1>Business Management</h1>
+        <h2>software for construction companies</h2>
         <p>
-        Here’s the solution for car wrapping and detailing businesses. We’ve designed and tested <br/>meMate specifically for you—robust, simple to use, and proven in the field.        </p>
+        All-in-one business software for Australian construction companies. Manage jobs, quotes,<br/> contractors, scheduling, invoicing, and site teams — all in one place        
+        </p>
       </div>
       <div className="NextHeaderWrapper">
         <div className="industryNewHead">
           <div className="LeftSide">
-            <span>Business Management Software for the Automotive Industry</span>
-            <h4>For Car Wrapping & Detailing  </h4>
+            <span>Management Software for</span>
+            <h4>Builders, Trades & Construction Teams</h4>
             <p>
-            meMate streamlines operations for car wrapping and detailing services, managing workflows, contractors, and customer communication—all in one easy-to-use platform.            </p>
+            Run your construction business the smart way — with everything in one dashboard. From job quotes to on-site contractor coordination, MeMate <br/>handles it all.           </p>
             <div className="dubleButtonLeft">
               <div className="request-btn">
                 <Link
@@ -75,4 +76,4 @@ const AutomotiveHeader = () => {
   );
 };
 
-export default AutomotiveHeader;
+export default ConstructionHeader;

@@ -8,11 +8,11 @@ import AppWrapper from '../../components/AppWrapper'
 const AutomotivePage = ({postsLatest}) => {
   return (
     <>
-    <AppWrapper>
+    {/* <AppWrapper> */}
     <Layout>
-      <AutomotivePageContent postsLatestMainIndustry={postsLatest}/>
+      <AutomotivePageContent postsLatestMainIndustry={postsLatest} postsLatest={postsLatest}/>
     </Layout>
-    </AppWrapper>
+    {/* </AppWrapper> */}
     </>
   )
 }

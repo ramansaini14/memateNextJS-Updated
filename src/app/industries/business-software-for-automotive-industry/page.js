@@ -1,6 +1,6 @@
 // 'use client';
 
-// import AppWrapper from '../../../components/AppWrapper';
+import AppWrapper from '../../../components/AppWrapper';
 import AutomotivePage from '../../../page-components/automotive';
 
 export const metadata = {
@@ -22,8 +22,8 @@ export const metadata = {
 
 export default function Automotive() {
   return (
-    // <AppWrapper>
+    <AppWrapper>
       <AutomotivePage />
-    // </AppWrapper>
+    </AppWrapper>
   );
 }

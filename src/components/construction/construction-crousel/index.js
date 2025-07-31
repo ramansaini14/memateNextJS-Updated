@@ -4,43 +4,29 @@ import IndustryImages from "../../../assests/industry-images";
 
 const carouselData = [
   {
-    heading: "“meMate has completely transformed how we manage repairs and customer communication. The system tracks every job, and clients are updated automatically, cutting our follow-up time in half. We’ve also seen a 30% improvement in overall project efficiency. Highly recommend for any repair business.”",
-    logoText: "AO",
-    title: "Camera Fix",
-    subtitle: "Alex, Owner, Camera Fix",
-    rating: 5
-  },
-  {
-    heading: "“Since implementing meMate, our quoting process has become lightning fast. We can generate accurate quotes in under a minute, and customers love the easy approval process. It’s helped us reduce underquoting and boosted our profits by 20%. Game-changer for our car wrapping services!”",
-    logoText: "DP",
-    title: "PROvinyl",
-    subtitle: "Danny, PROvinyl",
-    rating: 5
-  },
-  {
-    heading: "“Managing multiple contractors used to be a headache, but meMate’s contractor management tools have made it simple. We now assign tasks, track progress, and get invoices all in one place. It’s helped us run smoother projects and save on admin costs.”",
-    logoText: "LD",
+    heading: "MeMate has been a game-changer for our private membership club.",
+    logoText: "EL",
     title: "Elite Life",
-    subtitle: "Liam, Director, Elite Life",
+    subtitle: "Head of Design, Layers",
     rating: 5
   },
   {
-    heading: "“With meMate, our team collaboration has never been better. The internal chat and task management features have kept everyone on the same page, improving our turnaround time by 40%. It’s a must-have tool for any creative agency.”",
-    logoText: "MC",
-    title: "theAd",
-    subtitle: "Max, Co-Founder, theAd",
-    rating: 5
+    heading: "This app has revolutionized our workflow and productivity.",
+    logoText: "SP",
+    title: "Super Productivity",
+    subtitle: "CEO, Productivity Hub",
+    rating: 4
   },
   {
-    heading: "“Thanks to meMate, we’ve been able to track expenses and profitability for each project with incredible accuracy. We’ve tightened our budget control and increased profitability by 25%. It’s a great fit for media production companies.”",
-    logoText: "MS",
-    title: "Sorted Media",
-    subtitle: "Mike, Sorted Media",
+    heading: "An invaluable tool for modern business needs.",
+    logoText: "MM",
+    title: "Modern Minds",
+    subtitle: "Manager, Innovation Hub",
     rating: 5
   }
 ];
 
-const AutomotiveCrousel = () => {
+const IndustryCrousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto-slide effect
@@ -103,4 +89,4 @@ const AutomotiveCrousel = () => {
   );
 };
 
-export default AutomotiveCrousel;
+export default IndustryCrousel;
