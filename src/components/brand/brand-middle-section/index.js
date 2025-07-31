@@ -2303,6 +2303,7 @@ const knowledgeData = [
            <p>Download</p>
            </a>
            </div>
+           
        </span>
        </li>
        <li>
@@ -2387,6 +2388,19 @@ const knowledgeData = [
            </div>
        </span>
        </li>
+     </ul>
+     `,
+      },
+      {
+        id: 911,
+        name: "Logo Animations",
+        description: `
+     <ul class="brandFileGrid">
+       <li class="brandAnimationsFlex">
+       <span><img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/MeMate-312x144-Loop.gif" width="100%" alt="frame39531"></span>
+      
+       </li>
+      
      </ul>
      `,
       },

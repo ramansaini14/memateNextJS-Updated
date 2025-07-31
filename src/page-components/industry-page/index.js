@@ -10,7 +10,6 @@ const IndustryPage = ({ postsLatest }) => {
     <>
         <Layout>
           <div className="bgshadowwrapper">
-            {console.log("POST LATEST", postsLatest)}
             <IndustryPageContent postsLatest={postsLatest} />
           </div>
         </Layout>

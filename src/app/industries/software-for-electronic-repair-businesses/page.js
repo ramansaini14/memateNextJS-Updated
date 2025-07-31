@@ -1,6 +1,6 @@
 // 'use client';
 
-// import AppWrapper from '../../../components/AppWrapper';
+import AppWrapper from '../../../components/AppWrapper';
 import ElectronicPage from '../../../page-components/electronic';
 
 export const metadata = {
@@ -22,8 +22,8 @@ export const metadata = {
 
 export default function Electronic() {
   return (
-    // <AppWrapper>
+    <AppWrapper>
       <ElectronicPage />
-    // </AppWrapper>
+     </AppWrapper>
   );
 }

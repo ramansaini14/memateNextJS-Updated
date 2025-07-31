@@ -7,8 +7,7 @@ import IndustryCrousel from './industry-crousel';
 // import IndustryMoreSpecific from './industry-more-specific';
 import IndustyQuesitonAndAns from './industry-question-ans';
 // import ReadMoreData from './industry-read-more';
-import AppWrapper from '../../components/AppWrapper';
-import Layout from '../../layout';
+import SuccessStories from "../../components/success-stories";
 import NewsAndUpdate from "../../components/news-and-updates";
 
 
@@ -21,9 +20,16 @@ const IndustryPageContent = ({postsLatest}) => {
         <IndustryHeader/>
         <IndustryBussinessManagement/>
         <IndustryCrousel/>
+         </div>
+         <div className='singleHeadWrapper'>
+          <h4>Reach out to us to discover how meMate can streamline operations at your company.</h4>
+          <p>Our Business Management software has been tested with multiple agencies across industries, including digital marketing, photography, video production, and development.</p>
+         </div>
+         <SuccessStories />
         <NewsAndUpdate postsLatest={postsLatest} />
+        <div className='industry-page-parent'>
         <IndustyQuesitonAndAns/>
-      </div>
+     </div>
     </div>
     </>
   )

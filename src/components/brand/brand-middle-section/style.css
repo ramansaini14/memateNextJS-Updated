@@ -5,7 +5,10 @@
   flex-wrap: wrap;
   gap: 40px;
 }
-
+li.brandAnimationsFlex {
+    justify-content: flex-start;
+    padding: 40px 100px;
+}
 .kb-list {
   list-style: none;
   width: 172px;

@@ -10,7 +10,7 @@ const ElectronicPage = ({postsLatest}) => {
     <>
     <AppWrapper>
     <Layout>
-      <ElectronicPageContent postsLatestMainIndustry={postsLatest}/>
+      <ElectronicPageContent postsLatest={postsLatest}/>
     </Layout>
     </AppWrapper>
     </>

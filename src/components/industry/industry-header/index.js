@@ -54,15 +54,14 @@ const IndustryHeader = () => {
                   <Link
                     href="https://app.memate.com.au/onboarding"
                     target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
+                    className="nav-btn--get-started  navbar-link">
                       <WhiteButtonBammer text="Start Free Trial"/>
                   </Link>
                 </div>
           </div>
     </div>
     <div className='RightSide'>
-     <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1753878014/industry-new-img_fgfmzo.png" width="100%" alt="marketing & creative agencies"/>
+     <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-new-img.png" width="100%" alt="industry-specific software solutions"/>
     </div>
     </div>
    </div>

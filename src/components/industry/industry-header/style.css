@@ -100,9 +100,76 @@
 
 
 
-
-
-
+@media screen and (max-width: 767px) {
+  .NextHeaderWrap {
+    padding: 62.5px 0;
+}
+.NextHeaderWrap h1 {
+        font-size: 24px !important;
+        line-height: 32px !important;
+}
+.NextHeaderWrap h2 {
+    font-size: 53px;
+    line-height: 46px;
+    letter-spacing: 0;
+    padding-bottom: 12px;
+}
+.NextHeaderWrapper {
+    margin-top: -8px;
+    padding: 48px;
+}
+.industryNewHead .LeftSide span {
+    font-size: 22px;
+    line-height: 21px;
+    text-align: center;
+}
+.industryNewHead .LeftSide h4 {
+    letter-spacing: 0;
+    font-size: 42px;
+    line-height: 53px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+.industryNewHead .LeftSide {
+    width: 100%;
+    text-align: center;
+}
+.dubleButtonLeft {
+    text-align: center;
+    margin-top: 32px;
+    display: grid;
+    justify-content: center;
+}
+.industryNewHead {
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+}
+.dubleButtonLeft .request-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.singleHeadWrapper h4 {
+    letter-spacing: 0;
+    padding-top: 0px;
+    font-size: 39px;
+    line-height: 53px;
+}
+.singleHeadWrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.industryNewHead .RightSide {
+    text-align: center;
+    width: 100%;
+}
+.industryNewHead .LeftSide p {
+    text-align: center;
+}
+}
 
 
 

@@ -24,8 +24,8 @@ const PhotoBussinessManagement = () => {
             alt="contact us main image"
             // width={400} height={400}
           /> */}
-      <p className="industry-bussiness-management-heading">Business Management </p>
-      <span className='industry-bussinees-content photo-agency-wb gradientAnimenate'>software for photographers & videographers </span>
+      {/* <p className="industry-bussiness-management-heading">Business Management </p>
+      <span className='industry-bussinees-content photo-agency-wb gradientAnimenate'>software for photographers & videographers </span> */}
       {/* <div className='industry-bussiness-sub-content'>
         <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
         <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>

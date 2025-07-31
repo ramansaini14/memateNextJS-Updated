@@ -1,6 +1,6 @@
 // 'use client';
 
-// import AppWrapper from '../../../components/AppWrapper';
+import AppWrapper from '../../../components/AppWrapper';
 import PhotoPage from '../../../page-components/photo-video-agency';
 
 export const metadata = {
@@ -22,8 +22,8 @@ export const metadata = {
 
 export default function Photo() {
   return (
-    // <AppWrapper>
+    <AppWrapper>
       <PhotoPage />
-    // </AppWrapper>
+     </AppWrapper>
   );
 }
