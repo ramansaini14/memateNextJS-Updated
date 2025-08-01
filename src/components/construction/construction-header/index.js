@@ -35,7 +35,7 @@ const ConstructionHeader = () => {
         All-in-one business software for Australian construction companies. Manage jobs, quotes,<br/> contractors, scheduling, invoicing, and site teams — all in one place        
         </p>
       </div>
-      <div className="NextHeaderWrapper">
+      <div className="NextHeaderWrapper NextHeaderAutoBox">
         <div className="industryNewHead">
           <div className="LeftSide">
             <span>Management Software for</span>
@@ -65,9 +65,9 @@ const ConstructionHeader = () => {
           </div>
           <div className="RightSide">
             <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-new-img.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/construction-industry-img.png"
               width="100%"
-              alt="industry-specific software solutions"
+              alt="construction-specific software solutions"
             />
           </div>
         </div>

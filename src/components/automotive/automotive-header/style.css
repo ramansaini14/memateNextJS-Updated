@@ -1,6 +1,7 @@
 /* New Changes Design */
-.NextHeaderWrap{
-  
+.NextHeaderWrap {
+    margin: 47px 0 17px;
+    display: inline-block;
 }
 .NextHeaderWrap h1{
   color: #29292B;
@@ -11,7 +12,12 @@
     line-height: 40px;
     font-family: 'sequel_sans' !important;
 }
-
+.NextHeaderAutoBox {
+    padding: 0 25px 0 48px !important;
+}
+.NextHeaderAutoBox .RightSide {
+    margin-bottom: -4px;
+}
 .NextHeaderWrap h2{
       color: transparent;
     text-align: center;

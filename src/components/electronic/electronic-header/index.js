@@ -35,7 +35,7 @@ const ElectronicHeader = () => {
       <div className='NextHeaderWrapper'>
     <div className='industryNewHead'>
     <div className='LeftSide'>
-      <span>Software that helps Australian repair shops
+      <span>Software that helps Australian repair <br/>shops
 operate efficiently</span>
        <h4>Electronic Repair Specialists</h4>
        <p>With MeMate, you can effortlessly communicate with clients and effortlessly submit jobs, all from a centralised and streamlined interface. Say goodbye to scattered systems and embrace the convenience of MeMate for unparalleled business management in the  electronics repair industry.</p>

@@ -4,8 +4,8 @@ import Link from "next/link";
 const ConstructionIntuitive = () => {
   return (
     <>
-      <div
-        className={`${style.flexboxWrap} ${style.dubleimages} ${style.flexboxWrapstyle} ${style.bgContentWrap} ${style.sectionTopSpace}`}
+      <div id="contractionSpaceBox"
+        className={`${style.flexboxWrap} ${style.dubleimages} ${style.flexboxWrapstyle} ${style.bgContentWrap} ${style.sectionTopSpace} `}
       >
         <div className={`${style.spacingLeft} ${style.flexContentWrap}`}>
           <h4>Intuitive</h4>

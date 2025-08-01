@@ -31,11 +31,11 @@ const StartupsHeader = () => {
     // </div>
     <>
      <div className='NextHeaderWrap'>
-      <h1>Business Management</h1>
+      <h1>Business Management Software for Startups</h1>
       <h2>startups and new companies</h2>
       <p>All-in-one business management software designed to help startups and new companies<br/> stay organized and grow with confidence.</p>
     </div>
-      <div className='NextHeaderWrapper'>
+      <div className='NextHeaderWrapper NextHeaderAutoBox'>
     <div className='industryNewHead'>
     <div className='LeftSide'>
       <span>Management Software for</span>
@@ -61,7 +61,7 @@ const StartupsHeader = () => {
           </div>
     </div>
     <div className='RightSide'>
-     <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-new-img.png" width="100%" alt="industry-specific software solutions"/>
+     <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/software-for-startups-img.png" width="100%" alt="Project Management Tools for Startups"/>
     </div>
     </div>
    </div>

@@ -29,12 +29,12 @@ const AutomotiveHeader = () => {
 
     <>
       <div className="NextHeaderWrap">
-        <h1>Business Management </h1>
+        <h1>Business Management Software for the Automotive Industry</h1>
         <h2>software for auto detailing shops</h2>
         <p>
         Here’s the solution for car wrapping and detailing businesses. We’ve designed and tested <br/>meMate specifically for you—robust, simple to use, and proven in the field.        </p>
       </div>
-      <div className="NextHeaderWrapper">
+      <div className="NextHeaderWrapper NextHeaderAutoBox">
         <div className="industryNewHead">
           <div className="LeftSide">
             <span>Business Management Software for the Automotive Industry</span>
@@ -64,9 +64,9 @@ const AutomotiveHeader = () => {
           </div>
           <div className="RightSide">
             <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/industry-new-img.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/automotive-industry-img.png"
               width="100%"
-              alt="industry-specific software solutions"
+              alt="mechanic shop CRM"
             />
           </div>
         </div>

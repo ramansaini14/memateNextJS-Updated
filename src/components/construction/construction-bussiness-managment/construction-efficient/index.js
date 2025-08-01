@@ -4,7 +4,7 @@ import Link from "next/link";
 const ConstructionEfficient = () => {
   return (
     <>
-      <div className={`${style.flexboxWrap} ${style.bgContentWrap}`}>
+      <div className={`${style.flexboxWrap} ${style.bgContentWrap} contractionSpaceBox`}>
         <div className={style.flexImageBox}>
           {/* <img
             src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/accurate-quoting.svg"
