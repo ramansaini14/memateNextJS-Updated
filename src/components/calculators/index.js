@@ -1,10 +1,19 @@
 import style from './calculators.module.scss';
 import React from "react";
-import ComingSoon from "../../layout/coming-soon";
+import CalculatorComponent from "./calculator-component";
+import CalculatorsComponentFeature from "./calculator-component-feature";
+import CalculatorsInvestment from "./calculator-investment";
+import QuestionAnswer from "./ans-questions-calculator";
+// import ComingSoon from "../../layout/coming-soon";
 const CalculatorsComponent = () => {
   return (
     <>
- <ComingSoon />
+      {/* <ComingSoon /> */}
+      <CalculatorComponent />
+      <CalculatorsComponentFeature />
+      <CalculatorsInvestment />
+      <QuestionAnswer />
+
     </>
   );
 };
