@@ -13,7 +13,7 @@ const PipeLineTool = () => {
       <div className="sales-imageF">
         <LazyLoadImage
             alt="staff and job tracking by location"
-            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/collaborative-image.png"
+            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/custombusiness03-min.png"
             effect="blur" 
             type="image/svg+xml"
             className="Collaborative"

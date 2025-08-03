@@ -13,7 +13,7 @@ const TaskManagement = () => {
       <div className="sales-imageF">
         <LazyLoadImage
           alt="manage multiple business locations"
-          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/accessible-image01.png"
+          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/tolist01-min.png"
           effect="blur" 
           type="image/svg+xml"
           />

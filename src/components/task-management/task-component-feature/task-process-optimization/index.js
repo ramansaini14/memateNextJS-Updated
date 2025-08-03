@@ -21,7 +21,7 @@ const TaskProcessOptimiation = () => {
       <div className="sales-imageF">
         <LazyLoadImage
             alt="location-based job management"
-            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/productive-image.png"
+            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/todolist04-min.png"
             effect="blur" 
             type="image/svg+xml"
             className="geolocation"

@@ -13,7 +13,7 @@ const AgilePipeLineManagement = () => {
       <div className="sales-imageF">
         <LazyLoadImage
           alt="Aussie multi-location tools"
-          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/convenient-image.png"
+          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/companycalender05-min.png"
           effect="blur" 
           type="image/svg+xml"
           />

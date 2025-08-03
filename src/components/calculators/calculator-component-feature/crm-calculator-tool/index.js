@@ -21,7 +21,7 @@ const CRMCalculatorTools = () => {
       <div className="sales-imageF">
          <LazyLoadImage
             alt="multi-site business software"
-            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/secure-image02.png"
+            src="https://memate-website.s3.ap-southeast-2.amazonaws.com/custombusiness02-min.png"
             effect="blur" 
             type="image/svg+xml"
             />

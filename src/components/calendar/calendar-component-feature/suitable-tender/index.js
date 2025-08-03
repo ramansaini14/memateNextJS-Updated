@@ -21,7 +21,7 @@ const SuitableTender = () => {
       <div className="sales-imageF">
         <LazyLoadImage
           alt="branch management software"
-          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/centralised-image.png"
+          src="https://memate-website.s3.ap-southeast-2.amazonaws.com/companycalender06-min.png"
           effect="blur" 
           type="image/svg+xml"
           />
