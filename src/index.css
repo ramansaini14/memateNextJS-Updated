@@ -138,3 +138,30 @@ span.ssMDFont {
     padding: 0;
     display: flex;
   }
+
+
+@media screen and (max-width: 767px) {
+    .mobile-logo img {
+        width: 88px;
+    }
+    /* .sales-component-featureF span {
+        text-align: center;
+        letter-spacing: -2.16px;
+        padding-right: 10px;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 420;
+        line-height: 80px;
+        font-family: sequel_sans_semi_bold_disp !important;
+    }
+    .sales-component-feature span {
+        text-align: center;
+        letter-spacing: -2.16px;
+        padding-right: 10px;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 420;
+        line-height: 80px;
+        font-family: sequel_sans_semi_bold_disp !important;
+    } */
+}

@@ -404,6 +404,16 @@ input:focus-visible {
     letter-spacing: -1.44px;
     font-family: 'sequel_sans' !important;
 }
+.redmessage{
+    color: red;
+    font-family: sequel_sans_semi_bold_disp !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 16px;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 767px) {
     #contactUsPage .main-image img {
         width: 100%;

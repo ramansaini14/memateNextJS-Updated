@@ -43,22 +43,22 @@ const EmailNow = () => {
           window.location.href = "/thank-you";
       } catch (err) {
           console.error("Error submitting form:", err);
-          if (err.response && err.response.data && err.response.data.errors) {
-              const serverErrors = err.response.data.errors;
+        //   if (err.response && err.response.data && err.response.data.errors) {
+        //       const serverErrors = err.response.data.errors;
   
-              // Handle email-specific server error
-              if (serverErrors.email) {
-                  setError("email", {
-                      type: "server",
-                      message: serverErrors.email[0], // Show the first email error message
-                  });
-              }
-          } else {
-              setError("form", {
-                  type: "server",
-                  message: "Something went wrong. Please try again later.",
-              });
-          }
+        //       // Handle email-specific server error
+        //       if (serverErrors.email) {
+        //           setError("email", {
+        //               type: "server",
+        //               message: serverErrors.email[0], // Show the first email error message
+        //           });
+        //       }
+        //   } else {
+        //       setError("form", {
+        //           type: "server",
+        //           message: "Something went wrong. Please try again later.",
+        //       });
+        //   }
       }
   };
   
@@ -107,7 +107,7 @@ const EmailNow = () => {
                                 />
                             )}
                         />
-                        {errors.name && <p className="error-message">{errors.name.message}</p>}
+                        {/* {errors.name && <p className="error-message redmessage">{errors.name.message}</p>} */}
                     </div>
                     <div className={style.marginbotton}>
                 <label htmlFor="email">Email</label>
@@ -122,18 +122,18 @@ const EmailNow = () => {
                         />
                     )}
                 />
-                {errors.email && (
-                    <p className="error-message" style={{ color: "red" }}>
+                {/* {errors.email && (
+                    <p className="error-message redmessage" style={{ color: "red" }}>
                         {errors.email.message}
                     </p>
-                )}
-                 {error && <p style={{ color: 'red' }}>The email has already been taken.</p>}
+                )} */}
+                 {errors.email && <p className="error-message redmessage">{errors.email.message}</p>}
             </div>
 
 
 
-{/* 
-                    <div className={style.marginbotton}>
+
+                    {/* <div className={style.marginbotton}>
                         <label htmlFor="email">Email</label>
                         <Controller
                             name="email"
@@ -146,7 +146,7 @@ const EmailNow = () => {
                                 />
                             )}
                         />
-                        {errors.email && <p className="error-message">{errors.email.message}</p>}
+                        {errors.email && <p className="error-message redmessage">{errors.email.message}</p>}
                     </div> */}
 
                     <div className={style.marginbotton}>
@@ -177,7 +177,7 @@ const EmailNow = () => {
                               />
                             )}
                         />
-                        {errors.message && <p className="error-message">{errors.message.message}</p>}
+                        {errors.message && <p className="error-message redmessage">{errors.message.message}</p>}
                     </div>
                     <div className={style.marginbotton}>
             <ReCAPTCHA

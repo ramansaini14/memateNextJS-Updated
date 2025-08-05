@@ -20,7 +20,7 @@ export const RequestCallBackAPI = async (formData) => {
 
 export const emailNowAPI = async (formData) => {
   try {
-    const response = await api.post("/email-now", JSON.stringify(formData));
+    const response = await api.post("/request-callback", JSON.stringify(formData));
     return response.data;
   } catch (error) {
     console.error('API Error:', error);

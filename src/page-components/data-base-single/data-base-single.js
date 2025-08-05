@@ -9,6 +9,7 @@ const DatabasePageSingle = () => {
   const router = useRouter();
   const params = useParams();
   const slug = params.slug;
+  console.log("ROUTER SLUG", slug.replaceAll("%20", "-"))
   const [supplierData, setSupplierData] = useState(null);
   const [loadingsingle, setLoadingSinge] = useState(true);
   const [error, setError] = useState(null);
@@ -34,6 +35,9 @@ const DatabasePageSingle = () => {
 
   if (loadingsingle) return <p></p>;
   if (error) return <p>{error}</p>;
+
+  // console.log("slug", slug.replaceAll("%20", "-"))
+  // const updatedSlugWithCity = slug.replaceAll("%20", "-")
 
   return (
     <>

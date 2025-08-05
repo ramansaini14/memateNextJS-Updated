@@ -86,7 +86,7 @@ const CallbackNow = () => {
               name="name"
               control={control}
               render={({ field }) => <input placeholder="Enter your name" id="name" {...field} />}/>
-            {errors.name && <p className="error-message">{errors.username.name}</p>}
+            {/* {errors.name && <p className="error-message">{errors.username.name}</p>} */}
           </div>
           <div className={style.marginbotton}>
                         <label>Phone number</label>
@@ -99,14 +99,14 @@ const CallbackNow = () => {
                                 value={field.value}
                                 className="phoneInput input2"
                                 placeholder={placeholder} 
-                                containerClass={style.countrySelector}
+                                // containerClass={style.countrySelector}
                                 onChange={field.onChange}
                                 onCountryChange={handleCountryChange}
                                 style={{ color: '#1D2939' }}
                               />
                             )}
                           />
-                        {errors.phone_number && <p className="error-message">{errors.phone_number.message}</p>}
+                        {errors.phone_number && <p className="error-message redmessage">{errors.phone_number.message}</p>}
                     </div>
                     <div className={style.marginbotton}>
             <label htmlFor="email">Email</label>
@@ -123,14 +123,14 @@ const CallbackNow = () => {
                 }
               }
               />}/>
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
+            {errors.email && <p className="error-message redmessage">{errors.email.message}</p>}
           </div>
            <div className={style.marginbotton}> 
             <ReCAPTCHA
         sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
         onChange={handleCaptchaChange}
       />
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {error && <p className="redmessage" style={{ color: 'red' }}>{error}</p>}
 
           </div> 
         </form>
