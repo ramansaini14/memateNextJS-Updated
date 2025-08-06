@@ -98,7 +98,6 @@ const Header = () => {
       "/resources": 6,
       "/supplier-database": 6,
       "/knowledge-base": 6,
-      "/delete-request": 6,
       "/memate-wiki": 6,
     };
 

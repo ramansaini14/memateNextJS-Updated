@@ -149,14 +149,13 @@ const SitemapComponent = () => {
             <Link href="#">MeMate vs Xero</Link>
             <Link href="#">MeMate vs ms Project</Link>
             <Link href="#">MeMate vs Sage</Link>
-            <Link href="#">MeMate vs NetSuite</Link>
+            <Link href="/memate-vs-netsuite">MeMate vs NetSuite</Link>
         </div>
         </div>
       </li>
       <li>
            <h3>Support</h3>
             <Link href="/contact-us">Contact Us</Link>
-            <Link href="/delete-request">Delete Request</Link>
             <Link href="/memate-software-updates">Software Update</Link>
             <Link href="/faqs">FAQs</Link>
       </li>

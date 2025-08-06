@@ -11,7 +11,7 @@ const SoftwareUpdate = () => {
   const [totalUpdate, setTotalUpdate] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState(null);
-  const postsPerPage = 2;
+  const postsPerPage = 10;
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {

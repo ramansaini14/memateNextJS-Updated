@@ -41,8 +41,8 @@ const Footer = () => {
             <div className="application-section">
               <p>Mobile Application for Employees and Contractors</p>
               <div className="application-icons">
-                <div><Link href="https://play.google.com/store/apps/details?id=com.memate&pli=1"><img src={AppStoreIcon} alt="AppStoreIcon" /></Link></div>
-                <div><Link href="https://apps.apple.com/in/app/memate/id1563935364"><img src={PlayStoreIcon} alt="PlayStoreIcon" /></Link></div>
+                <div><Link href="https://apps.apple.com/in/app/memate/id1563935364"><img src={AppStoreIcon} alt="AppStoreIcon" /></Link></div>
+                <div><Link href="https://play.google.com/store/apps/details?id=com.memate&pli=1"><img src={PlayStoreIcon} alt="PlayStoreIcon" /></Link></div>
               </div>
             </div>
             <div className="application-section">
@@ -140,7 +140,7 @@ const Footer = () => {
               <Link href="/">MeMate vs Xero</Link>
               <Link href="/">MeMate vs ms Project</Link>
               <Link href="/">MeMate vs Sage</Link>
-              <Link href="/">MeMate vs NetSuite</Link>
+              <Link href="/memate-vs-netsuite">MeMate vs NetSuite</Link>
               </div>
             </div>
 
@@ -159,7 +159,6 @@ const Footer = () => {
               <p className="link-heading">Support</p>
               <div className="page-links" style={{width: "109px"}}>
               <Link href="/contact-us">Contact Us</Link>
-              <Link href="/delete-request">Delete Request</Link>
                 <Link href="/memate-software-updates">Software Update </Link>
                 <Link href="/faqs">FAQs</Link>
               </div>

@@ -36,14 +36,6 @@ const ResourcesComponent = () => {
               </div>
             </div>
             {/* Item Box */}
-            <div className={`itemFlex ${style.itemFlex}`}>
-              {/* Item Box */}
-              <div className={style.itemText}>
-                <Link href="/delete-request">
-                  <h3>Delete Request</h3>
-                </Link>
-              </div>
-            </div>
             {/* Item Box */}
           </div>
         </div>

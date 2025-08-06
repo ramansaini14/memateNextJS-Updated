@@ -117,13 +117,13 @@ export async function GET() {
     <loc>https://memate.com.au/memate-vs-servicem8</loc>
   </url>
   <url>
+    <loc>https://memate.com.au/memate-vs-netsuite</loc>
+  </url>
+  <url>
     <loc>https://memate.com.au/features/profitability-and-budgeting-software</loc>
   </url>
   <url>
     <loc>https://memate.com.au/terms</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/delete-request</loc>
   </url>
   <url>
     <loc>https://memate.com.au/memate-software-updates</loc>

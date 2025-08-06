@@ -25,11 +25,6 @@ const MenuRessources = () => {
             <Link href="/brand" className={` ${pathname === "/brand" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Brand</p></Link>
             </div>
           </div>
-          {/* <div className="menu-management-feature">
-            <div className="menu-client-management">
-              <Link to="/delete-request" className={` ${location.pathname === "/delete-request" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Delete Request</p></Link>
-            </div>
-          </div> */}
         </div>
         <div className="menu-feature-management">
           <p className="menu-feature-text">Memate wiki</p>

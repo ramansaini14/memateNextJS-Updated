@@ -18,6 +18,10 @@
         font-size: 32px;
         line-height: 32px;
     }
+    .smart-investment-bannerF {
+    font-size: 72px !important;
+    line-height: 64px!important;
+}
     .gradientHeading.header-text {
         font-size: 42px;
         letter-spacing: 1px;

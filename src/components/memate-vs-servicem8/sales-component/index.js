@@ -12,7 +12,7 @@ const SalesComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
        <h1 className="h1tagsseo">Compare the solutions</h1>
-       <div className="sales-heading client-heading client-heading-ServiceM8">MeMate vs ServiceM8 </div>
+       <div className="sales-heading client-heading client-heading-ServiceM8">memate vs ServiceM8</div>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="compaire-service01">
@@ -29,6 +29,7 @@ const SalesComponent = () => {
         <div className="compaireHeadPara">
           <h2>Work smarter with the #1 Service M8 alternative.</h2>
           <p>Despite the similarities in name and target audience, these two software solutions are quite different. ServiceM8 is focused more on “on-the-go” tradespeople, while meMate caters to more established businesses with a more robust workflow.</p>
+        <br></br>
         <div className="request-btn request-btn-center" data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
@@ -36,9 +37,8 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link href='/' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Get started" /></Link>
+        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Book a Demo" /></Link>
       </div>
-
         </div>
       </div>
     </div>

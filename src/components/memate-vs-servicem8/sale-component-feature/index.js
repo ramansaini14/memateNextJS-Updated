@@ -4,6 +4,7 @@ import Link from 'next/link';
 import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
 import CenterMode from '../../find-one-all/CenterMode';
+import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 const SalesComponentFeature = () => {
   return (
     <div className='sales-component-feature-wrapper'>
@@ -23,14 +24,14 @@ const SalesComponentFeature = () => {
       <div className={style.sectionService8}>
       <div className={style.gridService8L}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/serviem8-logo.png' alt='Services M8' />
-      <h4>What’s ServiceM8 Good For?</h4>
+      <h4>What’s ServiceM8 <br/>Good For?</h4>
       <p>ServiceM8 is suitable for plumbers and tradespeople who need to quickly provide quotes, send invoices while on location, and track the jobs of other team members. 
     </p>
       <p>It is relatively easy to use and flexible, making it ideal for businesses that need to handle tasks on-site efficiently.
     </p>
         </div>
         <div className={style.gridService8R}>
-        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/servicesm8-map.png' alt='Services M8 map' />
+        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/compaire-servicem8-02-min.png' alt='Services M8 map' />
         </div>
         </div>
         <div className={style.sectionvsCompaire}>
@@ -39,21 +40,48 @@ const SalesComponentFeature = () => {
       <div className={style.sectionService8Gradient}>
       <div className={style.gridService8L}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg' alt='Services M8' />
-      <h4>What’s MeMate
+      <h4>What’s MeMate<br/>
       Good For?</h4>
       <p>MeMate, on the other hand, is designed to be run from an office environment. It offers features for quoting, invoicing, and project management, with the ability to assign and track jobs for employees and contractors. </p>
       <p>Although it is less flexible in terms of on-the-go usage, meMate provides a more structured and secure system, enabling managers to maintain a strict workflow.</p>
         </div>
         <div className={style.gridService8R}>
-        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/servicesm8-ser.png' alt='Services M8 Services' />
+        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/compaire-servicem8-01-min.png' alt='Services M8 Services' />
         </div>
         </div>
 
+        
+        <div className='m8compaireSwitchingSection01'>
+        <h2>More benefits to switching to MeMate</h2>
+          <div className='m8InSection01'>
+              <div className='m8InFlexLeft'>
+               <h3>Switching <span>is easy</span></h3>
+               <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
+              </div>
+              <div className='m8InFlexRight'>
+                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/m8image01-min.jpg' alt='m8image01'/>
+              </div>
+          </div>
+        </div>
+        <div className='m8compaireSwitchingSection02'>
+          <div className='m8InSection01'>
+             <div className='m8InFlexRight'>
+                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/m8image02.jpg' alt='m8image02'/>
+              </div>
+              <div className='m8InFlexLeft'>
+               <h3>Service M8 <span>Alternative</span></h3>
+               <p>meMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
+              </div>
+             
+          </div>
+        </div>
 
-      <div className={style.sectionMoreBenifit}>
+      {/* <div className={style.sectionMoreBenifit}>
       <div className={style.head}>
         <h3>More benefits to switching to MeMate</h3>
         </div>
+
+
       <div className={style.gridList}>
       <ul>
         <li className={style.List01}>
@@ -82,18 +110,38 @@ const SalesComponentFeature = () => {
         </li>
       </ul>
       </div>
-      </div>
 
-      <div className={style.sectionService8grey}>
+
+
+      </div> */}
+
+      <div className={`${style.sectionService8grey} sectionService8greyNew`}>
       <div className={style.gridService8L}>
       <h4>In short</h4>
-      <p>If you need a quick quoting solution you can use on the go, ServiceM8 is the way to go. However, if you have a manager who processes requests, allocates tasks to contractors, replies to customers, provides quotes, and manages projects, meMate is the software for you.</p>
-      <div className="request-btn request-btn-leftq">
-        <Link href='/' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="See all features" /></Link>
-      </div>
+      <p>meMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
+         <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
+                <div className="request-btn">
+                  <Link
+                    href="https://app.memate.com.au/requestdemo"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <TronRequestADemo text="Book a Demo" />
+                  </Link>
+                </div>
+                <div className="request-btn">
+                  <Link
+                    href="https://app.memate.com.au/onboarding"
+                    target="_blank"
+                    className="nav-btn--get-started  navbar-link"
+                  >
+                      <WhiteButtonBammer text="Start Free Trial"/>
+                  </Link>
+                </div>
+          </div>
         </div>
         <div className={style.gridService8R}>
-        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/inshort.png' alt='Services inshort' />
+        <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />
         </div>
         </div>
 
@@ -138,7 +186,7 @@ const SalesComponentFeature = () => {
         <div className={style.sectionOurBenefit}>
         <div className={style.sectionBenefitHead}>
             <h2>Our Benefits</h2>
-            <p>When you choose MeMate over Service M8, you’ll have the features you need to manage sales, projects and people long-term, without needing expensive add-ons. You’ll thank yourself later.</p>
+            <p>When you choose <strong>MeMate over Service M8</strong>, you’ll have the features you need to manage sales, projects and people long-term, without needing expensive add-ons. You’ll thank yourself later.</p>
           </div>
           <div className={style.sectionBenefitFlex}>
             <ul>

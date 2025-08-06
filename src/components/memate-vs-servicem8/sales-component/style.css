@@ -64,10 +64,12 @@
   line-height: 140%; 
 }
 .sales-heading.client-heading-ServiceM8 {
-  font-size: 82px;
-  line-height: 76px;
+    margin-top: 3px;
+    font-size: 82px;
+    line-height: 76px;
+    font-family: 'sequel_sans_bold_disp' !important;
+    width: 875px;
 }
-
 .sales-component-content {
   display: flex;
   justify-content: center;
@@ -88,6 +90,10 @@
   /* margin: -293px auto -348px; */
   text-align: center;
 }
+.m8SuccessStories .bottom-management {
+    margin-top: 0px !important;
+    padding-bottom: 60px!important;
+}
 .sales-component-wrapperm8:before {
   border-radius: 670px;
   background: radial-gradient(ellipse at left, #1AB2FF, #FFB258);
@@ -106,17 +112,16 @@
   text-align: center;
   margin-top: 79px;
 }
-
 .compaireHeadPara p {
-  color: #757B8A;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 140%;
-  width: 40%;
-  margin: 8px auto;
-  font-family: 'sequel_sans_roman_head' !important;
+    color: #757b8a;
+    text-align: center;
+    width: 45%;
+    margin: 8px auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 140%;
+    font-family: 'sequel_sans_roman_head' !important;
 }
 @media screen and (max-width: 767px) {
   .compaireHeadPara p {
@@ -171,6 +176,35 @@
   font-family: sequel_sans_roman_head!important;
 }
 @media screen and (max-width: 767px) {
+.m8compaireSwitchingSection01 .m8InSection01,.m8compaireSwitchingSection02 .m8InSection01 {
+    display: block !important;
+}
+
+.m8compaireSwitchingSection01 .m8InSection01 .m8InFlexRight,.m8compaireSwitchingSection02 .m8InSection01 .m8InFlexRight {
+    width: auto!important;
+    height: auto!important;
+}
+.m8compaireSwitchingSection01 .m8InSection01 .m8InFlexLeft p,.m8compaireSwitchingSection02 .m8InSection01 .m8InFlexLeft p {
+    width: auto!important;
+}
+.sales-component-feature-wrapper .gradientAnimenate {
+    justify-content: center !important;
+    font-size: 35px !important;
+    line-height: 72px !important;
+    display: flex !important;
+}
+.sectionService8greyNew .dflexbannerbtnFT {
+    justify-content: flex-start;
+    margin: 10px 0 0 !important;
+    display: block !important;
+}
+.sales-heading.client-heading-ServiceM8 {
+    width: auto !important;
+}
+
+
+
+
   .compaire-service01 img {
     width: 100%;
 }
