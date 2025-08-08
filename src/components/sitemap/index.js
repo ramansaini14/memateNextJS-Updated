@@ -4,8 +4,6 @@
 import style from './sitemap.module.scss';
 
 const SitemapComponent = () => {
-
-
   return (
     <>
     <div className={style.sitemapHEad}>
@@ -17,6 +15,7 @@ const SitemapComponent = () => {
         <h3>Core Pages</h3>
         <Link href="/about">About</Link>
         <Link href="/pricing">Pricing</Link>
+        <Link href="/memate-software-updates">Software Update</Link>
         <Link href="/contact-us">Contact us</Link>
         <Link href="/faqs">Faqs</Link>
         <Link href="/brand">Brand</Link>
@@ -84,6 +83,18 @@ const SitemapComponent = () => {
         </div>
       </li>
       <li>
+        <h3>Case Studies</h3>
+        <div className={style.sitemapGrid}>
+        <div className={style.sitemapGridItem}>
+            <Link href="/customer-stories/camera-fix">Camera Fix</Link>
+            <Link href="/customer-stories/pro-vinyl">PROvinyl</Link>
+            <Link href="/customer-stories/elite-life">Elite Life</Link>
+            <Link href="/customer-stories/boat-wizard">Boat Wizard</Link>
+            <Link href="/customer-stories/sorted-media">Sorted Media</Link>
+        </div>
+        </div>
+      </li>
+      <li>
         <h3>Content Hubs</h3>
             <Link href="/news">News</Link>
             <Link href="/memate-wiki">Memate Wiki</Link>
@@ -98,9 +109,10 @@ const SitemapComponent = () => {
       <li>
         <h3>Legal</h3>
             <Link href="/terms">Terms & Conditions</Link>
+            <Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target='_blank'>Carreers</Link>
             <Link href="/privacy">Privacy</Link>
       </li>
-      <li>
+      {/* <li>
         <h3>RESOURCES</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
@@ -114,13 +126,8 @@ const SitemapComponent = () => {
             <Link href="/memate-wiki">Memate Wiki</Link>
         </div>
         </div>
-      </li>
-      <li>
-        <h3>Company</h3>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target='_blank'>Carreers</Link>
-      </li>
+      </li> */}
+   
       <li>
            <h3>Business Software</h3>
             <Link href="/pricing">Plan and Pricing</Link>
@@ -130,7 +137,7 @@ const SitemapComponent = () => {
    
 
       <li>
-        <h3>COMPARE</h3>
+        <h3>Compare</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
             <Link href="#">MeMate vs QuickBooks</Link>
@@ -153,12 +160,7 @@ const SitemapComponent = () => {
         </div>
         </div>
       </li>
-      <li>
-           <h3>Support</h3>
-            <Link href="/contact-us">Contact Us</Link>
-            <Link href="/memate-software-updates">Software Update</Link>
-            <Link href="/faqs">FAQs</Link>
-      </li>
+      
      </ul>
     </div>
     </>

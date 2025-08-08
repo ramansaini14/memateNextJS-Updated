@@ -58,6 +58,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .parent-blog-page.customerstoriespage {
+    padding: 0 11px;
+}
   .pageBreadcrumbs ul {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;

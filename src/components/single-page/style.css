@@ -690,6 +690,18 @@ padding: 0;
 }
 .pageBreadcrumbs ul.postlist {
     display: flex !important;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    color: #106b99;
+    -webkit-box-orient: vertical;
+    width: 340px;
+    font-family: 'sequel_sans_roman_body';
+    text-decoration: none;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.parentBlogWrapper {
+    padding: 0 12px;
 }
 .img-1-container-A {
   margin-top: 15px !important;
@@ -727,29 +739,29 @@ padding: 0;
   margin-top: 22px;
 }
 .blogMetstags .tag a {
-  border-radius: 12px;
-  border: 1px solid var(--Gray-300, #D0D5DD);
-  background: var(--Gray-50, #F9FAFB);
-  height: 45px;
-  padding: 10px 24px;
-  justify-content: center;
-  align-items: center;
-  color: var(--Gray-700, #344054);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 415;
-  line-height: normal;
-  margin: 4px 4px;
-  display: inline-block;
-  line-height: 13px;
-  text-decoration: none;
-  display: flex;
-  justify-content: left;
-  line-height: 18px;
-  width: auto;
-  max-width: max-content;
+    border: 1px solid var(--Gray-300, #d0d5dd);
+    background: var(--Gray-50, #f9fafb);
+    height: auto;
+    color: var(--Gray-700, #344054);
+    border-radius: 12px;
+    justify-content: left;
+    align-items: center;
+    width: auto;
+    max-width: max-content;
+    margin: 4px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 18px;
+    text-decoration: none;
+    display: flex;
 }
-
+.date-heading-mainb a {
+    margin: 7px 0;
+    font-size: 19px;
+    line-height: 23px;
+}
 .subscribe_Subscribebox__jCI0J .subscribe_formWrapmain__LRNdK {
   display: flex;
   justify-content: space-between;

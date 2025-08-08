@@ -253,6 +253,12 @@ p.owners-disp {
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 @media screen and (max-width: 767px) {
+  .slider-section1FF .slider-containerF .slick-slide.slick-active.slick-center.slick-current {
+    margin-top: 0;
+}
+.success-stories1Bottom .request-btn {
+    margin-bottom: 31px;
+}
   .bottom-management .SStoriesHead {
     font-size:26px;
     line-height:32px;

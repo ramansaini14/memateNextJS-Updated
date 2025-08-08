@@ -72,8 +72,8 @@ const MemateWiki = () => {
           <p className='loaderBarCircle'>
           <Oval
           visible={true}
-          height="40"
-          width="40"
+          height={40}
+          width={40}
           color="#1ab2ff"
           ariaLabel="oval-loading"
           wrapperStyle={{}}

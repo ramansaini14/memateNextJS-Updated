@@ -470,6 +470,9 @@ object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
+  span.gradientAnimenate {
+    font-size: 40px !important;
+}
   .application-heading h3 {
     font-size: 24px;
     line-height: 30px;

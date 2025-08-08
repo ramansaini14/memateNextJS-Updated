@@ -49,6 +49,13 @@
       height: 46px;
       width: 46px;
     }
+    .react-responsive-modal-modal {
+    padding: 10px 10px 5px !important;
+    }
+    .react-responsive-modal-closeButton {
+    top: 25px !important;
+    right: 25px !important;
+}
     .videoPlayIconIn svg {
       width: 18px;
     }

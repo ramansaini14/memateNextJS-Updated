@@ -331,6 +331,9 @@ img.img-container-stories {
     font-family: 'sequel_sans' !important;
 }
 @media screen and (max-width: 767px) {
+  .parent-blog-page.customerstoriespage {
+    padding: 0 11px;
+}
   .customerstoriesGrid {
     width: 100%;
     margin: 42px auto 15px;

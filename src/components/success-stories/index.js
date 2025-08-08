@@ -11,7 +11,7 @@ const SuccessStories = () => {
   return (
    <>
     <div className="slider-section1 slider-section1FF" >
-      <div className="success-stories1">
+      <div className="success-stories1 success-stories1Bottom">
         <div className="bottom-management" data-aos="fade-up"
         data-aos-offset="50"
         data-aos-delay="50"

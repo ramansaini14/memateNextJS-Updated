@@ -181,7 +181,7 @@ const breadcrumbList = post ? {
 
       
 
-      <div className="parentBlog parentSingle ">
+      <div className="parentBlog parentBlogWrapper parentSingle ">
       <div className="pageBreadcrumbs">
             <ul className='postlist'>
               <li><Link className="MainHomeLink" href="/">Home</Link></li><li>/</li><li><Link className="MainPageLink" href="/news">Latest Articles</Link></li><li>/</li><li><Link href={`/news/${post.slug}`}>{post.title}</Link></li>

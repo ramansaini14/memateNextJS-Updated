@@ -5,6 +5,12 @@
   flex-wrap: wrap;
   gap: 40px;
 }
+.memate-brand-right li.brandFileGridGif {
+    justify-content: space-between;
+}
+span.downloadFileGridgg {
+    grid-template-columns: 1fr !important;
+}
 li.brandAnimationsFlex {
     justify-content: flex-start;
     padding: 40px 100px;
@@ -18,7 +24,10 @@ li.brandAnimationsFlex {
   border-radius: 16px;
   border: 1px dashed #7B61FF;
 }
-
+.brandAnimationsFlexZif img, .brandAnimationsFlexZif {
+    width: auto;
+    text-align: center;
+}
 .form-grid-brand {
   display: flex;
   gap: 20px;
@@ -1158,6 +1167,10 @@ h1#section-8 {
   /* .kb-main-section.privacy-module_mainHeadinstyle__KLI6V .latest-update-text {
     font-size: 79px;
 } */
+ .brandAnimationsFlexZif img, .brandAnimationsFlexZif {
+    text-align: center;
+    width: 100%;
+}
 .memate-brand-right ul.brandFileGrid li {
   gap: 0px;
 }

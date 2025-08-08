@@ -1,34 +1,35 @@
 import React, { useState } from "react";
 import style from './tabs-comp.module.scss';
 import ToolTip from "./tool-tip";
+import Image from "next/image";
 const data = [
     {
-      category: "Client Management",
-      meMate: "Comprehensive client details, history, and contacts in one place.",
-      meMateM8: "Basic client management focused on job details and communication.",
-      service: "Comprehensive client details, history, and contacts in one place.",
-      serviceM8: "Basic client management focused on job details and communication.",
-      toolTip: "Basic client management focused on job details and communication."
-    },
-    {
-      category: "Supplier Management",
-      meMate: "Complete supplier list with expense history.",
-      meMateM8: "Not a dedicated feature.",
-      service: "omplete supplier list with expense history.",
-      serviceM8: "Not a dedicated feature.",
-       toolTip: "Basic client management focused on job details and communication."
-    },
-    {
-      category: "Project Management",
-      meMate: "Advanced project management with timelines, expenses, and history.",
-      meMateM8: "Job management with a focus on checklists and job completion",
-      service: "dvanced project management with timelines, expenses, and history.",
-      serviceM8: "Job management with a focus on checklists and job completion",
-       toolTip: "Basic client management focused on job details and communication."
-    },
-    {
       category: "Quoting & Invoicing",
-      meMate: "Quotes, invoices, and automated follow-ups.",
+      meMate: "Built-in quoting tools, auto-invoicing, client approvals",
+      meMateM8: "Available, but often requires setup/customisation",
+      service: "Built-in quoting tools, auto-invoicing, client approvals",
+      serviceM8: "Available, but often requires setup/customisation",
+      toolTip: "Available, but often requires setup/customisation"
+    },
+    {
+      category: "Project & Job Management",
+      meMate: "Visual job board, scheduling, contractor assignment, progress tracking",
+      meMateM8: "Enterprise-grade tools, better for large project teams",
+      service: "Visual job board, scheduling, contractor assignment, progress tracking",
+      serviceM8: "Enterprise-grade tools, better for large project teams",
+       toolTip: "Visual job board, scheduling, contractor assignment, progress tracking"
+    },
+    {
+      category: "CRM & Lead Tracking",
+      meMate: "Simple CRM with pipeline, contact history, and reminders",
+      meMateM8: "Advanced CRM system, often more complex than needed",
+      service: "Simple CRM with pipeline, contact history, and reminders",
+      serviceM8: "Advanced CRM system, often more complex than needed",
+       toolTip: "Simple CRM with pipeline, contact history, and reminders"
+    },
+    {
+      category: "Team Scheduling & Time Tracking",
+      meMate: "Staff clock-in/out, shift planner, task timers",
       meMateM8: "Quoting and invoicing directly from the field.",
       service: "Quotes, invoices, and automated follow-ups.",
       serviceM8: "Quoting and invoicing directly from the field.",
@@ -113,7 +114,8 @@ const ComparisonTabs = () => {
       <button
         className={`${style.tabsButton} ${selectedTab === "serviceM8" ? `${style.tabsButtonDark}` :`${style.serviceM8}`}`}
         onClick={() => setSelectedTab("serviceM8")}>
-       <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/serviem8-logo.png" alt="service8" />
+       <Image src='https://memate-website.s3.ap-southeast-2.amazonaws.com/netsuite.png' alt='Services M8' width={160.403}
+             height={40} />
       </button>
     </div>
     <div className={style.tabsTableWrap}>
