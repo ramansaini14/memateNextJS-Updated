@@ -31,9 +31,9 @@ const Footer = () => {
                 </p>
             </div>
             <div className="footer-icons">
-              <div><Link href="https://www.facebook.com/mematesoftware/"><img src={FacebookIcon} alt="FacebookIcon"/></Link></div>
-              <div><Link href="https://www.instagram.com/memateapp/"><img src={InstagramIcon} alt="InstagramIcon" /></Link></div>
-              <div><Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
+              <div><Link href="https://www.facebook.com/mematesoftware/" target="_blank"><img src={FacebookIcon} alt="FacebookIcon"/></Link></div>
+              <div><Link href="https://www.instagram.com/memateapp/" target="_blank"><img src={InstagramIcon} alt="InstagramIcon" /></Link></div>
+              <div><Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target="_blank"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
             </div>
           </div>
           <div className="download-section">

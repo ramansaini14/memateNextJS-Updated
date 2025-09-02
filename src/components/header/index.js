@@ -152,8 +152,10 @@ const Header = () => {
       <MenuData />
       <div className="navbar">
         <div className="navbar-container">
-          <div className="navbar-logo-wrapper" onClick={handleLogoClick}>
-            <img src={Images.logo} alt="logo" type="image/svg+xml" />
+          <div className="navbar-logo-wrapper">
+            <Link href="/">
+              <img src={Images.logo} alt="logo" type="image/svg+xml" />
+            </Link>
           </div>
 
           <div className="header-navbar-container">
