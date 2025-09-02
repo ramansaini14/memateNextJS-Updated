@@ -140,9 +140,15 @@ const SitemapComponent = () => {
         <h3>Compare</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
+<<<<<<< HEAD
             <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
             <Link href="#">MeMate vs Myob</Link>
             <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
+=======
+            <Link href="#">MeMate vs QuickBooks</Link>
+            <Link href="#">MeMate vs Myob</Link>
+            <Link href="#">MeMate Vs Jira</Link>
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
             <Link href="#">MeMate vs Monday</Link>
             <Link href="#">MeMate vs Trello</Link>
             <Link href="#">MeMate vs SalesForce</Link>
@@ -151,12 +157,21 @@ const SitemapComponent = () => {
         </div>
         <div className={style.sitemapGridItem}>
            <Link href="#">MeMate vs Wrike</Link>
+<<<<<<< HEAD
             <Link href="/compare/memate-vs-servicem8">MeMate vs Servicem8</Link>
             <Link href="#">MeMate vs Reckon</Link>
             <Link href="#">MeMate vs Xero</Link>
             <Link href="/compare/memate-vs-microsoft-project">MeMate vs ms Project</Link>
             <Link href="/compare/memate-vs-sage">MeMate vs Sage</Link>
             <Link href="/compare/memate-vs-netsuite">MeMate vs NetSuite</Link>
+=======
+            <Link href="/memate-vs-servicem8">MeMate vs Servicem8</Link>
+            <Link href="#">MeMate vs Reckon</Link>
+            <Link href="#">MeMate vs Xero</Link>
+            <Link href="#">MeMate vs ms Project</Link>
+            <Link href="#">MeMate vs Sage</Link>
+            <Link href="/memate-vs-netsuite">MeMate vs NetSuite</Link>
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
         </div>
         </div>
       </li>

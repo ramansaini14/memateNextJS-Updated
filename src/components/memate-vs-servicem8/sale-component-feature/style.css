@@ -149,6 +149,7 @@
 
 
 
+<<<<<<< HEAD
 tr.tabsTableWrapButton span.darkLOgo img {
     filter: contrast(0) brightness(2);
     width: 78.116px;
@@ -188,6 +189,9 @@ tr.tabsTableWrapButton span.lightLOgo img {
    width: 201.923px;
    height: 40px;
 }
+=======
+
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 
 .one-application-sec {
   margin-top: 70px;
@@ -542,12 +546,20 @@ ul.tab-list li p {
   overflow: hidden;
 }
 .one-application-wrappers {
+<<<<<<< HEAD
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/group%2Bshadow-min.png);
+=======
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/group+427318021.png);
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 93px;
+<<<<<<< HEAD
     width: 1200px;
+=======
+    width: 1440px;
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     margin: 0 auto;
 }
 /* .large-image {

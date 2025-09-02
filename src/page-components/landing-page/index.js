@@ -28,7 +28,11 @@ const LandingPage = ({ postsLatest }) => {
         <Layout>
           <BussinessManagement />
           <LessBusyness />
+<<<<<<< HEAD
           <FeaturedOn />  
+=======
+          <FeaturedOn />
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
           <FindOneApplication />
           <CommonChallenges />
           <ZeroOfferOnboarding />

@@ -337,6 +337,7 @@
     <loc>https://memate.com.au/news/tags/memate-vs-netsuite</loc>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://memate.com.au/news/tags/memate-vs-sage</loc>
   </url>
   <url>
@@ -349,6 +350,8 @@
     <loc>https://memate.com.au/news/tags/memate-vs-jira</loc>
   </url>
   <url>
+=======
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     <loc>https://memate.com.au/news/tags/project-management-software-comparison</loc>
   </url>
   <url>

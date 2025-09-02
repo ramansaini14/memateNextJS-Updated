@@ -15,7 +15,11 @@
     margin: 0px 0px 20px 0px;
 }
 .intro-sticky {
+<<<<<<< HEAD
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/nextstep-shadow.png);
+=======
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/nextstep-shadow.png);
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

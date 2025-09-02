@@ -12,6 +12,7 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+<<<<<<< HEAD
 .minHeightBenifit {
     min-height: 124px;
 }
@@ -29,6 +30,10 @@
     .one-application-wrappers {
     width: 1200px;
     }
+=======
+
+@media screen and (max-width: 767px) {
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     .gradientHeading {
         font-size: 32px;
         line-height: 32px;

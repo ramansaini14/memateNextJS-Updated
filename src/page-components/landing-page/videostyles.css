@@ -51,10 +51,13 @@
     }
     .react-responsive-modal-modal {
     padding: 10px 10px 5px !important;
+<<<<<<< HEAD
     border-radius: 25px !important;
     }
     .react-responsive-modal-container video{
       border-radius: 19px !important;
+=======
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     }
     .react-responsive-modal-closeButton {
     top: 25px !important;

@@ -1,6 +1,7 @@
 .weightAndFamily{
     font-family: 'sequel_sans_bold_disp' !important;
 }
+
 .aboutgradient {
     color: rgba(0, 0, 0, 0);
     text-align: center;
@@ -124,6 +125,7 @@
     font-family: 'sequel_sans_roman_head' !important;
     width: 395px;
 }
+
 @media screen and (max-width: 767px) {
     div#aboutPage {
         padding: 0 15px;

@@ -176,6 +176,7 @@
   font-family: sequel_sans_roman_head!important;
 }
 @media screen and (max-width: 767px) {
+<<<<<<< HEAD
 .m8compaireSwitchingSection01 .m8InSection01,.m8compaireSwitchingSection02 .m8InSection01 {
     display: block !important;
 }
@@ -231,6 +232,8 @@
     font-size: 34px!important;
     line-height: 44px!important;
 }
+=======
+>>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
   .compaire-service01 img {
     width: 100%;
 }
