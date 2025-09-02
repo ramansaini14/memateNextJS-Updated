@@ -179,7 +179,6 @@
 .m8compaireSwitchingSection01 .m8InSection01,.m8compaireSwitchingSection02 .m8InSection01 {
     display: block !important;
 }
-<<<<<<< HEAD
 .replace-text {
     margin: 0px 0 0!important;
 }
@@ -187,9 +186,6 @@
     margin-top: 0 !important;
     display: block;
 } 
-=======
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 .m8compaireSwitchingSection01 .m8InSection01 .m8InFlexRight,.m8compaireSwitchingSection02 .m8InSection01 .m8InFlexRight {
     width: auto!important;
     height: auto!important;
@@ -200,7 +196,6 @@
 .sales-component-feature-wrapper .gradientAnimenate {
     justify-content: center !important;
     font-size: 35px !important;
-<<<<<<< HEAD
     line-height: 33px !important;
     display: flex !important;
     margin-bottom: 0 !important;
@@ -218,20 +213,10 @@
 }
 .difference-module-module-scss-module__BoruDG__sectionService8grey .difference-module-module-scss-module__BoruDG__gridService8L {
     padding: 10px !important;
-=======
-    line-height: 72px !important;
-    display: flex !important;
-}
-.sectionService8greyNew .dflexbannerbtnFT {
-    justify-content: flex-start;
-    margin: 10px 0 0 !important;
-    display: block !important;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 }
 .sales-heading.client-heading-ServiceM8 {
     width: auto !important;
 }
-<<<<<<< HEAD
 .m8compaireSwitchingSection02 .m8InSection01 .m8InFlexLeft {
     padding-left: 28px;
 }
@@ -246,12 +231,6 @@
     font-size: 34px!important;
     line-height: 44px!important;
 }
-=======
-
-
-
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
   .compaire-service01 img {
     width: 100%;
 }

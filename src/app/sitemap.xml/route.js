@@ -114,7 +114,6 @@ export async function GET() {
     <loc>https://memate.com.au/industries/business-software-for-construction-industry</loc>
   </url>
   <url>
-<<<<<<< HEAD
     <loc>https://memate.com.au/compare/memate-vs-servicem8</loc>
   </url>
   <url>
@@ -131,12 +130,6 @@ export async function GET() {
   </url>
   <url>
     <loc>https://memate.com.au/compare/memate-vs-jira</loc>
-=======
-    <loc>https://memate.com.au/memate-vs-servicem8</loc>
-  </url>
-  <url>
-    <loc>https://memate.com.au/memate-vs-netsuite</loc>
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
   </url>
   <url>
     <loc>https://memate.com.au/features/profitability-and-budgeting-software</loc>

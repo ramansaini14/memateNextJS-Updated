@@ -65,7 +65,6 @@ const LessBusyness = () => {
   return (
     <>
       <div className={style.shelfgradientwrap}>
-<<<<<<< HEAD
         <div className={style.videobackground}>
                    <video
                   width="100%"
@@ -85,9 +84,6 @@ const LessBusyness = () => {
           </div>
 
         <div className={`${style.shelfgradient} ${style.videoOverlyWrap} `}>
-=======
-        <div className={style.shelfgradient}>
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
           <div className={style.lessContainers}>
             <h3>More Business - Less Busyness</h3>
             <p>

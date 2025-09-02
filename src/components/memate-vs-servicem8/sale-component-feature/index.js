@@ -5,10 +5,7 @@ import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
 import CenterMode from '../../find-one-all/CenterMode';
 import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
-<<<<<<< HEAD
 import FindOneApplication from '@/components/find-one-all';
-=======
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 const SalesComponentFeature = () => {
   return (
     <div className='sales-component-feature-wrapper'>
@@ -79,49 +76,6 @@ const SalesComponentFeature = () => {
              
           </div>
         </div>
-<<<<<<< HEAD
-=======
-
-      {/* <div className={style.sectionMoreBenifit}>
-      <div className={style.head}>
-        <h3>More benefits to switching to MeMate</h3>
-        </div>
-
-
-      <div className={style.gridList}>
-      <ul>
-        <li className={style.List01}>
-          <div className={style.box}>
-          <h4 className='fontSSMD FS28'>Switching</h4>
-          <h2 className='fontSBD FS48'>is easy</h2>
-          <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
-          </div>
-        </li>
-        <li className={style.List02}>
-        <div className={style.box}>
-          
-          </div>
-        </li>
-        <li className={style.List03}>
-        <div className={style.box}>
-         
-          </div>
-        </li>
-        <li className={style.List04}>
-        <div className={style.box}>
-          <h4 className='fontSBD FS48'>Service M8</h4>
-          <h2 className='fontSSMD FS28'>Alternative</h2>
-          <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
-          </div>
-        </li>
-      </ul>
-      </div>
-
-
-
-      </div> */}
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
       <div className={`${style.sectionService8grey} sectionService8greyNew`}>
       <div className={style.gridService8L}>
       <h4>In short</h4>
@@ -129,7 +83,6 @@ const SalesComponentFeature = () => {
          <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
                 <div className="request-btn">
                   <Link
-<<<<<<< HEAD
                     href="/features"
                     className="nav-btn--get-started  navbar-link"
                   >
@@ -138,26 +91,11 @@ const SalesComponentFeature = () => {
                 </div>
                 <div className="request-btn">
                   <Link
-=======
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
                     href="https://app.memate.com.au/requestdemo"
                     target="_blank"
                     className="nav-btn--get-started  navbar-link"
                   >
-<<<<<<< HEAD
                       <WhiteButtonBammer text="Book a demo"/>
-=======
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Start Free Trial"/>
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
                   </Link>
                 </div>
           </div>
@@ -188,37 +126,21 @@ const SalesComponentFeature = () => {
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>
-<<<<<<< HEAD
           <p>
             <a href="https://app.memate.com.au/requestdemo">
             <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/group469444LB.png' alt='group469444' />
             </a>
           </p>
-=======
-          &nbsp;
-          <p> <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/group469444LB.png' alt='group469444' /></p>
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
         </div>
         <div className={style.sectionSwapM}>
            <span>vs</span>
         </div>
         <div className={style.sectionSwapR}>
         <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/group469446RT.png' alt='group469446' /></p>
-<<<<<<< HEAD
-=======
-        &nbsp;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
         <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/group469445RB.png' alt='group469445' /></p>
         </div>
         </div>
         </div>
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
         <div className={style.sectionOurBenefit}>
         <div className={style.sectionBenefitHead}>
             <h2>Our Benefits</h2>
@@ -228,33 +150,21 @@ const SalesComponentFeature = () => {
             <ul>
               <li>
                 <div className={`${style.iconStyle} ${style.iconStyle1}`}>
-<<<<<<< HEAD
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/check-circle.svg' alt='Profitability' />
-=======
-                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Profitability-Management_+1.svg' alt='Profitability' />
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
                 </div>
                 <h4>Tax deductible 
                 for business use</h4>
               </li>
               <li>
               <div className={`${style.iconStyle} ${style.iconStyle2}`}>
-<<<<<<< HEAD
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/check-circle.svg' alt='logout' />
-=======
-                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/logout-icon.svg' alt='logout' />
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
                 </div>
                 <h4>Freedome to cancel
                 anytime</h4>
               </li>
               <li>
               <div className={`${style.iconStyle} ${style.iconStyle3}`}>
-<<<<<<< HEAD
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/check-circle.svg' alt='shield' />
-=======
-                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/shield-tick.svg' alt='shield' />
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
                 </div>
                 <h4>Secure and safe
                 cloud storage</h4>
@@ -264,12 +174,8 @@ const SalesComponentFeature = () => {
             </div>
           </div>
           <div className={style.sectionFindOneApplication}>
-<<<<<<< HEAD
              {/* <CenterMode /> */}
              <FindOneApplication />
-=======
-             <CenterMode />
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
           </div>
     </div>
     </div>

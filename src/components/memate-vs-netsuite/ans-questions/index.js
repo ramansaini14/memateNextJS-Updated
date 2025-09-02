@@ -163,11 +163,7 @@ const QuestionAnswer = () => {
 
       <div className="question-answer-content">
         <div className="question-answer-heading-wrapperF">
-<<<<<<< HEAD
           <p className="question-answer-heading">We answer your questions</p>
-=======
-          <p className="question-answer-heading">FAQs for Comparing MeMate and ServiceM8</p>
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
         </div>
         <div className="questions-wrapper">
           {questions.map((ques) => (

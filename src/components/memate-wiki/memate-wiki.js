@@ -51,11 +51,7 @@ const MemateWiki = () => {
     <>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={`titleHead ${style.mainHeadTitle}`}>
-<<<<<<< HEAD
           <h2>memate <br />wiki</h2>
-=======
-          <h2>meMate <br />wiki</h2>
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
           <h1 className="h1tagsseow">Business Tips & Insights for Aussie SMEs</h1><span>
           </span>
           <h4>

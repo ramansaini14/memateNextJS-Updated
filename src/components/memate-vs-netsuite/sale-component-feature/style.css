@@ -16,20 +16,10 @@
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-<<<<<<< HEAD
     letter-spacing: -.38px;
 }
 .m8compaireSwitchingSection01 .m8InSection01 ul {
     margin-top: 30px;
-=======
-    letter-spacing: -0.38px;
-}
-.sectionService8greyNew1 .dflexbannerbtnFT{
-  margin: 0 0 0 !important;
-}
-.m8compaireSwitchingSection01 .m8InSection01 ul {
-  margin-top: 30px;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 }
 .m8compaireSwitchingSection01 .m8InSection01 {
     border: 3px solid rgba(0, 0, 0, 0);
@@ -170,7 +160,6 @@
 
 
 
-<<<<<<< HEAD
 tr.tabsTableWrapButton span.darkLOgo img {
     filter: contrast(0) brightness(2);
     width: 78.116px;
@@ -210,9 +199,6 @@ tr.tabsTableWrapButton span.lightLOgo img {
    width: 201.923px;
    height: 40px;
 }
-=======
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 
 .one-application-sec {
   margin-top: 70px;
@@ -567,20 +553,12 @@ ul.tab-list li p {
   overflow: hidden;
 }
 .one-application-wrappers {
-<<<<<<< HEAD
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/group%2Bshadow-min.png);
-=======
-    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/group+427318021.png);
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 93px;
-<<<<<<< HEAD
     width: 1200px;
-=======
-    width: 1440px;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     margin: 0 auto;
 }
 /* .large-image {
@@ -694,12 +672,9 @@ object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
-<<<<<<< HEAD
   .m8compaireSwitchingSection01 .m8InSection01 .m8InFlexLeft h3 span,.m8compaireSwitchingSection02 .m8InSection01 .m8InFlexLeft h3 span {
     font-size: 34px;
 }
-=======
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
   .application-heading h3 {
     font-size: 24px;
     line-height: 30px;

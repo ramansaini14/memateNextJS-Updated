@@ -128,7 +128,6 @@
 }
 
 .replace-text {
-<<<<<<< HEAD
     margin: 0;
     font-size: 72px;
     line-height: 80px;
@@ -143,17 +142,6 @@
     padding-bottom: 50px;
     padding-right: 0;
     font-style: normal;
-=======
-    margin: 0px;
-    text-align: center;
-    font-size: 72px;
-    font-style: normal;
-    line-height: 80px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: -1.16px;
-    font-family: "sequel_sans_semi_bold_disp" !important;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 }
 
 .tab-section {
@@ -359,13 +347,9 @@ ul.tab-list li p {
 
 
 
-<<<<<<< HEAD
 .to-replace-bold-text {
     text-align: center;
 }
-=======
-
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 
 .large-image-container {
   position: relative;
@@ -374,20 +358,12 @@ ul.tab-list li p {
   overflow: hidden;
 }
 .one-application-wrappers {
-<<<<<<< HEAD
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/group%2Bshadow-min.png);
-=======
-    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/group+427318021.png);
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 93px;
-<<<<<<< HEAD
     width: 1200px;
-=======
-    width: 1440px;
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
     margin: 0 auto;
 }
 /* .large-image {
@@ -494,10 +470,7 @@ object-fit: cover;
 }
 .one-application-wrappers {
     width: 100%;
-<<<<<<< HEAD
     padding-bottom: 0;
-=======
->>>>>>> 5f1279a59947b65843d469a8c7ac34696f7faa7c
 }
 .slick-slider {
     margin-bottom: 0;
