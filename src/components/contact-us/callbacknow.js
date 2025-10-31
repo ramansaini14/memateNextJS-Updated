@@ -32,12 +32,15 @@ const CallbackNow = () => {
   
   
     const onSubmit = async (data) => {
-      if (!captchaValue) {
+      const token = (typeof window !== 'undefined' && typeof grecaptcha !== 'undefined')
+        ? grecaptcha.getResponse()
+        : (captchaValue || '');
+      if (!token) {
         setError("Please complete the CAPTCHA.");
         return;
       }
       try {
-        const result = await RequestCallBackAPI(data); 
+        const result = await RequestCallBackAPI({ ...data, token }); 
         console.log("Form submitted successfully:", result);
         reset();
         setVisible(false);
@@ -127,9 +130,9 @@ const CallbackNow = () => {
           </div>
            <div className={style.marginbotton}> 
             <ReCAPTCHA
-        sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
-        onChange={handleCaptchaChange}
-      />
+              sitekey={process.env.MAIL_SITE_KEY}
+              onChange={handleCaptchaChange}
+            />
             {error && <p className="redmessage" style={{ color: 'red' }}>{error}</p>}
 
           </div> 

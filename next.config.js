@@ -5,6 +5,11 @@ const nextConfig = {
   // Ensure proper page extensions are handled
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   
+  // Expose env vars to the client
+  env: {
+    MAIL_SITE_KEY: process.env.MAIL_SITE_KEY,
+  },
+  
   /**
    * @config {image domains and optimizations}
    */

@@ -14,11 +14,13 @@ const EmailNow = () => {
     const [error, setError] = useState('');
     const [visibleEmail, setVisibleEmail] = useState(false);
     const [captchaValue, setCaptchaValue] = useState(null);
+
     // Validation schema with all fields
     const schema = yup.object().shape({
         name: yup.string().required("Name is required"),
         email: yup.string().email("Invalid email address").required("Email is required"),
         message: yup.string().required("Message is required"),
+        token: yup.string()
     });
 
     const { control, handleSubmit, formState: { errors }, reset } = useForm({
@@ -27,15 +29,15 @@ const EmailNow = () => {
 
 
     const onSubmit = async (data) => {
-      if (!captchaValue) {
-          setError("captcha", {
-              type: "manual",
-              message: "Please complete the CAPTCHA.",
-          });
+      const token = (typeof window !== 'undefined' && typeof grecaptcha !== 'undefined')
+        ? grecaptcha.getResponse()
+        : (captchaValue || '');
+      if (!token) {
+          setError("Please complete the CAPTCHA.");
           return;
       }
       try {
-          const result = await emailNowAPI(data); 
+          const result = await emailNowAPI({ ...data, token }); 
           console.log("Form submitted successfully:", result);
           reset();
           setVisible(false);
@@ -180,10 +182,10 @@ const EmailNow = () => {
                         {errors.message && <p className="error-message redmessage">{errors.message.message}</p>}
                     </div>
                     <div className={style.marginbotton}>
-            <ReCAPTCHA
-        sitekey="6LfAwdMqAAAAAFtI7SUPXKb1ew7C0jUYRvxDqjpS"
-        onChange={handleCaptchaChange}/>
-        
+                    <ReCAPTCHA
+                    sitekey={process.env.MAIL_SITE_KEY}
+                    onChange={handleCaptchaChange}/>
+                
           </div>
                 </form>
             </Dialog>
