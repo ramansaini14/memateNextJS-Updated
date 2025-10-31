@@ -24,14 +24,14 @@ const BussinessManagement = () => {
           <div className="macBook-image">
             <div className="big-img-mac">
               <div className="big-img-macMain">
-                <Image
-                  alt="Business Management Software"
-                  src={Images.landingHero}
-                  width="1200"
-                  height="600"
-                  style={{ width: "100%", height: "auto" }}
-                  loading="eager"
-                />
+                  <Image
+                    alt="Business Management Software"
+                    src={Images.landingHero}                           
+                    priority                      
+                    fetchPriority="high"         
+                    placeholder="empty"         
+                    width={1200} height={600} sizes="100vw" style={{ width: "100%", height: "auto" }}
+                  />
               </div>
             </div>
           </div>

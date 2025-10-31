@@ -7,7 +7,7 @@ export async function generateMetadata({ params }) {
   try {
     const resolvedParams = await params;
     const slug = resolvedParams.slug;
-    
+
     console.log('🔍 Generating metadata for slug:', slug);
     
     const post = await blogSingle(slug);

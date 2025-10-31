@@ -129,8 +129,28 @@ const nextConfig = {
         permanent: true,
       }, 
       {
+        source: '/supplier-database/we-print-it-australia-best-business-printer',
+        destination: '/supplier-database/we-print-it-australia-best-business-printer-alexandria',
+        permanent: true,
+      }, 
+      {
+        source: '/supplier-database/contact-us',
+        destination: '/supplier-database',
+        permanent: true,
+      }, 
+      {
         source: '/news/business-management-software-2024',
         destination: '/news/streamline-your-operations-in-2024-with-the-best-business-management-software-solutions',
+        permanent: true,
+      }, 
+      {
+        source: '/news/mastering-efficiency',
+        destination: '/news/mastering-efficiency-how-to-effectively-manage-business-software-solutions',
+        permanent: true,
+      }, 
+      {
+        source: '/news/win-more-deals--how-quote-management-software-transforms-sales',
+        destination: '/news/win-more-deals-how-quote-management-software-transforms-sales',
         permanent: true,
       }, 
       {
@@ -194,13 +214,99 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/news/employee-engagement',
+        destination: '/news/keep-your-team-s-productivity-in-check-with-workforce-management-system',
+        permanent: true,
+      },
+      {
         source: '/news/memate-features',
+        destination: '/news/software-comparison-servicem8-vs-memate',
+        permanent: true,
+      },
+      {
+        source: '/news/memate-workforce-solution',
+        destination: '/news/how-memate-helped-improve-a-yacht-management-service',
+        permanent: true,
+      },
+      {
+        source: '/news/memate-workflow-management',
+        destination: '/news/how-memate-helped-improve-a-yacht-management-service',
+        permanent: true,
+      },
+      {
+        source: '/news/reduce-errors',
+        destination: '/news/win-more-deals-how-quote-management-software-transforms-sales',
+        permanent: true,
+      },
+      {
+        source: '/news/project-management-tools-2022',
+        destination: '/news/top-5-business-management-software-2022',
+        permanent: true,
+      },
+      {
+        source: '/news/how-to-organise-a-business',
+        destination: '/news/business-logic-for-every-owner',
+        permanent: true,
+      },
+      {
+        source: '/news/women-small-business-australia',
+        destination: '/news/women-business-backbone-australia',
+        permanent: true,
+      },
+      {
+        source: '/news/small-business-software-empowerment',
+        destination: '/news/women-business-backbone-australia',
+        permanent: true,
+      },
+      {
+        source: '/news/women-business-owners-australia',
+        destination: '/news/women-business-backbone-australia',
+        permanent: true,
+      },
+      {
+        source: '/news/performance-analytics',
+        destination: '/news/keep-your-team-s-productivity-in-check-with-workforce-management-system',
+        permanent: true,
+      },
+   
+      {
+        source: '/news/remote-work-efficiency',
+        destination: '/news/keep-your-team-s-productivity-in-check-with-workforce-management-system',
+        permanent: true,
+      },
+      {
+        source: '/news/showcase-software-benefits',
+        destination: '/news/introducing-showcase-a-new-interactive-design-community',
+        permanent: true,
+      },
+      {
+        source: '/news/from-chaos-to-clarity--5-steps-to-organise-your-new-business-like-a-pro',
+        destination: '/news/from-chaos-to-clarity-5-steps-to-organise-your-new-business-like-a-pro',
+        permanent: true,
+      },
+      {
+        source: '/news/women-running-small-business-operations',
+        destination: '/news/women-business-backbone-australia',
+        permanent: true,
+      },
+      {
+        source: '/news/women-in-sme-leadership',
+        destination: '/news/women-business-backbone-australia',
+        permanent: true,
+      },
+      {
+        source: '/news/software-comparison--servicem8-vs-memate',
         destination: '/news/software-comparison-servicem8-vs-memate',
         permanent: true,
       },
       {
         source: '/news/small-business-management-software',
         destination: '/news/how-a-digital-agency-benefitted-from-memate',
+        permanent: true,
+      },
+      {
+        source: '/news/manage-contractors-with-less-admin',
+        destination: '/news/why-workflow-efficiency-matters',
         permanent: true,
       },
       {
@@ -324,15 +430,21 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/news/tags/shift-management-software',
+        source: '/news/lead-to-results',
+        destination: '/news/from-lead-to-results-navigating-business-processes-with-memate',
+        permanent: true,
+      },
+      {
+        source: '/news/erp-and-crm-integration',
+        destination: '/news/from-lead-to-results-navigating-business-processes-with-memate',
+        permanent: true,
+      },
+      {
+        source: '/news/shift-management-software',
         destination: '/news/introducing-showcase-a-new-interactive-design-community',
         permanent: true,
       },
-      { 
-        source: '/news/introducing-showcase-a-new-interactive-design-community',
-        destination: '/news/introducing-showcase--a-new-interactive-design-community',
-        permanent: true,
-      },
+   
       {
         source: '/news/scale-your-business',
         destination: '/news/why-smes-should-make-workflow-automation-the-focal-point-in-2023',
@@ -503,11 +615,7 @@ const nextConfig = {
         destination: '/about',
         permanent: true,
       },
-      {
-        source: '/introducing-showcase-a-new-interactive-design-community/',
-        destination: '/news/introducing-showcase-a-new-interactive-design-community',
-        permanent: true,
-      },
+    
       {
         source: '/signup/',
         destination: 'https://app.memate.com.au/onboarding',
