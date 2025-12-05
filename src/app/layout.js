@@ -217,6 +217,7 @@ export default function RootLayout({ children }) {
             document.body.appendChild(jotScript);
           `}
         </Script>
+        
       </head>
       <body>
         <noscript>
@@ -229,6 +230,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Providers>{children}</Providers>
+    
       </body>
     </html>
   );

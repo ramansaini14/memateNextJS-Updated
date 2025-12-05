@@ -7,6 +7,8 @@ import AOS from "aos";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Script from "next/script";
+import Popup from "../layout/Popup"
+import LinkedInCampaign from "./linkdin-compaign";
 
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -248,10 +250,12 @@ export default function AppWrapper({ children }) {
 
   return (
     <>
+    <Popup />
       <Script
         src="https://www.google.com/recaptcha/api.js"
         strategy="lazyOnload"
       />
+      <LinkedInCampaign strategy="lazyOnload"/>
       <div className="App">{childrenWithProps}</div>
     </>
   );

@@ -1,0 +1,230 @@
+ .legalvisionbannerbtn {
+          position: relative;
+        }
+        .legalvision-gridR .listText li {
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 9px 8px;
+          margin: 5px 0;
+        }
+        .legalvision-flex .legalvision-gridR strong {
+    display: block;
+    font-weight: 600;
+}
+          .lightButton {
+    position: relative;
+}
+        .legalvision-gridR .listText {
+          display: flex;
+          justify-content: center;
+          text-align: left;
+        }
+        .legalvisionSectionBanner h2 {
+          color: #29292b;
+          text-align: center;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 415;
+          line-height: 60px;
+          letter-spacing: -1.44px;
+          font-family: sequel_sans !important;
+        }
+        .legalvisionSectionBanner h1 {
+            -webkit-text-fill-color: transparent;
+    text-align: center;
+    letter-spacing: -2.16px;
+    background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: 1052px;
+    margin: 0 auto;
+    font-size: 99px;
+    font-style: normal;
+    font-weight: 425;
+    line-height: 121px;
+    font-family: sequel_sans_bold_disp !important;
+        }
+        .saprateSpace {
+          color: #757b8a;
+          max-width: 100%;
+          font-family: sequel_sans_roman_head !important;
+          max-width: 1022px;
+          margin: 22px auto 22px;
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          display: inline-block;
+          width: 100%;
+        }
+        .legalvisionSectionBanner p {
+          max-width: 100%;
+          font-family: sequel_sans_roman_head !important;
+          padding-top: 15px;
+          max-width: 613px;
+          margin: 0 auto 20px;
+          color: #29292b;
+          text-align: center;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+        }
+        .downClickButton {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+        }
+        .legalvision-flex {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          padding: 100px 0;
+          align-items: center;
+        }
+        .legalvision-flex .legalvision-gridR {
+          text-align: center;
+        }
+        .legalvision-flex .legalvision-gridR ul li {
+          color: #757b8a;
+          text-align: center;
+          font-family: Sequel Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          font-family: sequel_sans_roman_head !important;
+          list-style: none;
+        }
+        .legalvision-flex .legalvision-gridR p {
+          color: #29292b;
+          text-align: center;
+          letter-spacing: -0.72px;
+          max-width: 613px;
+          margin: 0 auto 20px;
+          padding-top: 9px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          font-family: sequel_sans_roman_head !important;
+        }
+        .legalvision-flex .legalvision-gridR span {
+          color: #757b8a;
+          text-align: center;
+          font-family: Sequel Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          font-family: sequel_sans_roman_head !important;
+        }
+        .legalvision-flex .legalvision-gridR h3 {
+          text-align: center;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 40px;
+          font-family: sequel_sans !important;
+          margin: 10px 0;
+          color: #29292b;
+        }
+        .legalvision-special-sec {
+          width: 1220px;
+          margin: 0 auto;
+        }
+        .legalvisionSectionBanner {
+    margin-top: -100px;
+    padding-top: 48px;
+}
+        @media screen and (max-width: 767px) {
+          .toMuchAdminApplication .sliderTabWrapper .slick-list {
+    padding: 11px 20px !important;
+}
+        }
+        @media screen and (max-width: 600px) {
+          .legalvisionSectionBanner {
+    margin-top: -66px;
+    padding-top: 36px;
+}
+.navbar-logo-wrapper1 img {
+    width: 169.94px;
+    height: auto;
+    margin-top: 10px;
+}
+.bgshadowwrapper1:before {
+    left: -277px;
+}
+.legalvision-flex .legalvision-gridR strong {
+    display: block;
+}
+.bgshadowwrapper1:after {
+    right: -270px;
+}
+      .legalvisionSectionBanner h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 41px;
+    line-height: 63px;
+}
+          .legalvisionSectionBanner h2 {
+            font-size: 35px;
+            line-height: 26px;
+          }
+          .compaire-service01 img {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0px;
+          }
+          .legalvisionSectionBanner p {
+            max-width: 100%;
+            margin: 11px auto 20px;
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 0 20px;
+          }
+          .saprateSpace {
+            font-size: 14px;
+            margin: 10px auto;
+          }
+          .legalvision-flex .legalvision-gridR h3 {
+            margin: 0px 0;
+            font-size: 23px;
+          }
+          .legalvision-special-sec {
+            width: 100%;
+            margin: 0 auto;
+          }
+          .legalvision-flex {
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 20px;
+            padding: 46px 0 9px;
+            display: grid;
+          }
+          .legalvision-flex .legalvision-gridR span {
+            font-size: 20px;
+            line-height: 23px;
+          }
+          .legalvision-flex .legalvision-gridR ul li {
+            font-size: 19px;
+            line-height: 27px;
+          }
+          .legalvision-flex .legalvision-gridR p {
+            max-width: 90%;
+            margin: 0 auto 20px;
+            font-size: 19px;
+            line-height: 27px;
+          }
+          .sliderTabWrapper .slick-list {
+    padding: 11px 20px !important;
+}
+        }
