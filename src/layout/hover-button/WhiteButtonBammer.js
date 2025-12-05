@@ -41,7 +41,7 @@ const WhiteButtonBammer = (props) => {
       </div>
       <div className="btn-base--tron-hover2">
         <div
-          className="tron-hover-rotate1 small1"
+          className=""
           style={{
             transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
             transformStyle: 'preserve-3d',
