@@ -1,5 +1,14 @@
 import Link from "next/link";
 import './bannerstyle.css'
+import SalesIcon from "../../../svg/SalesIcon";
+import ProfitabilityIcon from "../../../svg/ProfitabilityIcon";
+import QuoteIcon from "../../../svg/QuoteIcon";
+import CommunicationIcon from "../../../svg/CommunicationIcon";
+import ReportingIcon from "../../../svg/ReportingIcon";
+import CalculationIcon from "../../../svg/CalculationIcon";
+import Scheduling from "../../../svg/Scheduling";
+import EmployeesIcon from "../../../svg/EmployeesIcon";
+import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
 const LegalvisionBannerComponent = () => {
@@ -9,13 +18,85 @@ const LegalvisionBannerComponent = () => {
         <h2>Smarter. Faster. Digital.</h2>
         <h1>Run Your Business.</h1>
         <div className="sales-componet-content-wrapper client-component-para">
-          <div className="compaire-service01">
-            <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/runyourbusiness-banner.png"
-              width="1100px"
+<section className="partnerWrap">
+  <ul className="leftItems">
+    <li>
+      <span>  
+            <SalesIcon alt="Sales active icon" />
+            </span>
+      <p>Sales</p>
+    </li>
+    <li>
+      <span>  
+            <ProfitabilityIcon alt="Sales active icon" />
+            </span>
+      <p>Profitability</p>
+    </li>
+    <li>
+      <span>  
+            <QuoteIcon alt="Sales active icon" />
+            </span>
+      <p>Quote</p>
+    </li>
+    <li>
+      <span>  
+            <CommunicationIcon alt="Sales active icon" />
+            </span>
+      <p>Communication</p>
+    </li>
+  </ul>
+  <div className="middleItem">
+   
+  <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/partner-banner-img.png"
+              width="100%"
               alt="Mockup"
             />
-          </div>
+             <div className="activeBusiness">
+             <div className="activeBorder">
+        <ManagementIconActive alt="Sales active icon" />
+        <p>Management</p>
+       </div>
+    </div>
+  </div>
+   <ul className="RightItems">
+     <li>
+      <span>  
+            <ReportingIcon alt="Sales active icon" />
+            </span>
+      <p>Reporting</p>
+    </li>
+     <li>
+      <span>  
+            <CalculationIcon alt="Sales active icon" />
+            </span>
+      <p>Calculation</p>
+    </li>
+     <li>
+      <span>  
+            <Scheduling alt="Sales active icon" />
+            </span>
+      <p>Scheduling</p>
+    </li>
+     <li>
+      <span>  
+            <EmployeesIcon alt="Sales active icon" />
+            </span>
+      <p>Employees</p>
+    </li>
+  </ul>
+
+</section>
+
+
+
+
+
+
+
+
+
+          
           <div className="legalvisionbannerbtn">
             <div className="darkButton">
               <Link href="https://app.memate.com.au/onboarding" target="_blank">
