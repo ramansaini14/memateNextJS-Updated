@@ -236,8 +236,8 @@
     align-items: center;
     gap: 0;
     width: 1313px;
-    margin: 0 auto;
-    padding: 35px 0;
+    margin: -33px auto 0;
+    padding: 0 0 35px;
     display: grid;
 }
 .partnerWrap .middleItem {

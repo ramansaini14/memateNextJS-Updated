@@ -23,25 +23,25 @@ const LegalvisionBannerComponent = () => {
   <ul className="leftItems">
     <li>
       <span>  
-            <SalesIcon alt="Sales active icon" />
+            <SalesIcon alt="Sales icon" />
             </span>
       <p>Sales</p>
     </li>
     <li>
       <span>  
-            <ProfitabilityIcon alt="Sales active icon" />
+            <ProfitabilityIcon alt="Profitability icon" />
             </span>
       <p>Profitability</p>
     </li>
     <li>
       <span>  
-            <QuoteIcon alt="Sales active icon" />
+            <QuoteIcon alt="Quote icon" />
             </span>
       <p>Quote</p>
     </li>
     <li>
       <span>  
-            <CommunicationIcon alt="Sales active icon" />
+            <CommunicationIcon alt="Communication icon" />
             </span>
       <p>Communication</p>
     </li>
@@ -53,9 +53,10 @@ const LegalvisionBannerComponent = () => {
               width="100%"
               alt="Mockup"
             />
+          
              <div className="activeBusiness">
              <div className="activeBorder">
-        <ManagementIconActive alt="Sales active icon" />
+        <ManagementIconActive alt="Management icon" />
         <p>Management</p>
        </div>
     </div>
@@ -63,25 +64,25 @@ const LegalvisionBannerComponent = () => {
    <ul className="RightItems">
      <li>
       <span>  
-            <ReportingIcon alt="Sales active icon" />
+            <ReportingIcon alt="Reporting icon" />
             </span>
       <p>Reporting</p>
     </li>
      <li>
       <span>  
-            <CalculationIcon alt="Sales active icon" />
+            <CalculationIcon alt="Calculation icon" />
             </span>
       <p>Calculation</p>
     </li>
      <li>
       <span>  
-            <Scheduling alt="Sales active icon" />
+            <Scheduling alt="Scheduling icon" />
             </span>
       <p>Scheduling</p>
     </li>
      <li>
       <span>  
-            <EmployeesIcon alt="Sales active icon" />
+            <EmployeesIcon alt="Employees icon" />
             </span>
       <p>Employees</p>
     </li>
