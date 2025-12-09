@@ -1,0 +1,88 @@
+.imageAdminBg {
+    position: relative;
+    display: inline-block;
+}
+.adminScrollBackground .imageAdminBg p {
+    width: 276px;
+    min-height: 73px;
+    transition-property: 50px 50px;
+    text-align: left;
+    background: rgba(247, 248, 250, .514);
+    margin: 0;
+    padding: 11px 23px;
+    text-decoration: none;
+    position: absolute;
+    color: #29292b !important;
+    font-family: sequel_sansbook_head !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 100 !important;
+    line-height: 18px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.adminScrollBackground .overlyAdminTextFirst p {
+    top: 12%;
+    left: 25%;
+}
+.adminScrollBackground .overlyAdminTextSecond p {
+    top: 42%;
+    left: 7%;
+}
+.adminScrollBackground .overlyAdminTextThird p {
+    top: 42%;
+    right: 7%;
+}
+
+.adminScrollBackground .overlyAdminTextFourth p {
+    bottom: 12%;
+    left: 22%;
+}
+.adminScrollBackground .overlyAdminTextFifth p {
+    bottom: 8%;
+    right: 13%;
+}
+      .toMuchAdminSection {
+    text-align: center;
+   
+}
+      .toMuchAdminSection p {
+    color: #29292b;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 55px;
+    text-decoration: none;
+    font-family: sequel_sans !important;
+}
+    .downClickButton{
+     padding-top: 80px;
+     text-align: center;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    }
+.toMuchAdminApplication .text{
+    color: #29292b;
+    text-align: center;
+    letter-spacing: -2.16px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    display: inline-block;
+    width: 100%;
+}
+
+    @media screen and (max-width: 600px) {
+
+
+       }
