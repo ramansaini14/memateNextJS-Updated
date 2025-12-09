@@ -11,6 +11,7 @@ import EmployeesIcon from "../../../svg/EmployeesIcon";
 import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
+import MacbookCarousel from "../macbookcarousel"
 const LegalvisionBannerComponent = () => {
   return (
     <>
@@ -88,15 +89,6 @@ const LegalvisionBannerComponent = () => {
 
 </section>
 
-
-
-
-
-
-
-
-
-          
           <div className="legalvisionbannerbtn">
             <div className="darkButton">
               <Link href="https://app.memate.com.au/onboarding" target="_blank">
@@ -130,11 +122,12 @@ const LegalvisionBannerComponent = () => {
       <div id="legalvision" className="legalvision-special-sec">
         <div className="legalvision-flex">
           <div className="legalvision-gridL">
-            <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_1+1.png"
+            <MacbookCarousel />
+            {/* <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
               width="100%"
               alt="Free_MacBook_Pro_1+1"
-            />
+            /> */}
           </div>
           <div className="legalvision-gridR">
             <span>legalvision Special: </span>
