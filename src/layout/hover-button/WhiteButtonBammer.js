@@ -6,6 +6,7 @@ import './WhiteButtonBammer.css';
 const WhiteButtonBammer = (props) => {
   return (
   <>
+    <div className="nav-btn--get-started">
       <div className="btn-base--tron-radial1">
         <div className="radial-embed-nav1 w-embed">
           <svg
@@ -41,7 +42,7 @@ const WhiteButtonBammer = (props) => {
       </div>
       <div className="btn-base--tron-hover2">
         <div
-          className=""
+          className="tron-hover-rotate1 small1"
           style={{
             transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
             transformStyle: 'preserve-3d',
@@ -51,6 +52,7 @@ const WhiteButtonBammer = (props) => {
       </div>
       <div className="btn-base--black2">
         <div className="text-btn--nav2">{props.text}</div>
+      </div>
       </div>
   </>
   );

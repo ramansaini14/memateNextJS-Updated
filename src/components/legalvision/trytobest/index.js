@@ -1,4 +1,5 @@
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
+import './style.css';
 import Link from "next/link";
 const TryToBestComponent = () => {
   return (

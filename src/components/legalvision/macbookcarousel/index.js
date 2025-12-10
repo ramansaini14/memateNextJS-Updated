@@ -6,22 +6,22 @@ import "./macbookCarousel.css";
 export default function MacbookCarousel() {
   const slides = ["https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png", "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png", "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"];
 
-  const [index, setIndex] = useState(0);
-  const slideRef = useRef(null);
+  // const [index, setIndex] = useState(0);
+  // const slideRef = useRef(null);
 
-  const delay = 6000;
+  // const delay = 6000;
 
-  useEffect(() => {
-    const id = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
-    }, delay);
-    return () => clearInterval(id);
-  }, [slides.length]);
+  // useEffect(() => {
+  //   const id = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % slides.length);
+  //   }, delay);
+  //   return () => clearInterval(id);
+  // }, [slides.length]);
 
-  useEffect(() => {
-    if (!slideRef.current) return;
-    slideRef.current.style.transform = `translateX(-${index * 100}%)`;
-  }, [index]);
+  // useEffect(() => {
+  //   if (!slideRef.current) return;
+  //   slideRef.current.style.transform = `translateX(-${index * 100}%)`;
+  // }, [index]);
 
   return (
     <div className="macbook-wrapper">
@@ -31,7 +31,14 @@ export default function MacbookCarousel() {
           className="macbook-image"
           alt="macbook-frame"
         />
-        <div className="macbook-screen">
+        {/* <div className="macbook-screenn"> */}
+        <div className="carousel-containerr">
+          <img className="img1" src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png" alt="slide-1" />
+          <img className="img2" src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png" alt="slide-2" />
+          <img className="img3" src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png" alt="slide-3" />
+          {/* </div> */}
+          </div>
+        {/* <div className="macbook-screen">
           <div className="carousel-container">
             <div className="carousel-track" ref={slideRef}>
               {slides.map((src, i) => (
@@ -50,7 +57,7 @@ export default function MacbookCarousel() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
