@@ -9,12 +9,15 @@
           margin: 5px 0;
         }
         .legalvision-flex .legalvision-gridR strong {
-    display: block;
-    font-weight: 600;
-}
+          display: inline-block;
+          margin-top: 4px;
+          font-size: 28px;
+          font-weight: 600;
+      }
           .lightButton {
     position: relative;
 }
+
         .legalvision-gridR .listText {
           display: flex;
           justify-content: center;
@@ -208,23 +211,43 @@
     top: 40%;
     right: 20%;
 }
-.adminSlideWrap{
-  position: relative;
+.adminSlideWrap {
+    position: relative;
+}
+.adminSlideWrap img {
+    z-index: 2;
+    position: relative;
+}
+.adminSlideWrap > img, .middleItem > img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 .adminSlideWrap .adminSlideGrid {
-  width: 422px;
-  margin: 0 auto;
-  position: absolute;
-  top: 12px;
-  left: 0px;
-  right: 0;
+    gap: 36px;
+    width: 423px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
 }
-.adminSlideItem.itemActive img {
-  z-index: -1;
-  position: absolute;
+.adminSlideTrack {
+    display: flex;
+    gap: 36px;
+    will-change: transform;
+    cursor: grab;
 }
-.adminSlideGrid img {
-    /* clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%); */
+/* .adminSlideGrid img {
+    clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%);dfgfd
+} */  
+.adminSlideItem img {
+    width: 421px;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 .adminSlideGrid .itemActive {
   display: block;
@@ -327,6 +350,9 @@
     top: 8px;
     left: 8px;
     right: 0;
+}
+.adminSlideTrack {
+    gap: 36px;
 }
 
 .partnerWrap .activeBusiness {

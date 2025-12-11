@@ -23,6 +23,9 @@
     vertical-align: middle;
     display: flex;
     align-items: center;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 .adminScrollBackground .overlyAdminTextFirst p {
     top: 12%;
@@ -44,6 +47,7 @@
 .adminScrollBackground .overlyAdminTextFifth p {
     bottom: 8%;
     right: 13%;
+    transform-origin: right bottom;
 }
       .toMuchAdminSection {
     text-align: center;
@@ -119,3 +123,20 @@
     top: initial;
 }
        }
+
+       .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* font-weight: 600; */
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+       

@@ -12,7 +12,104 @@ import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
 import MacbookCarousel from "../macbookcarousel";
-import { motion, useAnimation } from "motion/react";
+import { motion, useAnimation, useMotionValue } from "motion/react";
+import { animate } from "motion";
+import { useEffect, useMemo, useRef, useState } from "react";
+
+const InfiniteDragCarousel = ({ images, gap = 20 }) => {
+  const x = useMotionValue(0);
+  const itemRef = useRef(null);
+  const containerRef = useRef(null);
+  const [itemWidth, setItemWidth] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  const repeatedImages = useMemo(() => {
+    const copies = 5;
+    return Array.from({ length: copies })
+      .flatMap(() => images)
+      .map((src, idx) => ({ src, key: `${src}-${idx}` }));
+  }, [images]);
+
+  useEffect(() => {
+    if (!itemRef.current) return;
+    const width = itemRef.current.offsetWidth || 0;
+    setItemWidth(width);
+  }, []);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const element = containerRef.current;
+    const update = () => setContainerWidth(element.offsetWidth || 0);
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(element);
+    return () => ro.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!itemWidth || images.length === 0) return;
+    const wrapSize = images.length * (itemWidth + gap);
+    x.set(-wrapSize);
+  }, [itemWidth, images.length, gap, x]);
+
+  useEffect(() => {
+    if (!itemWidth || images.length === 0) return;
+    const wrapSize = images.length * (itemWidth + gap);
+    const unsubscribe = x.on("change", (current) => {
+      if (current <= -2 * wrapSize) {
+        x.set(current + wrapSize);
+      } else if (current >= 0) {
+        x.set(current - wrapSize);
+      }
+    });
+    return unsubscribe;
+  }, [itemWidth, images.length, gap, x]);
+
+  const snapToNearestCenter = (currentX) => {
+    if (!itemWidth || !containerWidth || images.length === 0) return;
+    const step = itemWidth + gap;
+    const wrapSize = images.length * step;
+    const viewportCenter = containerWidth / 2;
+
+    const iFloat = (viewportCenter - itemWidth / 2 - currentX) / step;
+    let i = Math.round(iFloat);
+
+    let targetX = viewportCenter - itemWidth / 2 - i * step;
+
+    if (targetX >= 0) targetX -= wrapSize;
+    if (targetX <= -2 * wrapSize) targetX += wrapSize;
+
+    animate(x, targetX, {
+      type: "spring",
+      stiffness: 300,
+      damping: 30,
+    });
+  };
+
+  return (
+    <div className="adminSlideGrid" ref={containerRef}>
+      <motion.div
+        className="adminSlideTrack"
+        drag="x"
+        style={{ x, touchAction: "none" }}
+        dragElastic={0}
+        dragMomentum={false}
+        onDragEnd={() => snapToNearestCenter(x.get())}
+        whileTap={{ cursor: "grabbing" }}
+      >
+        {repeatedImages.map(({ src, key }, index) => (
+          <div
+            className="adminSlideItem"
+            key={key}
+            ref={index === 0 ? itemRef : undefined}
+          >
+            <img src={src} width="100%" alt="Slider01" draggable={false} />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+};
 
 const LegalvisionBannerComponent = () => {
   const controls = useAnimation();
@@ -165,12 +262,38 @@ const LegalvisionBannerComponent = () => {
                 alt="Mockup"
               />
 
-              <div className="activeBusiness">
+              <motion.div className="activeBusiness" 
+              animate={controls}
+               style={{opacity: 1}}
+               viewport={{ once: true, amount: 0.3 }}
+              //  onViewportEnter={() => {
+              //    controls.start({
+              //      ...targetState,
+              //      transition: {
+              //        duration: 1,
+              //        delay: 0.1,
+              //        ease: "easeOut",
+              //      },
+              //    });
+              //  }}
+               drag
+               dragMomentum={false}
+               whileDrag={{ zIndex: 1000 }}
+               onDragEnd={() => {
+                 controls.start({
+                   ...targetState,
+                   transition: {
+                     type: "spring",
+                     stiffness: 300,
+                     damping: 25,
+                   },
+                 });
+               }}>
                 <div className="activeBorder">
                   <ManagementIconActive alt="Management icon" />
                   <p>Management</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <ul className="RightItems">
               <motion.li
@@ -326,20 +449,31 @@ const LegalvisionBannerComponent = () => {
           Get in touch with our experts above for tailored discovery calls,
           personalized onboarding, and inquiries.
         </p>
-        <div
+        <motion.div
           className="downClickButton"
-          onClick={() => {
-            document.getElementById("legalvision")?.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-            });
+          animate={{
+            y: [0, 12, 0],
+            opacity: [0.7, 1, 0.7],
           }}
+          transition={{
+            duration: 1.6,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          style={{ display: "inline-block" }}
         >
-          <img
+          <motion.img
             alt="DownBlackArrow"
             src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg"
+            style={{ cursor: "pointer", }}
+            onClick={() => {
+              document.getElementById("legalvision")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
           />
-        </div>
+        </motion.div>
       </div>
       <div id="legalvision" className="legalvision-special-sec">
         <div className="legalvision-flex">
@@ -349,31 +483,22 @@ const LegalvisionBannerComponent = () => {
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
                 width="100%"
                 alt="Free_MacBook_Pro_1+1"
+                draggable={false}
+                style={{
+                  pointerEvents: "none",
+                  userSelect: "none",
+                  WebkitUserDrag: "none",
+                }}
               />
 
-              <div className="adminSlideGrid">
-                <div className="adminSlideItem">
-                  <img
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-                    width="100%"
-                    alt="Slider01"
-                  />
-                </div>
-                <div className="adminSlideItem">
-                  <img
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-                    width="100%"
-                    alt="Slider01"
-                  />
-                </div>
-                <div className="adminSlideItem">
-                  <img
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-                    width="100%"
-                    alt="Slider01"
-                  />
-                </div>
-              </div>
+              <InfiniteDragCarousel
+                images={[
+                  "/slide-img01.png",
+                  "/slide-img01.png",
+                  "/slide-img01.png",
+                ]}
+                gap={36}
+              />
             </div>
           </div>
           <div className="legalvision-gridR">
@@ -423,6 +548,10 @@ const LegalvisionBannerComponent = () => {
                   repeatType: "loop",
                   ease: "easeInOut",
                 }}
+                onClick={() => {
+                  navigator.clipboard.writeText("LV50");
+                }}
+                style={{ cursor: "copy" }}
               >
                 LV50
               </motion.strong>
