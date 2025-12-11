@@ -35,17 +35,14 @@
 
 .brandLogoWrapper::before {
   left: 0;
-  /* Similar to bg-gradient-to-r with transparent end */
   background: linear-gradient(to right, #ffffff, transparent);
 }
 
 .brandLogoWrapper::after {
   right: 0;
-  /* Similar to bg-gradient-to-l with transparent end */
   background: linear-gradient(to left, #ffffff, transparent);
 }
 
-/* Motion track that actually moves */
 .brandLogoTrack {
   display: flex;
   align-items: center;

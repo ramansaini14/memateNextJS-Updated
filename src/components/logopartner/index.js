@@ -18,9 +18,9 @@ const BrandLogoSlide = () => {
       <div className="brandLogoWrapper">
         <motion.div
           className="brandLogoTrack"
-          animate={{ x: ["0%", "-25%"] }}
+          animate={{ x: ["-25%", "0%"] }}
           transition={{
-            duration: 90,
+            duration: 50,
             ease: "linear",
             repeat: Infinity,
           }}
