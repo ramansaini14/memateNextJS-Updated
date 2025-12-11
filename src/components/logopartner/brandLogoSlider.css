@@ -1,0 +1,82 @@
+.brandLogoSlider {
+    width: 1200px;
+    margin: 100px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.brandLogoWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandLogoSlider span {
+    font-weight: 100;
+    font-family: 'sequel_sans_roman_head' !important;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #757B8A;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+.brandLogoWrapper .logoItem img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.brandLogoWrapper .logoItem:hover img {
+    transform: scale(1.1); 
+}
+@media screen and (max-width: 767px) {
+.CaseStudiesGrid {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+.CaseStudiesItem .imageBox {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 18px;
+    position: relative;
+}
+.CaseStudiesSection {
+    width: 100%;
+    margin: 0px auto 0;
+    padding: 0 19px;
+}
+.brandLogoSlider {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 36px auto;
+    display: block;
+}
+.brandLogoWrapper {
+    width: 100%;
+    display: block;
+    gap: 20px;
+    text-align: center;
+}
+.brandLogoWrapper .logoItem {
+    display: inline-block;
+    margin: 42px 19px 0;
+    text-align: center;
+}
+.brandLogoSlider span {
+    white-space: initial;
+    color: #222;
+    text-transform: uppercase;
+    margin-right: 0;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+}
+

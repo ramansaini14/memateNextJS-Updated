@@ -12,7 +12,23 @@
   /* 21px */
   letter-spacing: -0.21px;
 }
+.imageOverlyText.videoPlayWrap .customerstoriesDetails {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .77) 0%, rgba(0, 0, 0, 0) 44.23%), linear-gradient(rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .5) 100%);
+    border-radius: 30px;
+    justify-content: start;
+    align-items: flex-end;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+.videoPlayWrap video{
+  border-radius: 30px;
 
+}
 .customerstoriesGrid h1 {
   margin-bottom: 30px;
   color: #29292B;
@@ -483,7 +499,13 @@
   .gadientText3 {
     padding: 30px 0px;
   }
-
+.mobileTextDecrese .textCustomerStories{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 0;
+}
   .gadientText3 h2 {
     font-size: 16px;
     line-height: 21px;

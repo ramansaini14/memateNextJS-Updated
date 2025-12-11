@@ -247,7 +247,7 @@ button.get-started-btn {
     overflow: hidden;
 }
     .request-btn-bg {
-        justify-content: center;
+        justify-content: center !important;
         display: flex;
         text-align: center;
     }

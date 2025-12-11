@@ -19,6 +19,8 @@ import ZeroOfferOnboarding from "../../components/zero-offer-onboarding";
 import Layout from "../../layout";
 // import { Helmet } from 'react-helmet-async';
 import LessBusyness from "./less-busyness";
+import CaseStudiesHome from "../../components/casestudies-home";
+import BrandLogoSlide from "../../components/logopartner";
 // import AppWrapper from "../../components/AppWrapper";
 
 const LandingPage = ({ postsLatest }) => {
@@ -37,9 +39,11 @@ const LandingPage = ({ postsLatest }) => {
           <MeMateFinanceInsights />
           <MeMateFeatureMotivateTeam />
           <MeMateFeatureAgile />
-          <MeMateWorkForce />
+          <MeMateWorkForce /> 
           <SeamlessInegration />
-          <SimpleVersatilePowerful />
+          <BrandLogoSlide /> 
+          <CaseStudiesHome />
+          {/* <SimpleVersatilePowerful /> */}
           <SuccessStories />
           <NewsAndUpdate postsLatest={postsLatest} />
         </Layout>

@@ -1,0 +1,70 @@
+.CaseStudiesSection {
+    width: 1040px;
+    margin: 65px auto 0;
+}
+.CaseStudiesItem .imageBox {
+    border-radius: 30px;
+    width: 340px;
+    height: 604px;
+    position: relative;
+}
+.CaseStudiesItem .imageBox img {
+    object-fit: cover;
+    border-radius: 30px;
+}
+.CaseStudiesItem .imageBox .overlyBox {
+    position: absolute;
+    bottom: 0;
+    margin: 27px 25px;
+}
+.CaseStudiesItem .imageBox .overlyBox p, .CaseStudiesItem .imageBox .overlyBox span {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 415;
+    font-family: 'sequel_sans' !important;
+    line-height: 26px;
+}
+.CaseStudiesItem .imageBox .overlyBox span em {
+    font-weight: 600;
+    font-style: normal;
+    display: block;
+}
+
+.CaseStudiesItem .imageBox .overlyBox .flextText {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 16px;
+}
+.CaseStudiesItem .imageBox .overlyBox .flextText img{
+        width: 160px;
+}
+.CaseStudiesGrid {
+    margin-top: 59px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 33px;
+}
+.CaseStudiesItem .flextPopupVideo {
+    right: 0;
+}
+.CaseStudiesItem .flextTextVideo {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding: 2px;
+    cursor: pointer;
+}
+.CaseStudiesItem .flextTextVideo span {
+    font-size: 16px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin-right: 16px;
+}
+.CaseStudiesItem .imageBox video{
+    border-radius: 30px;
+}
+

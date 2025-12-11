@@ -87,18 +87,32 @@ function CameraFix() {
 
           <div className="customerstoriesGrid">
             <h1>How Camera Fix Runs Their Repair Business with MeMate</h1>
-            <div className="innerGrid imageOverlyText">
+            <div className="innerGrid imageOverlyText videoPlayWrap">
               <div>
-                <img
+                {/* <img
                   className="img-container-stories"
                   src={CustomerStoriesImage}
                   alt="Camera Fix"
-                />
+                /> */}
+                <video
+                                  width="100%"
+                                  height="100%"
+                                  autoPlay
+                                  muted
+                                  loop
+                                  playsInline
+                                >
+                                  <source
+                                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/MeMate+x+Camerafix-edit1208+(1).mp4"
+                                    type="video/mp4"
+                                  />
+                                  Your browser does not support the video tag.
+                                </video>
               </div>
               <div className="customerstoriesDetails">
                 <div>
                   <div className="category">Camera Fix</div>
-                  <div className="date-heading-title">
+                  <div className="date-heading-title mobileTextDecrese">
                     <span className="textCustomerStories">
                       Empowering a Boutique Camera Repair Shop to Manage
                       Business and Serve Over 100 Clients Monthly
@@ -249,7 +263,7 @@ function CameraFix() {
               </div>
             </div>
             <div className="gadientText">
-              <h2 className="gameChangerText">
+              <h2 className="gameChangerText ">
                 “Switching to meMate has been a game-changer for us. We’re able
                 to provide the next level of service to our clients, and the
                 software has made our operations much smoother. It’s an

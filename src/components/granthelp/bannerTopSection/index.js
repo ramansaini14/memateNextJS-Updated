@@ -1,5 +1,14 @@
 import Link from "next/link";
 import './bannerstyle.css'
+import SalesIcon from "../../../svg/SalesIcon";
+import ProfitabilityIcon from "../../../svg/ProfitabilityIcon";
+import QuoteIcon from "../../../svg/QuoteIcon";
+import CommunicationIcon from "../../../svg/CommunicationIcon";
+import ReportingIcon from "../../../svg/ReportingIcon";
+import CalculationIcon from "../../../svg/CalculationIcon";
+import Scheduling from "../../../svg/Scheduling";
+import EmployeesIcon from "../../../svg/EmployeesIcon";
+import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
 const GeandHelpBannerComponent = () => {
@@ -9,13 +18,77 @@ const GeandHelpBannerComponent = () => {
         <h2>Smarter. Faster. Digital.</h2>
         <h1>Run Your Business.</h1>
         <div className="sales-componet-content-wrapper client-component-para">
-          <div className="compaire-service01">
-            <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/runyourbusiness-banner.png"
-              width="1100px"
+<section className="partnerWrap">
+  <ul className="leftItems">
+    <li>
+      <span>  
+            <SalesIcon alt="Sales icon" />
+            </span>
+      <p>Sales</p>
+    </li>
+    <li>
+      <span>  
+            <ProfitabilityIcon alt="Profitability icon" />
+            </span>
+      <p>Profitability</p>
+    </li>
+    <li>
+      <span>  
+            <QuoteIcon alt="Quote icon" />
+            </span>
+      <p>Quote</p>
+    </li>
+    <li>
+      <span>  
+            <CommunicationIcon alt="Communication icon" />
+            </span>
+      <p>Communication</p>
+    </li>
+  </ul>
+  <div className="middleItem">
+   
+  <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/partner-banner-img.png"
+              width="100%"
               alt="Mockup"
             />
-          </div>
+          
+             <div className="activeBusiness">
+             <div className="activeBorder">
+        <ManagementIconActive alt="Management icon" />
+        <p>Management</p>
+       </div>
+    </div>
+  </div>
+   <ul className="RightItems">
+     <li>
+      <span>  
+            <ReportingIcon alt="Reporting icon" />
+            </span>
+      <p>Reporting</p>
+    </li>
+     <li>
+      <span>  
+            <CalculationIcon alt="Calculation icon" />
+            </span>
+      <p>Calculation</p>
+    </li>
+     <li>
+      <span>  
+            <Scheduling alt="Scheduling icon" />
+            </span>
+      <p>Scheduling</p>
+    </li>
+     <li>
+      <span>  
+            <EmployeesIcon alt="Employees icon" />
+            </span>
+      <p>Employees</p>
+    </li>
+  </ul>
+
+</section>
+
           <div className="legalvisionbannerbtn">
             <div className="darkButton">
               <Link href="https://app.memate.com.au/onboarding" target="_blank">
@@ -49,11 +122,38 @@ const GeandHelpBannerComponent = () => {
       <div id="legalvision" className="legalvision-special-sec">
         <div className="legalvision-flex">
           <div className="legalvision-gridL">
-            <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_1+1.png"
+             <div className="adminSlideWrap">
+              <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
               width="100%"
               alt="Free_MacBook_Pro_1+1"
             />
+            
+               <div className="adminSlideGrid">
+               <div className="adminSlideItem itemActive">
+               <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+              width="100%"
+              alt="Slider01"
+               />
+               </div>
+               <div className="adminSlideItem itemDeactive">
+               <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+              width="100%"
+               alt="Slider01"
+               />
+               </div>
+               <div className="adminSlideItem itemDeactive">
+               <img
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+              width="100%"
+                alt="Slider01"
+               />
+               </div>
+               </div>
+             </div>
+           
           </div>
           <div className="legalvision-gridR">
             <span>legalvision Special: </span>
