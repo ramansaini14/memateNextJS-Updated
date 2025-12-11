@@ -51,11 +51,18 @@
   will-change: transform;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  transform: translateZ(0);
+}
+
+.brandLogoTrack .logoItem {
+  flex: 0 0 auto;
+  margin: 0; 
 }
 
 .brandLogoTrack .logoItem img {
   transition: transform 0.3s ease;
   cursor: pointer;
+  display: block; 
 }
 
 .brandLogoTrack .logoItem:hover img {
@@ -96,8 +103,8 @@
     gap: 40px;
   }
   .brandLogoTrack .logoItem {
-    display: inline-block;
-    margin: 24px 12px 0;
+    display: block;
+    margin: 24px 0 0; 
     text-align: center;
   }
   .brandLogoSlider span {

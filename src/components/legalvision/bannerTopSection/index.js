@@ -16,12 +16,41 @@ import { motion, useAnimation, useMotionValue } from "motion/react";
 import { animate } from "motion";
 import { useEffect, useMemo, useRef, useState } from "react";
 
+async function copyToClipboard(text) {
+  try {
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch (e) {
+  }
+  try {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.top = "-9999px";
+    textarea.style.left = "-9999px";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    textarea.setSelectionRange(0, text.length);
+    const ok = document.execCommand("copy");
+    document.body.removeChild(textarea);
+    return ok;
+  } catch (_) {
+    return false;
+  }
+}
+
 const InfiniteDragCarousel = ({ images, gap = 20 }) => {
   const x = useMotionValue(0);
   const itemRef = useRef(null);
   const containerRef = useRef(null);
   const [itemWidth, setItemWidth] = useState(0);
   const [containerWidth, setContainerWidth] = useState(0);
+  const autoRef = useRef(null);
 
   const repeatedImages = useMemo(() => {
     const copies = 5;
@@ -65,6 +94,34 @@ const InfiniteDragCarousel = ({ images, gap = 20 }) => {
     return unsubscribe;
   }, [itemWidth, images.length, gap, x]);
 
+  useEffect(() => {
+    if (!itemWidth || !containerWidth || images.length === 0) return;
+    const step = itemWidth + gap;
+    const wrapSize = images.length * step;
+    const advance = () => {
+      const current = x.get();
+      const target = current - step;
+      const controls = animate(x, target, {
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+      });
+      controls.finished.then(() => {
+        let corrected = x.get();
+        if (corrected >= 0) corrected -= wrapSize;
+        else if (corrected <= -2 * wrapSize) corrected += wrapSize;
+        x.set(corrected);
+      });
+    };
+    autoRef.current = setInterval(advance, 4000);
+    return () => {
+      if (autoRef.current) {
+        clearInterval(autoRef.current);
+        autoRef.current = null;
+      }
+    };
+  }, [itemWidth, containerWidth, images.length, gap, x]);
+
   const snapToNearestCenter = (currentX) => {
     if (!itemWidth || !containerWidth || images.length === 0) return;
     const step = itemWidth + gap;
@@ -94,7 +151,35 @@ const InfiniteDragCarousel = ({ images, gap = 20 }) => {
         style={{ x, touchAction: "none" }}
         dragElastic={0}
         dragMomentum={false}
-        onDragEnd={() => snapToNearestCenter(x.get())}
+        onDragStart={() => {
+          if (autoRef.current) {
+            clearInterval(autoRef.current);
+            autoRef.current = null;
+          }
+        }}
+        onDragEnd={() => {
+          snapToNearestCenter(x.get());
+          if (!autoRef.current && itemWidth && containerWidth && images.length > 0) {
+            const step = itemWidth + gap;
+            const wrapSize = images.length * step;
+            const restart = () => {
+              const current = x.get();
+              const target = current - step;
+              const controls = animate(x, target, {
+                type: "spring",
+                stiffness: 300,
+                damping: 30,
+              });
+              controls.finished.then(() => {
+                let corrected = x.get();
+                if (corrected >= 0) corrected -= wrapSize;
+                else if (corrected <= -2 * wrapSize) corrected += wrapSize;
+                x.set(corrected);
+              });
+            };
+            autoRef.current = setInterval(restart, 4000);
+          }
+        }}
         whileTap={{ cursor: "grabbing" }}
       >
         {repeatedImages.map(({ src, key }, index) => (
@@ -114,6 +199,15 @@ const InfiniteDragCarousel = ({ images, gap = 20 }) => {
 const LegalvisionBannerComponent = () => {
   const controls = useAnimation();
   const targetState = { x: 0, y: 0, rotate: 0, opacity: 1 };
+  const [copied, setCopied] = useState(false);
+  const copiedTimerRef = useRef(null);
+  const showCopied = () => {
+    if (copiedTimerRef.current) {
+      clearTimeout(copiedTimerRef.current);
+    }
+    setCopied(true);
+    copiedTimerRef.current = setTimeout(() => setCopied(false), 1200);
+  };
   return (
     <>
       <div className="legalvisionSectionBanner">
@@ -540,21 +634,49 @@ const LegalvisionBannerComponent = () => {
             </div>
             <p>
               Just use this promo code when creating your account:
-              <motion.strong
-                animate={{ opacity: [1, 0.2, 1] }}
-                transition={{
-                  duration: 1,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  ease: "easeInOut",
-                }}
-                onClick={() => {
-                  navigator.clipboard.writeText("LV50");
-                }}
-                style={{ cursor: "copy" }}
-              >
-                LV50
-              </motion.strong>
+              <span style={{ position: "relative", display: "inline-block", marginLeft: 6 }}>
+                <motion.strong
+                  animate={{ opacity: [1, 0.2, 1] }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    ease: "easeInOut",
+                  }}
+                  onClick={async () => {
+                    const ok = await copyToClipboard("LV50");
+                    if (ok) showCopied();
+                  }}
+                  style={{ cursor: "pointer" }}
+                >
+                  LV50
+                </motion.strong>
+                {copied && (
+                  <motion.span
+                    initial={{ opacity: 0, y: 28, scale: 0.98 }}
+                    animate={{ opacity: 1, y: 24, scale: 1 }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    style={{
+                      position: "absolute",
+                      left: "10%",
+                      transform: "translateX(-50%)",
+                      // top: "-8px",
+                      bottom: 0,
+                      background: "#111",
+                      color: "#fff",
+                      borderRadius: 12,
+                      padding: "4px 8px",
+                      fontSize: 12,
+                      lineHeight: 1,
+                      pointerEvents: "none",
+                      whiteSpace: "nowrap",
+                      boxShadow: "0 6px 18px rgba(0,0,0,0.15)",
+                    }}
+                  >
+                    Copied
+                  </motion.span>
+                )}
+              </span>
             </p>
           </div>
         </div>
