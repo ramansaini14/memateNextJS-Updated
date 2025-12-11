@@ -1,74 +1,109 @@
 .brandLogoSlider {
-    width: 1200px;
-    margin: 100px auto 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.brandLogoWrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 1200px;
+  margin: 100px auto 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .brandLogoSlider span {
-    font-weight: 100;
-    font-family: 'sequel_sans_roman_head' !important;
-    white-space: nowrap;
-    font-size: 14px;
-    color: #757B8A;
-    text-transform: uppercase;
-    margin-right: 50px;
+  font-weight: 100;
+  font-family: "sequel_sans_roman_head" !important;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #757b8a;
+  text-transform: uppercase;
+  margin-right: 50px;
 }
 
-.brandLogoWrapper .logoItem img {
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.brandLogoWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.brandLogoWrapper .logoItem:hover img {
-    transform: scale(1.1); 
+.brandLogoWrapper::before,
+.brandLogoWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.brandLogoWrapper::before {
+  left: 0;
+  /* Similar to bg-gradient-to-r with transparent end */
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.brandLogoWrapper::after {
+  right: 0;
+  /* Similar to bg-gradient-to-l with transparent end */
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+/* Motion track that actually moves */
+.brandLogoTrack {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: max-content;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.brandLogoTrack .logoItem img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.brandLogoTrack .logoItem:hover img {
+  transform: scale(1.01);
+  filter: greyscale(1);
 }
 @media screen and (max-width: 767px) {
-.CaseStudiesGrid {
+  .CaseStudiesGrid {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
     display: block;
     text-align: center;
-}
-.CaseStudiesItem .imageBox {
+  }
+  .CaseStudiesItem .imageBox {
     border-radius: 30px;
     width: 100%;
     height: auto;
     margin: 0 auto 18px;
     position: relative;
-}
-.CaseStudiesSection {
+  }
+  .CaseStudiesSection {
     width: 100%;
     margin: 0px auto 0;
     padding: 0 19px;
-}
-.brandLogoSlider {
+  }
+  .brandLogoSlider {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin: 36px auto;
     display: block;
-}
-.brandLogoWrapper {
+  }
+  .brandLogoWrapper {
     width: 100%;
-    display: block;
-    gap: 20px;
-    text-align: center;
-}
-.brandLogoWrapper .logoItem {
+  }
+  .brandLogoTrack {
+    gap: 40px;
+  }
+  .brandLogoTrack .logoItem {
     display: inline-block;
-    margin: 42px 19px 0;
+    margin: 24px 12px 0;
     text-align: center;
-}
-.brandLogoSlider span {
+  }
+  .brandLogoSlider span {
     white-space: initial;
     color: #222;
     text-transform: uppercase;
@@ -77,6 +112,6 @@
     text-align: center;
     width: 100%;
     display: inline-block;
-}
+  }
 }
 
