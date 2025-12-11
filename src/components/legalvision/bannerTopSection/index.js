@@ -11,7 +11,7 @@ import EmployeesIcon from "../../../svg/EmployeesIcon";
 import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
-import MacbookCarousel from "../macbookcarousel";
+// import MacbookCarousel from "../macbookcarousel";
 import { motion, useAnimation, useMotionValue } from "motion/react";
 import { animate } from "motion";
 import { useEffect, useMemo, useRef, useState } from "react";

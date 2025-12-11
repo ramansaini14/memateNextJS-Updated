@@ -26,7 +26,9 @@ const MuchAdminComponent = () => {
        className="overlyAdminText overlyAdminTextFirst"
        variants={{ hidden: {}, visible: {} }}
      >
-       <motion.p
+      <motion.p
+        animate={{ x: [0, 10, 0, -10, 0, 0], y: [0, 0, 10, 0, -10, 0], rotate: [0, 0.2, 0.4, 0.2, 0, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
          variants={{
            hidden: { opacity: 0, scale: 0.85 },
            visible: {
@@ -43,7 +45,9 @@ const MuchAdminComponent = () => {
        className="overlyAdminText overlyAdminTextSecond"
        variants={{ hidden: {}, visible: {} }}
      >
-       <motion.p
+      <motion.p
+        animate={{ x: [0, 8, 0, -8, 0, 8, 0, -8, 0], y: [0, -6, 0, 6, 0, -6, 0, 6, 0], rotate: [0, -0.15, 0, 0.15, 0, -0.15, 0, 0.15, 0] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1.0 }}
          variants={{
            hidden: { opacity: 0, scale: 0.85 },
            visible: {
@@ -60,7 +64,9 @@ const MuchAdminComponent = () => {
        className="overlyAdminText overlyAdminTextThird"
        variants={{ hidden: {}, visible: {} }}
      >
-       <motion.p
+      <motion.p
+        animate={{ x: [0, 6, 0, -6, 0], y: [0, 6, 0, -6, 0], rotate: [0, 0.1, 0, -0.1, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
          variants={{
            hidden: { opacity: 0, scale: 0.85 },
            visible: {
@@ -77,7 +83,9 @@ const MuchAdminComponent = () => {
        className="overlyAdminText overlyAdminTextFourth"
        variants={{ hidden: {}, visible: {} }}
      >
-       <motion.p
+      <motion.p
+        animate={{ x: [0, 4, 8, 4, 0, -4, -8, -4, 0], y: [0, -3, 0, 3, 0, -3, 0, 3, 0], rotate: [0, -0.2, 0, 0.2, 0, -0.2, 0, 0.2, 0] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1.4 }}
          variants={{
            hidden: { opacity: 0, scale: 0.85 },
            visible: {
@@ -94,8 +102,10 @@ const MuchAdminComponent = () => {
        className="overlyAdminText overlyAdminTextFifth"
        variants={{ hidden: {}, visible: {} }}
      >
-       <motion.p
-         style={{ transformOrigin: "right bottom" }}
+      <motion.p
+        style={{ transformOrigin: "right bottom" }}
+        animate={{ x: [0, 4, 0, -4, 0, -4, 0, 4, 0], y: [0, -4, 0, -2, 0, 2, 0, 4, 0], rotate: [0, 0.1, 0, -0.1, 0, 0.1, 0, -0.1, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.6 }}
          variants={{
            hidden: { opacity: 0, scale: 0.85 },
            visible: {

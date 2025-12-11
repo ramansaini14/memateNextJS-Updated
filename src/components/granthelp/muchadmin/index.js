@@ -21,27 +21,43 @@ const MuchAdminComponent = () => {
     >
     <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/backgrounBg-admin.jpg" width="1100px" alt="Mockup" />
      <motion.div className="overlyAdminText overlyAdminTextFirst" variants={{ hidden: {}, visible: {} }}>
-      <motion.p variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
+      <motion.p
+        animate={{ x: [0, 10, 0, -10, 0, 0], y: [0, 0, 10, 0, -10, 0], rotate: [0, 0.2, 0.4, 0.2, 0, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
+        variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
         Still jumping between apps just to get one thing done?
       </motion.p>
     </motion.div>
      <motion.div className="overlyAdminText overlyAdminTextSecond" variants={{ hidden: {}, visible: {} }}>
-      <motion.p variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
+      <motion.p
+        animate={{ x: [0, 8, 0, -8, 0, 8, 0, -8, 0], y: [0, -6, 0, 6, 0, -6, 0, 6, 0], rotate: [0, -0.15, 0, 0.15, 0, -0.15, 0, 0.15, 0] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1.0 }}
+        variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
         Paperwork’s growing faster than your business?
       </motion.p>
     </motion.div>
      <motion.div className="overlyAdminText overlyAdminTextThird" variants={{ hidden: {}, visible: {} }}>
-      <motion.p variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
+      <motion.p
+        animate={{ x: [0, 6, 0, -6, 0], y: [0, 6, 0, -6, 0], rotate: [0, 0.1, 0, -0.1, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+        variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
         Still chasing timesheets instead of running the crew?
       </motion.p>
     </motion.div>
      <motion.div className="overlyAdminText overlyAdminTextFourth" variants={{ hidden: {}, visible: {} }}>
-      <motion.p variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
+      <motion.p
+        animate={{ x: [0, 4, 8, 4, 0, -4, -8, -4, 0], y: [0, -3, 0, 3, 0, -3, 0, 3, 0], rotate: [0, -0.2, 0, 0.2, 0, -0.2, 0, 0.2, 0] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 1.4 }}
+        variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
         Hard to know if you’re making money ‘til the month’s over?
       </motion.p>
     </motion.div>
      <motion.div className="overlyAdminText overlyAdminTextFifth" variants={{ hidden: {}, visible: {} }}>
-      <motion.p style={{ transformOrigin: "right bottom" }} variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
+      <motion.p
+        style={{ transformOrigin: "right bottom" }}
+        animate={{ x: [0, 4, 0, -4, 0, -4, 0, 4, 0], y: [0, -4, 0, -2, 0, 2, 0, 4, 0], rotate: [0, 0.1, 0, -0.1, 0, 0.1, 0, -0.1, 0] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.6 }}
+        variants={{ hidden: { opacity: 0, scale: 0.85 }, visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 420, damping: 26 } } }}>
         More jobs, more admin and none of it paid for?
       </motion.p>
     </motion.div>
