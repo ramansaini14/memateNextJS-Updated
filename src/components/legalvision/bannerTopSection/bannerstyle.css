@@ -212,11 +212,11 @@
   position: relative;
 }
 .adminSlideWrap .adminSlideGrid {
-  width: 423px;
+  width: 422px;
   margin: 0 auto;
   position: absolute;
   top: 12px;
-  left: 2px;
+  left: 0px;
   right: 0;
 }
 .adminSlideItem.itemActive img {
@@ -224,7 +224,7 @@
   position: absolute;
 }
 .adminSlideGrid img {
-    clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%); */
 }
 .adminSlideGrid .itemActive {
   display: block;

@@ -12,7 +12,7 @@ import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
 import MacbookCarousel from "../macbookcarousel";
-import {motion, useAnimation} from 'motion/react'
+import { motion, useAnimation } from "motion/react";
 
 const LegalvisionBannerComponent = () => {
   const controls = useAnimation();
@@ -84,7 +84,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <ProfitabilityIcon alt="Profitability icon" />
                 </span>
@@ -116,7 +117,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <QuoteIcon alt="Quote icon" />
                 </span>
@@ -148,7 +150,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <CommunicationIcon alt="Communication icon" />
                 </span>
@@ -196,7 +199,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <ReportingIcon alt="Reporting icon" />
                 </span>
@@ -228,7 +232,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <CalculationIcon alt="Calculation icon" />
                 </span>
@@ -260,7 +265,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <Scheduling alt="Scheduling icon" />
                 </span>
@@ -292,7 +298,8 @@ const LegalvisionBannerComponent = () => {
                       damping: 25,
                     },
                   });
-                }}>
+                }}
+              >
                 <span>
                   <EmployeesIcon alt="Employees icon" />
                 </span>
@@ -337,38 +344,37 @@ const LegalvisionBannerComponent = () => {
       <div id="legalvision" className="legalvision-special-sec">
         <div className="legalvision-flex">
           <div className="legalvision-gridL">
-             <div className="adminSlideWrap">
+            <div className="adminSlideWrap">
               <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
-              width="100%"
-              alt="Free_MacBook_Pro_1+1"
-            />
-            
-               <div className="adminSlideGrid">
-               <div className="adminSlideItem itemActive">
-               <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-              width="100%"
-              alt="Slider01"
-               />
-               </div>
-               <div className="adminSlideItem itemDeactive">
-               <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-              width="100%"
-               alt="Slider01"
-               />
-               </div>
-               <div className="adminSlideItem itemDeactive">
-               <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
-              width="100%"
-                alt="Slider01"
-               />
-               </div>
-               </div>
-             </div>
-           
+                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
+                width="100%"
+                alt="Free_MacBook_Pro_1+1"
+              />
+
+              <div className="adminSlideGrid">
+                <div className="adminSlideItem">
+                  <img
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+                    width="100%"
+                    alt="Slider01"
+                  />
+                </div>
+                <div className="adminSlideItem">
+                  <img
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+                    width="100%"
+                    alt="Slider01"
+                  />
+                </div>
+                <div className="adminSlideItem">
+                  <img
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/slide-img01.png"
+                    width="100%"
+                    alt="Slider01"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div className="legalvision-gridR">
             <span>legalvision Special: </span>
@@ -409,7 +415,17 @@ const LegalvisionBannerComponent = () => {
             </div>
             <p>
               Just use this promo code when creating your account:
-              <strong>LV50</strong>
+              <motion.strong
+                animate={{ opacity: [1, 0.2, 1] }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  ease: "easeInOut",
+                }}
+              >
+                LV50
+              </motion.strong>
             </p>
           </div>
         </div>
