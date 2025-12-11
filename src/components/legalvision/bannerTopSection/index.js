@@ -11,12 +11,9 @@ import EmployeesIcon from "../../../svg/EmployeesIcon";
 import ManagementIconActive from "../../../svg/ManagementIconActive";
 import WhiteButtonBammer from "@/layout/hover-button/WhiteButtonBammer";
 import DarkButtonLauout from "@/layout/hover-button/darkButtonLauout";
-<<<<<<< HEAD
-=======
 import MacbookCarousel from "../macbookcarousel";
 import {motion, useAnimation} from 'motion/react'
 
->>>>>>> d94d148038808c2551e44ad5d574c66378ee81d9
 const LegalvisionBannerComponent = () => {
   const controls = useAnimation();
   const targetState = { x: 0, y: 0, rotate: 0, opacity: 1 };

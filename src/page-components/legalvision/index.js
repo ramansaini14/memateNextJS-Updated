@@ -15,7 +15,7 @@ const RunYourBusinessPage = () => {
     <Layout>
       <SmoothScroll />
      <div className="bgshadowwrapper1">
-      <LegalvisionBannerComponent />
+      <LegalvisionBannerComponent /> 
       <MuchAdminComponent />
       <WhyBusinessesChooseUs />
       <TryToBestComponent />
