@@ -7,11 +7,13 @@ import {
   TryToBestComponent,
 } from "../../components/legalvision";
 import AppWrapper from "../../components/AppWrapper";
+import SmoothScroll from "./SmoothScroll";
 const RunYourBusinessPage = () => {
   return (
     <>
     <AppWrapper>
     <Layout>
+      <SmoothScroll />
      <div className="bgshadowwrapper1">
       <LegalvisionBannerComponent />
       <MuchAdminComponent />
