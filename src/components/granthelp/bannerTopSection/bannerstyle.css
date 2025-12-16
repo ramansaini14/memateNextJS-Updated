@@ -218,6 +218,7 @@ position: relative;
 .adminSlideWrap img {
 z-index: 2;
 position: relative;
+height: 86%;
 }
 .adminSlideWrap > img, .middleItem > img {
   pointer-events: none;
@@ -246,7 +247,7 @@ cursor: grab;
 clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%);dfgfd
 } */  
 .adminSlideItem img {
-width: 421px;
+  width: 420.8px;
 -webkit-user-drag: none;
 user-select: none;
 }

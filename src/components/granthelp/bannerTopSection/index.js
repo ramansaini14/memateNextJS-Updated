@@ -81,6 +81,19 @@ const InfiniteDragCarousel = ({ images, gap = 20 }) => {
   }, [itemWidth, images.length, gap, x]);
 
   useEffect(() => {
+    if (!itemWidth || images.length === 0) return;
+    const wrapSize = images.length * (itemWidth + gap);
+    const unsubscribe = x.on("change", (current) => {
+      if (current <= -2 * wrapSize) {
+        x.set(current + wrapSize);
+      } else if (current >= 0) {
+        x.set(current - wrapSize);
+      }
+    });
+    return unsubscribe;
+  }, [itemWidth, images.length, gap, x]);
+
+  useEffect(() => {
     if (!itemWidth || !containerWidth || images.length === 0) return;
     const step = itemWidth + gap;
     const wrapSize = images.length * step;
@@ -119,7 +132,7 @@ const InfiniteDragCarousel = ({ images, gap = 20 }) => {
 
     let targetX = viewportCenter - itemWidth / 2 - i * step;
 
-    if (targetX >= 0) targetX -= wrapSize;
+    // if (targetX >= 0) targetX -= wrapSize;
     if (targetX <= -2 * wrapSize) targetX += wrapSize;
 
     animate(x, targetX, {
@@ -575,8 +588,8 @@ const GeandHelpBannerComponent = () => {
             <InfiniteDragCarousel
                 images={[
                   "/slide-img01.png",
-                  "/slide-img01.png",
-                  "/slide-img01.png",
+                  "/management.png",
+                  "/reporting.png",
                 ]}
                 gap={36}
               />
