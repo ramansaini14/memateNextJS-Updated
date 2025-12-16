@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import "./style.css";
 import Link from "next/link";
 import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
+
 
 const MeMateFeatureStreamline = () => {
   return (
@@ -49,13 +53,35 @@ const MeMateFeatureStreamline = () => {
                 </div>
               </div>
               <div className="operation-right">
-                <span className="gradientAnimenate gradiientColor"> memate </span>
+                <span className="gradientAnimenate gradiientColor smokeyGradient"> memate </span>
                 <div className="max-image">
-                   <LazyLoadImage
-                        alt="MeMate Feature Girl Image"
-                        src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-memate-feature-girl-min.png'}
-                        effect="blur" 
-                      />
+            <motion.div
+  className="downClickButton"
+  animate={{
+    x: [0, -30, 0], 
+    opacity: [1],
+  }}
+  transition={{
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  style={{ display: "inline-block" }}
+>
+  <motion.img
+    alt="MeMate Feature Girl Image"
+    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-memate-feature-girl-min.png"
+    style={{ cursor: "pointer" }}
+    onClick={() => {
+      document.getElementById("legalvision")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
+  />
+</motion.div>
+
+                 
                 </div>
               </div>
             </div>

@@ -198,7 +198,7 @@ const GeandHelpBannerComponent = () => {
     <>
       <div className="legalvisionSectionBanner">
         <h2>Smarter. Faster. Digital.</h2>
-        <h1>Run Your Business.</h1>
+        <h1 className="smokeyGradient">Run Your Business.</h1>
         <div className="sales-componet-content-wrapper client-component-para">
         <section className="partnerWrap">
             <ul className="leftItems">
@@ -584,7 +584,7 @@ const GeandHelpBannerComponent = () => {
            
           </div>
           <div className="legalvision-gridR">
-            <span>legalvision Special: </span>
+            <span>Grant Help: </span>
             <h3>First 3 months 50% disount</h3>
             <div className="listText">
               <ul>

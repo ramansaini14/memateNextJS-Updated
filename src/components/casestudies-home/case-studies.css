@@ -2,6 +2,7 @@
     width: 1040px;
     margin: 65px auto 0;
 }
+
 .CaseStudiesItem .imageBox {
     border-radius: 30px;
     width: 340px;
@@ -16,6 +17,15 @@
     position: absolute;
     bottom: 0;
     margin: 27px 25px;
+}
+.desktopVersionVideo:hover .overlyBoxText {
+    display: none;
+}
+.desktopVersionVideo .flextPopupVideo {
+    display: none;
+}
+.desktopVersionVideo:hover .flextPopupVideo {
+    display: block;
 }
 .CaseStudiesItem .imageBox .overlyBox p, .CaseStudiesItem .imageBox .overlyBox span {
     color: #fff;
@@ -68,3 +78,16 @@
     border-radius: 30px;
 }
 
+
+.MobileVersionVideo{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+.desktopVersionVideo {
+    display: none;
+}
+.MobileVersionVideo{
+    display: block;
+}
+}

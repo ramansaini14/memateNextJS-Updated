@@ -1,4 +1,5 @@
 const nextConfig = {
+  
   // Handle trailing slashes consistently
   trailingSlash: false,
   

@@ -212,7 +212,7 @@ const LegalvisionBannerComponent = () => {
     <>
       <div className="legalvisionSectionBanner">
         <h2>Smarter. Faster. Digital.</h2>
-        <h1>Run Your Business.</h1>
+        <h1 className="smokeyGradient">Run Your Business.</h1>
         <div className="sales-componet-content-wrapper client-component-para">
           <section className="partnerWrap">
             <ul className="leftItems">

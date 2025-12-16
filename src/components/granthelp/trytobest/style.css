@@ -1,3 +1,9 @@
+.nav-btn--get-started{
+    position: relative;
+    }
+    .trytobestSection video, .trytobestSection video {
+    border-radius: 30px;
+}
 .trytobestSection {
     text-align: left;
     position: relative;
@@ -85,9 +91,4 @@
     position: relative;
 }
        }
-.nav-btn--get-started{
-    position: relative;
-    }
-    .trytobestSection video {
-    border-radius: 30px;
-}
+       

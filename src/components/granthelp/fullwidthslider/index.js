@@ -207,21 +207,19 @@ const WhyBusinessesChooseUs = () => {
        
         }
 
-        .fullWidthChSection .card-overlay {
+           .fullWidthChSection .card-overlay {
           position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.85),
-            rgba(0, 0, 0, 0.2)
-          );
+       
+        
         }
 
         .fullWidthChSection .card-content {
           position: absolute;
-          left: 32px;
-          right: 32px;
-          bottom: 32px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
+    padding: 27px;
         }
 
       .fullWidthChSection .card-title {

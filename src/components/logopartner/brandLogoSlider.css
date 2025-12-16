@@ -70,6 +70,15 @@
   filter: greyscale(1);
 }
 @media screen and (max-width: 767px) {
+  .brandLogoWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff00, transparent);
+}
+
+.brandLogoWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff00, transparent);
+}
   .CaseStudiesGrid {
     justify-content: space-between;
     align-items: flex-start;

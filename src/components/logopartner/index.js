@@ -12,7 +12,7 @@ const LOGOS = [
 ];
 
 const BrandLogoSlide = () => {
-  const DIRECTION = 1; 
+  const DIRECTION = -1; 
   const SPEED_PX_PER_SEC = 40;
   const COPIES = 4; 
 

@@ -15,6 +15,7 @@ html {
     position: sticky;
     top: 0;
 }
+
 .trytobestSection .lightButton .btn-base--black2 {
     z-index: 10;
     color: #fff;
@@ -192,6 +193,13 @@ span.ssMDFont {
 
 
 @media screen and (max-width: 767px) {
+    .get-started-wrapper {
+    height: auto;
+}
+.sticky-section-switch .next-step {
+    margin-top: 0px !important;
+     margin-bottom: 0px !important; 
+}
     .mobile-logo img {
         width: 88px;
     }

@@ -11,7 +11,7 @@ const SeamlessInegration = () => {
       <div className="integration-brand-container shadowRightline3 shadowLeftline3">
         <LazyLoadImage
                         alt="Integration"
-                        src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/imag-seamless-integration.jpg'}
+                        src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/imag-seamless-integration.jpg'}
                         effect="blur" 
                         style={{width: "100%", height: "auto"}}
                       />

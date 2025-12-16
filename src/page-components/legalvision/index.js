@@ -18,7 +18,7 @@ const RunYourBusinessPage = () => {
       <LegalvisionBannerComponent /> 
       <MuchAdminComponent />
       <WhyBusinessesChooseUs />
-      <TryToBestComponent />
+      <TryToBestComponent /> 
       </div>  
     </Layout>
     </AppWrapper>

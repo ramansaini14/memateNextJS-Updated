@@ -15,7 +15,7 @@ const BussinessManagement = () => {
           <div className="home-platform">
             <h1>All-in-One Business Management Software Platform</h1>
           </div>
-          <div className="gradientHeading gradiientColor header-text">
+          <div className="gradientHeading  header-text smokeyGradient">
             to run your business
           </div>
         </div>

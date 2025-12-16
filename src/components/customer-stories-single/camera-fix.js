@@ -109,7 +109,9 @@ function CameraFix() {
                                   Your browser does not support the video tag.
                                 </video>
               </div>
-              <div className="customerstoriesDetails">
+             
+            </div>
+             <div className="customerstoriesDetails customerstoriesDetailsT">
                 <div>
                   <div className="category">Camera Fix</div>
                   <div className="date-heading-title mobileTextDecrese">
@@ -118,10 +120,9 @@ function CameraFix() {
                       Business and Serve Over 100 Clients Monthly
                     </span>
                   </div>
-                  <Link href="/customer-stories/camera-fix" className="readMoreBut">Read More</Link>
+       
                 </div>
               </div>
-            </div>
             <div className="gadientText">
               <h2 className="centeredText">
                 Business management software for Electronics Repair Shop in
@@ -263,7 +264,7 @@ function CameraFix() {
               </div>
             </div>
             <div className="gadientText">
-              <h2 className="gameChangerText ">
+              <h2 className="gameChangerText gameChangerTextMobileSmaill">
                 “Switching to meMate has been a game-changer for us. We’re able
                 to provide the next level of service to our clients, and the
                 software has made our operations much smoother. It’s an

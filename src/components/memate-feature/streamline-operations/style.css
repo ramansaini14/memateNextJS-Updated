@@ -7,6 +7,20 @@
 .features-section {
     width: 1200px;
 }
+              .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* font-weight: 600; */
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
 .memate .mainHeadingH2 {
     color: #29292B;
     text-align: center;

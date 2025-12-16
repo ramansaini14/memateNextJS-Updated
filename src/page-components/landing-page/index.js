@@ -28,7 +28,7 @@ const LandingPage = ({ postsLatest }) => {
     <>
       {/* <AppWrapper> */}
         <Layout>
-          <BussinessManagement />
+          <BussinessManagement /> 
           <LessBusyness />
           <FeaturedOn />  
           <FindOneApplication />
@@ -41,10 +41,10 @@ const LandingPage = ({ postsLatest }) => {
           <MeMateFeatureAgile />
           <MeMateWorkForce /> 
           <SeamlessInegration />
-          <BrandLogoSlide /> 
-          <CaseStudiesHome />
+          <BrandLogoSlide />    
+          <CaseStudiesHome />        
           {/* <SimpleVersatilePowerful /> */}
-          <SuccessStories />
+          <SuccessStories />  
           <NewsAndUpdate postsLatest={postsLatest} />
         </Layout>
       {/* </AppWrapper> */}

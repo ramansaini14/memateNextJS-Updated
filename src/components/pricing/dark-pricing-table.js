@@ -5,6 +5,7 @@ import "./tableStyle.css";
 import Link from "next/link";
 // import TronButton from "../../layout/hover-button/tourn-but";
 import CheckIcon from "../../svg/CheckIcon";
+import ElectricBorder from './ElectricBorder'
 import CheckBlackIcon from "../../svg/CheckBlackIcon";
 import PricingButton from "../../layout/hover-button/PricingButton";
 const pricingboll =
@@ -106,85 +107,85 @@ const PricingTable = () => {
           </div> */}
 
           <div className={` ${style.pricingcards}`}>
-            {plans.map((plan, index) => (
-              <div
-                key={index}
-                className={`pricingCardsWrap ${style.pricingcard}`}
-              >
-                <div className={style.tophead}>
-                  <div className={style.head}>
-                    {/* <div className={style.left1}>
-                      <div className={style.left}>
-                        {plan.image && <img src={plan.image} alt={plan.name} />}
-                      </div>
-                    </div> */}
-                    <div className={style.right}>
-                      <h2>{plan.name}</h2>
-                    </div>
-                  </div>
-                </div>
-                <p className={style.companypara}>{plan.companypara}</p>
-                <h5
-                  className={style.YourSavings}
-                  dangerouslySetInnerHTML={{
-                    __html: isYearly ? plan.YourSavings : "",
-                  }}
-                />
+        {plans.map((plan, index) => {
+  const CardContent = (
+    <div
+      className={`pricingCardsWrap ${style.pricingcard}`}
+    >
+      <div className={style.tophead}>
+        <div className={style.head}>
+          <div className={style.right}>
+            <h2>{plan.name}</h2>
+          </div>
+        </div>
+      </div>
 
-                <p
-                  className={style.price}
-                  dangerouslySetInnerHTML={{
-                    __html: isYearly ? plan.yearlyPrice : plan.monthlyPrice,
-                  }}
-                />
-              <h4 className={style.priceMainHead}>{plan.whatsInclude}</h4>
-                <ul>
-                 
-                  {plan.features.map((feature, i) => (
-                    <li key={i}>
-                      {index === 1 ? (
-                        <div className={style.checkcircleicon}>
-                          <CheckIcon />
-                        </div>
-                      ) : (
-                        <div className={style.checkcircleicon}>
-                          {/* Default icon */}
-                          <CheckBlackIcon />
-                        </div>
-                      )}
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                {index === 1 ? (
-                  <div
-                    id="request-btn-pricing"
-                    className="request-btn PricingButton request-btn-bg"
-                  >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'white'}/>
-                    </Link>
-                  </div>
-                ) : (
-                  <div
-                    id="request-btn-pricing"
-                    className="request-btn PricingButton request-btn-bg"
-                  >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'black'}/>
-                    </Link>
-                  </div>
-                )}
-              </div>
-            ))}
+      <p className={style.companypara}>{plan.companypara}</p>
+
+      <h5
+        className={style.YourSavings}
+        dangerouslySetInnerHTML={{
+          __html: isYearly ? plan.YourSavings : "",
+        }}
+      />
+
+      <p
+        className={style.price}
+        dangerouslySetInnerHTML={{
+          __html: isYearly ? plan.yearlyPrice : plan.monthlyPrice,
+        }}
+      />
+
+      <h4 className={style.priceMainHead}>{plan.whatsInclude}</h4>
+
+      <ul>
+        {plan.features.map((feature, i) => (
+          <li key={i}>
+            <div className={style.checkcircleicon}>
+              {index === 1 ? <CheckIcon /> : <CheckBlackIcon />}
+            </div>
+            {feature}
+          </li>
+        ))}
+      </ul>
+
+      <div
+        id="request-btn-pricing"
+        className="request-btn PricingButton request-btn-bg"
+      >
+        <Link
+          href={plan.link}
+          target="_blank"
+          className="nav-btn--get-started get-started-border-box navbar-link"
+        >
+          <PricingButton
+            text={plan.action}
+            borderVal={index === 1 ? "white" : "black"}
+          />
+        </Link>
+      </div>
+    </div>
+  );
+
+  return (
+    <React.Fragment key={index}>
+      {index === 1 ? (
+        <ElectricBorder
+          color="#61c7faff"
+          speed={1}
+          chaos={0.5}
+          thickness={2}
+          style={{ borderRadius: 16 }}
+        >
+          {CardContent}
+        </ElectricBorder>
+      ) : (
+        CardContent
+      )}
+    </React.Fragment>
+  );
+})}
+
           </div>
         </div>
       </div>
