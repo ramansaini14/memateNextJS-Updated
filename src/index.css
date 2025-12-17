@@ -15,7 +15,9 @@ html {
     position: sticky;
     top: 0;
 }
-
+.parentSingleBlogMemate a {
+    color: #1cb3fe !important;
+}
 .trytobestSection .lightButton .btn-base--black2 {
     z-index: 10;
     color: #fff;

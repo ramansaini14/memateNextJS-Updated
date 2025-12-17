@@ -309,6 +309,18 @@
 }
         }
         @media screen and (max-width: 600px) {
+            .adminSlideItem img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 423.8px;
+}
+.adminSlideWrap img {
+    z-index: 2;
+    height: 76%;
+    position: relative;
+    object-fit: contain;
+}
           .partnerWrap ul.leftItems,.partnerWrap ul.RightItems {
     position: relative;
     left: 0;

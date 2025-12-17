@@ -7,14 +7,14 @@ const LOGOS = [
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/theadLogo.svg",
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/legalvisionLogo.svg",
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/sortedLogo.svg",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765365094/payComLogo_rfgxh7.svg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/payComLogo_rfgxh7.svg",
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/grantHelpLogo.svg",
 ];
 
 const BrandLogoSlide = () => {
   const DIRECTION = -1; 
   const SPEED_PX_PER_SEC = 40;
-  const COPIES = 4; 
+  const COPIES = 4;
 
   const initialItems = useMemo(() => {
     const arr = [];
@@ -26,7 +26,10 @@ const BrandLogoSlide = () => {
     }
     return arr;
   }, []);
+
   const [logos, setLogos] = useState(initialItems);
+  const [isPaused, setIsPaused] = useState(false);
+
   const trackRef = useRef(null);
   const x = useMotionValue(0);
 
@@ -39,6 +42,8 @@ const BrandLogoSlide = () => {
   };
 
   useAnimationFrame((_, delta) => {
+    if (isPaused) return;
+
     const step = (SPEED_PX_PER_SEC * delta) / 1000 * DIRECTION;
     let next = x.get() + step;
 
@@ -54,7 +59,10 @@ const BrandLogoSlide = () => {
       let guard = 0;
       while (next >= 0 && trackEl.lastElementChild && guard < 8) {
         const lastEl = trackEl.lastElementChild;
-        const lastWidth = Math.round(lastEl.getBoundingClientRect().width || 0);
+        const lastWidth = Math.round(
+          lastEl.getBoundingClientRect().width || 0
+        );
+
         flushSync(() => {
           setLogos((arr) => {
             if (arr.length <= 1) return arr;
@@ -62,15 +70,20 @@ const BrandLogoSlide = () => {
             return [last, ...arr.slice(0, -1)];
           });
         });
+
         next -= lastWidth + gapPx;
         guard++;
       }
     } else {
       let firstEl = trackEl.firstElementChild;
       let guard = 0;
+
       while (firstEl && guard < 8) {
-        const firstWidth = Math.round(firstEl.getBoundingClientRect().width || 0);
+        const firstWidth = Math.round(
+          firstEl.getBoundingClientRect().width || 0
+        );
         const threshold = -(firstWidth + gapPx);
+
         if (next <= threshold) {
           flushSync(() => {
             setLogos((arr) => {
@@ -79,7 +92,8 @@ const BrandLogoSlide = () => {
               return [...rest, head];
             });
           });
-          next -= threshold; 
+
+          next -= threshold;
           firstEl = trackEl.firstElementChild;
           guard++;
         } else {
@@ -94,11 +108,24 @@ const BrandLogoSlide = () => {
   return (
     <div className="brandLogoSlider">
       <span>Our partners</span>
-      <div className="brandLogoWrapper">
-        <motion.div className="brandLogoTrack" ref={trackRef} style={{ x }}>
+
+      <div
+        className="brandLogoWrapper"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <motion.div
+          className="brandLogoTrack"
+          ref={trackRef}
+          style={{ x }}
+        >
           {logos.map((item) => (
             <div className="logoItem" key={item.id}>
-              <img src={item.src} alt="Partner logo" draggable={false} />
+              <img
+                src={item.src}
+                alt="Partner logo"
+                draggable={false}
+              />
             </div>
           ))}
         </motion.div>
@@ -108,4 +135,3 @@ const BrandLogoSlide = () => {
 };
 
 export default BrandLogoSlide;
-

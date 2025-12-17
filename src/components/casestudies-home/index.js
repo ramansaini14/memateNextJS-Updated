@@ -86,7 +86,7 @@ const handleMouseLeave = () => {
               <div className='flextText'>
                 <span><em>Porsha,</em> Manager</span>
               <img
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/img-logo+2%402x.png"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/img-logo+2.png"
               alt="Camera Fix"
             />
               </div>

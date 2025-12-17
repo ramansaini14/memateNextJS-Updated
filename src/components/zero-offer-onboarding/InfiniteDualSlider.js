@@ -4,15 +4,15 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const baseImages = [
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867514/Mask_t0acig.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867565/Mask_1_ccqn4x.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867565/Mask_1_ccqn4x.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867666/Mask_3_mbpn3k.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867932/Mask_4_uheb5y.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867931/Mask_5_siltbl.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867930/Mask_6_mvz2p8.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765867930/Mask_7_ndcm7h.png",
-  "https://res.cloudinary.com/dn0jqjad3/image/upload/v1765868112/Mask_8_kfnsjt.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask01.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask02.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask03.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask04.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask05.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask06.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask07.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask08.png",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask09.png",
 ];
 
 const images = Array.from({ length: 9 }, (_, i) =>
@@ -33,7 +33,7 @@ const col3Ref = useRef(null);
     let rafId;
 
 const speed1 = 0.015;
-const speed2 = 0.02;
+const speed2 = 0.01;
 const speed3 = 0.01;
 
     const onEnter = () => (pausedRef.current = true);
