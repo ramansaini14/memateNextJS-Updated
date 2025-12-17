@@ -10,7 +10,10 @@
      margin: 0 auto;
 }
  .trytobestSection .img_box {
-    width: 620px;
+   width: 620px;
+   height: 468.44px;
+   position: relative;
+   overflow: hidden;
 }
  .trytobestSection .img_box img {
     width: 100%;
