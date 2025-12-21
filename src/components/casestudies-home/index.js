@@ -76,7 +76,7 @@ const handleMouseLeave = () => {
             poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoPoster-bg.jpg" 
           >
             <source
-              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/MeMate_x_Camerafix-vertical.mp4"
+              src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/MeMate+x+Camerafix-vertical_1215-subs.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

@@ -12,6 +12,27 @@
   /* 21px */
   letter-spacing: -0.21px;
 }
+.video-wrapperCamera{
+  position: relative;
+  cursor: pointer;
+}
+.video-wrapperCamera .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: #fff;
+    background: rgba(182, 182, 182, 0.4);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    cursor: pointer;
+}
 .imageOverlyText.videoPlayWrap .customerstoriesDetails {
     color: #fff;
     background: linear-gradient(0deg, rgba(0, 0, 0, .77) 0%, rgba(0, 0, 0, 0) 44.23%), linear-gradient(rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .5) 100%);
@@ -889,6 +910,11 @@ font-size:14px;
   display: flex;
 }
 @media screen and (max-width: 767px) {
+  .video-wrapperCamera .play-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+}
 .customerstoriesGrid {
  width: 100%;
  margin: 42px auto 15px;

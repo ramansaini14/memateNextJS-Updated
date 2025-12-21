@@ -42,7 +42,7 @@ const LandingPage = ({ postsLatest }) => {
           <MeMateWorkForce /> 
           <SeamlessInegration />
           <BrandLogoSlide />    
-          <CaseStudiesHome />        
+          <CaseStudiesHome />          
           {/* <SimpleVersatilePowerful /> */}
           <SuccessStories />  
           <NewsAndUpdate postsLatest={postsLatest} />

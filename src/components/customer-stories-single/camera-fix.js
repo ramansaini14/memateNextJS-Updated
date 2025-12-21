@@ -4,6 +4,7 @@ import Link from "next/link";
 // import { Helmet } from "react-helmet-async";
 import SuccessStories from "../success-stories";
 import NewsSchema from "../blog/news-schema";
+import { useRef, useState } from "react";
 
 const CustomerStoriesImage =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png";
@@ -53,6 +54,20 @@ function CameraFix() {
       "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
     keywords: "Camera Repair Software in Action | MeMate Case Study",
   };
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
 
   return (
     <>
@@ -93,21 +108,29 @@ function CameraFix() {
                   className="img-container-stories"
                   src={CustomerStoriesImage}
                   alt="Camera Fix"
-                /> */}
-                <video
+                /> */}    
+          <div className="video-wrapper video-wrapperCamera" onClick={togglePlay}>
+              <video
                                   width="100%"
                                   height="100%"
-                                  autoPlay
-                                  muted
+                                  // autoPlay
+                                  // muted
                                   loop
+                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png"
+                                  ref={videoRef}
                                   playsInline
-                                >
+                                  >
                                   <source
                                     src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/MeMate+x+Camerafix-edit1208+(1).mp4"
                                     type="video/mp4"
                                   />
                                   Your browser does not support the video tag.
                                 </video>
+
+            {!isPlaying && <div className="play-icon"><svg width="80" height="80" viewBox="0 0 24 24" fill="white">
+  <path d="M8 5v14l11-7z" />
+</svg></div>}
+          </div>
               </div>
              
             </div>

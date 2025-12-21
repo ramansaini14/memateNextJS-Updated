@@ -22,14 +22,8 @@ const ZeroOfferOnboarding = () => {
               <Link href="https://app.memate.com.au/requestdemo"><button className="book-a-demo">Book a Demo</button></Link>
               <Link href="https://app.memate.com.au/onboarding"><button className="book-a-demo">Start Free Trial</button></Link>
             </div>
-          </div>
-        
-
-<InfiniteDualSlider />
-
-
-
-
+          </div>    
+         <InfiniteDualSlider />
         </div>
       </div>
     </div>

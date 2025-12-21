@@ -573,6 +573,7 @@ const GeandHelpBannerComponent = () => {
         <div className="legalvision-flex">
           <div className="legalvision-gridL">
              <div className="adminSlideWrap">
+             <div className="CMaceWrap">
               <img
               src="https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/Free_MacBook_Pro_transparent.png"
               width="100%"
@@ -584,6 +585,7 @@ const GeandHelpBannerComponent = () => {
                   WebkitUserDrag: "none",
                 }}
             />
+            </div>
             
             <InfiniteDragCarousel
                 images={[

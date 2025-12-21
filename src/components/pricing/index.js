@@ -6,28 +6,11 @@ import PricingTable from "./dark-pricing-table";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 import Link from "next/link";
-// import ElectricBorder from './ElectricBorder'
+
 
 const PricingComponent = () => {
   return (
     <>
-
-  
-
-
-{/* <ElectricBorder
-  color="#7df9ff"
-  speed={1}
-  chaos={0.5}
-  thickness={2}
-  style={{ borderRadius: 16 }}
->
-  <div>
-    <p style={{ margin: '6px 0 0', opacity: 0.8 }}>
-      A glowing, animated border wrapper.
-    </p>
-  </div>
-</ElectricBorder> */}
       <div
         className={`main-section ${style.mainsectionspace} ${style.mainSection}`}
       >

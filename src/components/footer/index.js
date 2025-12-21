@@ -113,6 +113,7 @@ const Footer = () => {
                 <Link href="/brand">Brand</Link>
                 <Link href="/sitemap">Sitemap</Link>
                 <Link href="https://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
+                <Link href="/partner-program">Affiliate Program</Link>
                 <Link href="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>

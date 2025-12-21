@@ -20,7 +20,7 @@ const RunYourBusinessPage = () => {
       <WhyBusinessesChooseUs />
       <TryToBestComponent />
       </div>  
-    </Layout>
+    </Layout>  
     </AppWrapper>
     </>
   );

@@ -18,6 +18,15 @@ html {
 .parentSingleBlogMemate a {
     color: #1cb3fe !important;
 }
+.pageBreadcrumbs ul li a.MainPageLink {
+  -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.pageBreadcrumbs ul li a {
+    color: #212121;
+}
 .trytobestSection .lightButton .btn-base--black2 {
     z-index: 10;
     color: #fff;

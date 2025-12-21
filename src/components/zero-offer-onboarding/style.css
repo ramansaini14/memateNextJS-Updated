@@ -155,33 +155,30 @@
   line-height: 60px; 
   letter-spacing: -1.44px;
 } */
- .sab-heading .h2HeadingHome span.shadow {
-  z-index: 1;
-  color: #5ff91d;
-  text-align: center;
-  letter-spacing: -1.44px;
-  font-size: 48px;
-  font-weight: 415;
-  line-height: 60px;
-  position: relative;
-  font-family: sequel_sans !important;
-
-  text-shadow: 0 0 10px rgba(95, 249, 29, 0.4);
-  animation: glowPulse 2.5s ease-in-out infinite;
+.sab-heading .h2HeadingHome span.shadow {
+z-index: 1;
+color: #5ff91d;
+text-align: center;
+letter-spacing: -1.44px;
+/* text-shadow: 0 0 10px #5ff91d66; */
+font-size: 48px;
+font-weight: 415;
+line-height: 60px;
+animation: 3s ease-in-out infinite glowPulse;
+/* position: relative; */
+font-family: 'sequel_sans'!important;
 }
 
 @keyframes glowPulse {
-  0% {
-    text-shadow: 0 0 1px rgba(95, 249, 29, 0.2);
-  }
-  50% {
-    text-shadow:
-      0 0 22px rgba(95, 249, 29, 0.8),
-      0 0 22px rgba(95, 249, 29, 0.6);
-  }
-  100% {
-    text-shadow: 0 0 1px rgba(95, 249, 29, 0.2);
-  }
+ 0% {
+    text-shadow: 0 0 2px #5ff91d33;
+}
+50% {
+    text-shadow: 0 0 22px #5ff91dcc, 0 0 22px #5ff91d99;
+}
+100% {
+    text-shadow: 0 0 2px #5ff91d33;
+}
 }
 
 .onboarding-section12 .sab-heading {

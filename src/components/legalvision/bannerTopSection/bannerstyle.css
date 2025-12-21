@@ -317,9 +317,12 @@
 }
 .adminSlideWrap img {
     z-index: 2;
-    height: 76%;
+    height: 100%;
     position: relative;
     object-fit: contain;
+}
+.adminSlideWrap .adminSlideGrid {
+    height: 200px;
 }
           .partnerWrap ul.leftItems,.partnerWrap ul.RightItems {
     position: relative;
