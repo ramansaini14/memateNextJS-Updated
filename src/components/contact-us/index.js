@@ -110,7 +110,7 @@ const ContactUsComponent = () => {
                 
               </div>
             </div>
-              <EmailNow />
+              <EmailNow buttonText="Email now" headingText="Email now" />
           </div>
         </div>
         <div className="small-heading">

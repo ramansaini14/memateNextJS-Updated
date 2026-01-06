@@ -45,7 +45,7 @@
     line-height: 150px;
     position: relative;
     font-family: 'sequel_sans_semi_bold_disp' !important;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 .StoriesNewWrap .StoriesHead h3{
     font-weight: 415;

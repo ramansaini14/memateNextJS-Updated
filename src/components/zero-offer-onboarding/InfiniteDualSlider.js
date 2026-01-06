@@ -15,50 +15,45 @@ const baseImages = [
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/19-11-2025/mask09.png",
 ];
 
-const images = Array.from({ length: 9 }, (_, i) =>
-  baseImages[i % baseImages.length]
-);
+const images = [...baseImages, ...baseImages];
 
 export default function InfiniteDualSlider() {
-const col1Ref = useRef(null);
-const col2Ref = useRef(null);
-const col3Ref = useRef(null);
-
-  const pausedRef = useRef(false); 
+  const col1Ref = useRef(null);
+  const col2Ref = useRef(null);
+  const col3Ref = useRef(null);
+  const pausedRef = useRef(false);
 
   useEffect(() => {
-   let y1 = 0;
-   let y2 = 0;
-   let y3 = 0;
+    const tracks = [
+      { ref: col1Ref, speed: 35 },
+      { ref: col2Ref, speed: 30 },
+      { ref: col3Ref, speed: 40 },
+    ];
+
+
+    let lastTime = performance.now();
     let rafId;
 
-const speed1 = 0.015;
-const speed2 = 0.01;
-const speed3 = 0.01;
+    const positions = tracks.map(() => 0);
+    const heights = tracks.map(
+      (t) => (t.ref.current?.scrollHeight || 0) / 2
+    );
 
-    const onEnter = () => (pausedRef.current = true);
-    const onLeave = () => (pausedRef.current = false);
+    const animate = (now) => {
+      const delta = now - lastTime;
+      lastTime = now;
 
-    const col1 = col1Ref.current;
-    const col2 = col2Ref.current;
-
-    col1.addEventListener("mouseenter", onEnter);
-    col1.addEventListener("mouseleave", onLeave);
-    col2.addEventListener("mouseenter", onEnter);
-    col2.addEventListener("mouseleave", onLeave);
-
-    const animate = () => {
       if (!pausedRef.current) {
-        y1 -= speed1;
-        y2 -= speed2;
-        y3 -= speed3;
+        tracks.forEach((track, i) => {
+          positions[i] -= (track.speed * delta) / 1000;
 
-        if (y1 <= -50) y1 = 0;
-        if (y2 <= -50) y2 = 0;
-        if (y3 <= -50) y3 = 0;
-    col1Ref.current.style.transform = `translateY(${y1}%)`;
-    col2Ref.current.style.transform = `translateY(${y2}%)`;
-    col3Ref.current.style.transform = `translateY(${y3}%)`;
+          if (Math.abs(positions[i]) >= heights[i]) {
+            positions[i] = 0;
+          }
+
+          track.ref.current.style.transform =
+            `translate3d(0, ${positions[i]}px, 0)`;
+        });
       }
 
       rafId = requestAnimationFrame(animate);
@@ -66,54 +61,56 @@ const speed3 = 0.01;
 
     rafId = requestAnimationFrame(animate);
 
+    const pause = () => (pausedRef.current = true);
+    const resume = () => (pausedRef.current = false);
+
+    tracks.forEach((t) => {
+      t.ref.current?.addEventListener("mouseenter", pause);
+      t.ref.current?.addEventListener("mouseleave", resume);
+    });
+
     return () => {
       cancelAnimationFrame(rafId);
-      col1.removeEventListener("mouseenter", onEnter);
-      col1.removeEventListener("mouseleave", onLeave);
-      col2.removeEventListener("mouseenter", onEnter);
-      col2.removeEventListener("mouseleave", onLeave);
+      tracks.forEach((t) => {
+        t.ref.current?.removeEventListener("mouseenter", pause);
+        t.ref.current?.removeEventListener("mouseleave", resume);
+      });
     };
   }, []);
 
   return (
-
-<div className="bg_slider ">
-    <div className="zeroshadowRight"></div>
-  <div className="fade fade-top " />
-  <div className="ui-grid">
-    <div className="ui-col">
-      <div className="slide_track" ref={col1Ref}>
-        {[...images, ...images].map((img, i) => (
-          <div className="ui-card card-sm" key={`c1-${i}`}>
-            <Image src={img} alt="" width={420} height={300} />
+    <div className="bg_slider">
+      <div className="ui-grid">
+        <div className="ui-col">
+          <div className="slide_track" ref={col1Ref}>
+            {images.map((img, i) => (
+              <div className="ui-card card-sm" key={`c1-${i}`}>
+                <Image src={img} alt="" width={420} height={300} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        <div className="ui-col">
+          <div className="slide_track" ref={col2Ref}>
+            {images.map((img, i) => (
+              <div className="ui-card card-lg" key={`c2-${i}`}>
+                <Image src={img} alt="" width={420} height={420} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="ui-col">
+          <div className="slide_track" ref={col3Ref}>
+            {images.map((img, i) => (
+              <div className="ui-card card-md" key={`c3-${i}`}>
+                <Image src={img} alt="" width={420} height={360} />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-
-    <div className="ui-col">
-      <div className="slide_track" ref={col2Ref}>
-        {[...images, ...images].map((img, i) => (
-          <div className="ui-card card-lg" key={`c2-${i}`}>
-            <Image src={img} alt="" width={420} height={420} />
-          </div>
-        ))}
-      </div>
-    </div>
-
-    <div className="ui-col">
-      <div className="slide_track" ref={col3Ref}>
-        {[...images, ...images].map((img, i) => (
-          <div className="ui-card card-md" key={`c3-${i}`}>
-            <Image src={img} alt="" width={420} height={360} />
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-  <div className="zeroshadowLeft"></div>
-  <div className="fade fade-bottom" />
-</div>
-
   );
 }

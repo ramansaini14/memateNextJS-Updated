@@ -1,8 +1,9 @@
 import Link from "next/link";
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 import "./programstyle.css";
+import "./PartNerL.css";
 import TickIconSVG from "../../svg/TickIcon";
-import BecomePartner from "./BecomePartner";
+import EmailNow from "../contact-us/emailnow";
+
 
 
 const PartnerProgramComponent = () => {
@@ -11,15 +12,61 @@ const PartnerProgramComponent = () => {
     <div className="headWrap">
       <h1 className="smokeyGradient">affiliate program</h1>
       <p>Unlock new earning opportunities by <br/> partnering with meMate</p>
-       <div className="request-btn">
-          <Link
-            href="https://app.memate.com.au/onboarding"
-            target="_blank"
-            className="nav-btn--get-started  navbar-link"
-          >
-            <TronRequestADemo text="Get Started" />
-          </Link>
+     <div className="affiliateBtnProps">
+         <div className="gradient_background nav-btn--get-started">
+        <div className="btn-base--tron-radiall1">
+          <div className="radial-embed-nav1 w-embed">
+            <svg
+              id="btn-tron_nav1"
+              data-name="Layer-svg-tron_nav"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 122 52"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient-tronnav"
+                  x1="0"
+                  y1="26"
+                  x2="122"
+                  y2="26"
+                  gradientTransform="translate(0 36.72) "
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#1ab2ff"></stop>
+                  <stop offset=".5" stopColor="#1ab2ff"></stop>
+                  <stop offset="1" stopColor="#ffb258"></stop>
+                </linearGradient>
+              </defs>
+              <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">
+                <path
+                  className="tron-icon_nav1"
+                  d="M96,3 H26 A13,13 0 0 0 13,16 V16 A13,13 0 0 0 26,29 H96 A13,13 0 0 0 109,16 V16 A13,13 0 0 0 96,3 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
+        <div className="btn-base--tron-hover1">
+          <div
+            className="tron-hover-rotate1 small1"
+            style={{
+              transform:
+                'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
+            }}
+          ></div>
+        </div>
+        <div className="darkStylePartner">
+          <div>
+               <EmailNow buttonText="Get Started" headingText="Affiliate Enquiry Form" />
+ 
+          </div>
+        </div>
+      </div>
+    
+    </div> 
     </div>
     <div className="partNerEnquiryWrap">
       <span>If you work with <b>small business owners</b> — as an</span>
@@ -55,7 +102,61 @@ const PartnerProgramComponent = () => {
        </div>
        <div className="partNerGridItem addMorePartner">
       
-         <div className="addPratener"> <BecomePartner /></div>
+      <div className="affiliateBtnProps">
+         <div className="gradient_background nav-btn--get-started">
+        <div className="btn-base--tron-radiall1">
+          <div className="radial-embed-nav1 w-embed">
+            <svg
+              id="btn-tron_nav1"
+              data-name="Layer-svg-tron_nav"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 122 52"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient-tronnav"
+                  x1="0"
+                  y1="26"
+                  x2="122"
+                  y2="26"
+                  gradientTransform="translate(0 36.72) "
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#1ab2ff"></stop>
+                  <stop offset=".5" stopColor="#1ab2ff"></stop>
+                  <stop offset="1" stopColor="#ffb258"></stop>
+                </linearGradient>
+              </defs>
+              <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">
+                <path
+                  className="tron-icon_nav1"
+                  d="M96,3 H26 A13,13 0 0 0 13,16 V16 A13,13 0 0 0 26,29 H96 A13,13 0 0 0 109,16 V16 A13,13 0 0 0 96,3 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div className="btn-base--tron-hover1">
+          <div
+            className="tron-hover-rotate1 small1"
+            style={{
+              transform:
+                'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
+            }}
+          ></div>
+        </div>
+        <div className="darkStylePartner">
+          <div>
+               <EmailNow buttonText="Become a Partner" headingText="Affiliate Enquiry Form" />
+ 
+          </div>
+        </div>
+      </div>
+    
+    </div> 
        </div>
        </div>
         <span>— the <b>meMate Partner Program</b> is built for you</span>
@@ -97,16 +198,61 @@ const PartnerProgramComponent = () => {
             </ul>
           </div>
       </div>
-       <div className="request-btn">
-        
-          <Link
-            href="https://app.memate.com.au/onboarding"
-            target="_blank"
-            className="nav-btn--get-started  navbar-link"
-          >
-            <TronRequestADemo text="Get Started" />
-          </Link>
+    <div className="affiliateBtnProps">
+         <div className="gradient_background nav-btn--get-started">
+        <div className="btn-base--tron-radiall1">
+          <div className="radial-embed-nav1 w-embed">
+            <svg
+              id="btn-tron_nav1"
+              data-name="Layer-svg-tron_nav"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 122 52"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient-tronnav"
+                  x1="0"
+                  y1="26"
+                  x2="122"
+                  y2="26"
+                  gradientTransform="translate(0 36.72) "
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#1ab2ff"></stop>
+                  <stop offset=".5" stopColor="#1ab2ff"></stop>
+                  <stop offset="1" stopColor="#ffb258"></stop>
+                </linearGradient>
+              </defs>
+              <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">
+                <path
+                  className="tron-icon_nav1"
+                  d="M96,3 H26 A13,13 0 0 0 13,16 V16 A13,13 0 0 0 26,29 H96 A13,13 0 0 0 109,16 V16 A13,13 0 0 0 96,3 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
         </div>
+        <div className="btn-base--tron-hover1">
+          <div
+            className="tron-hover-rotate1 small1"
+            style={{
+              transform:
+                'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
+            }}
+          ></div>
+        </div>
+        <div className="darkStylePartner">
+          <div>
+               <EmailNow buttonText="Get Started" headingText="Affiliate Enquiry Form" />
+ 
+          </div>
+        </div>
+      </div>
+    
+    </div> 
     </div>
      <div className="processStepPartner">
      <div className="headStep">
@@ -137,15 +283,61 @@ activity, and monitor your earnings.</p>
       <h6 className="smokeyGradient">let’s grow together</h6>
       <p>Become a meMate Partner and turn your influence into meaningful income — while
 helping Australian businesseswork smarter, faster, and more efficiently.</p>
-      <div className="request-btn">
-          <Link
-            href="https://app.memate.com.au/onboarding"
-            target="_blank"
-            className="nav-btn--get-started  navbar-link"
-          >
-            <TronRequestADemo text="Get Started" />
-          </Link>
-        </div>  
+      <div className="affiliateBtnProps">
+         <div className="gradient_background nav-btn--get-started">
+        <div className="btn-base--tron-radiall1">
+          <div className="radial-embed-nav1 w-embed">
+            <svg
+              id="btn-tron_nav1"
+              data-name="Layer-svg-tron_nav"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 122 52"
+            >
+              <defs>
+                <linearGradient
+                  id="linear-gradient-tronnav"
+                  x1="0"
+                  y1="26"
+                  x2="122"
+                  y2="26"
+                  gradientTransform="translate(0 36.72) "
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0" stopColor="#1ab2ff"></stop>
+                  <stop offset=".5" stopColor="#1ab2ff"></stop>
+                  <stop offset="1" stopColor="#ffb258"></stop>
+                </linearGradient>
+              </defs>
+              <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">
+                <path
+                  className="tron-icon_nav1"
+                  d="M96,3 H26 A13,13 0 0 0 13,16 V16 A13,13 0 0 0 26,29 H96 A13,13 0 0 0 109,16 V16 A13,13 0 0 0 96,3 Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div className="btn-base--tron-hover1">
+          <div
+            className="tron-hover-rotate1 small1"
+            style={{
+              transform:
+                'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateZ(-36deg) skew(0deg, 0deg)',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
+            }}
+          ></div>
+        </div>
+        <div className="darkStylePartner">
+          <div>
+               <EmailNow buttonText="Get Started" headingText="Affiliate Enquiry Form" />
+ 
+          </div>
+        </div>
+      </div>
+    
+    </div> 
     </div>
     </div>
 

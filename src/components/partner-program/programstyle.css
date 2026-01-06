@@ -13,6 +13,31 @@
     width: 1200px;
     margin: 0 auto;
 }
+.getStartedBtn .query-button button {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: normal;
+    font-family: 'sequel_sans' !important;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background-color: #1d1d1f;
+    border-radius: 2rem;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 21px;
+    display: flex;
+    position: relative;
+    inset: auto 0%;
+    margin-top: 39px;
+}
 .page-partner-program .sticky-section-switch {
     display: none;
 }
@@ -118,19 +143,22 @@
     align-items: center;
     justify-content: center;
 }
-.addMorePartner .addPratener button {
+/* .affiliateBtnProps .query-button button {
     letter-spacing: 0;
     text-align: center;
     color: #fff;
     background: #29292b;
+    border: 0;
     border-radius: 60px;
     font-size: 18px;
     font-weight: 415;
     line-height: 100%;
-    font-family: 'sequel_sans' !important;
     text-decoration: none;
-    border: 0;
-    padding: 17px 23px;
+    font-family: sequel_sans !important;
+    padding: 16px 25px;
+} */
+ .affiliateWrapper .nav-btn--get-started.navbar-link {
+    position: relative;
 }
 .addMorePartner::before{
       content: "";
@@ -404,6 +432,12 @@
     letter-spacing: -2.16px;
     text-align: center;
 }
+.rewardWrapPartner .affiliateBtnProps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
 .groToGetherPartner p{
   font-family: 'sequel_sans_roman_head' !important;
 font-weight: 360;
@@ -413,7 +447,7 @@ letter-spacing: -0.72px;
 text-align: center;
 color: rgba(117, 123, 138, 1);
 max-width: 699px;
-margin: 0 auto;
+margin: 0 auto 27px;
 }
 
 .groToGetherPartner .request-btn {
@@ -581,5 +615,13 @@ margin: 0 auto;
 .StepPartnerItem:before {
    display: none;
 }
-
+.rewardWrapPartner .affiliateBtnProps {
+    margin-top: 24px;
+}
+.darkStylePartner button {
+    height: 43px !important;
+    padding: 11px 14px !important;
+    font-size: 14px !important;
+    font-weight: 100;
+}
       }

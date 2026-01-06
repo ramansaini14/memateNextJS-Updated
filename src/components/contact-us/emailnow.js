@@ -9,7 +9,7 @@ import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { emailNowAPI } from '../../api/contactAPI';
 
-const EmailNow = () => {
+const EmailNow = (props) => {
     const [visible, setVisible] = useState(false);
     const [error, setError] = useState('');
     const [visibleEmail, setVisibleEmail] = useState(false);
@@ -79,14 +79,14 @@ const EmailNow = () => {
 
     const HeaderContent = (
         <div className="flexWrapBoxc requestCallback">
-            <h1>Email now</h1>
+            <h1>{props.headingText}</h1>
         </div>
     );
 
     return (
         <>
             <div className="query-button query-button-color">
-            <button onClick={() => setVisible(true)}>Email now</button></div>
+            <button onClick={() => setVisible(true)}>{props.buttonText}</button></div>
             <Dialog
                 visible={visible}
                 style={{ width: '566px' }}
