@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
 
         animationInstances.push(tl);
       }
-      console.log("ANIMATION INSTANCES", animationInstances);
+      // console.log("ANIMATION INSTANCES", animationInstances);
     }, 100);
 
     let refreshCount = 0;
