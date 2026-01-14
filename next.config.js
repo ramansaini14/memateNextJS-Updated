@@ -13,7 +13,7 @@ const ContentSecurityPolicy = `
     https://snap.licdn.com;
 
   style-src 'self' 'unsafe-inline';
-
+ 
   img-src 'self' data:
     https://res.cloudinary.com
     https://memate-website.s3.ap-southeast-2.amazonaws.com

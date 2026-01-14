@@ -111,7 +111,7 @@ const PricingTableDemo = () => {
               (() => {
                 const isFeatured = index === 1;
                 const cardInlineStyle = {
-                  border: "4px solid black",
+                  // border: "4px solid black",
                   borderRadius: "24px",
                   ...(isFeatured
                     ? {
