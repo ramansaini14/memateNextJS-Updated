@@ -1,4 +1,71 @@
+const ContentSecurityPolicy = `
+  default-src 'self'
+  https://www.jotform.com;
+
+  script-src 'self' 'unsafe-inline' 'unsafe-eval'
+    https://www.googletagmanager.com
+    https://www.google-analytics.com
+    https://cdn.jotfor.ms
+    https://www.jotform.com
+    https://www.google.com
+    https://www.gstatic.com
+    https://googleads.g.doubleclick.net
+    https://snap.licdn.com;
+
+  style-src 'self' 'unsafe-inline';
+
+  img-src 'self' data:
+    https://res.cloudinary.com
+    https://memate-website.s3.ap-southeast-2.amazonaws.com
+    https://www.google-analytics.com
+    https://www.googletagmanager.com
+    https://www.jotform.com
+    https://files.jotform.com
+    https://www.google.com
+    https://px.ads.linkedin.com;
+
+  font-src 'self' data:;
+
+  connect-src 'self'
+    https://memate.com.au
+    https://www.google.com
+    https://www.jotform.com
+    https://localhost:3000
+    https://analytics.google.com
+    https://admin.memate.com.au
+    https://www.google-analytics.com
+    https://region1.google-analytics.com
+    https://www.googletagmanager.com
+    https://px.ads.linkedin.com
+    https://ads.linkedin.com
+    ;
+
+  frame-src 'self'
+    https://memate.com.au
+    https://www.googletagmanager.com
+    https://www.jotform.com
+    https://www.linkedin.com
+    https://linkedin.com
+    ;
+
+  object-src 'none';
+`;
+
+
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
+          },
+        ],
+      },
+    ];
+  },
   
   // Handle trailing slashes consistently
   trailingSlash: false,

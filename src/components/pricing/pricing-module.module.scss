@@ -145,25 +145,38 @@ position: relative;
 border: 0.968px solid #EFF0F6;
 background: #FFF;
 box-shadow: 0px 1.936px 51.61px 0px rgba(20, 20, 43, 0.08);
-    &:nth-child(2){
-      background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
-      p,ul,li,span,h4,h3,h2{
+    overflow: hidden;
+
+    /* Apply to featured (index === 1) card via JS */
+    &.pricingcardFeatured {
+      /* background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%); */
+
+      p,
+      ul,
+      li,
+      span,
+      h4,
+      h3,
+      h2 {
         color: #fff !important;
-        
       }
-      span{
+
+      span {
         font-family: 'sequel_sans_roman_head' !important;
       }
-      svg{
+
+      svg {
         fill: #fff !important;
       }
-      button{
-        border: 1px solid #fff !important; 
+
+      button {
+        border: 1px solid #fff !important;
       }
-      .YourSavings{
-        span{
+
+      .YourSavings {
+        span {
           color: #fff !important;
-          -webkit-text-fill-color: #fff !important  ;
+          -webkit-text-fill-color: #fff !important;
           border-radius: 46px;
           background: rgba(255, 255, 255, 0.24);
         }
@@ -368,7 +381,7 @@ span {
         align-items: center;
     }
   }
-  
+
  }
   }
   

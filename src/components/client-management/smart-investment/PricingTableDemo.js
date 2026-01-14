@@ -7,6 +7,7 @@ import Link from "next/link";
 import CheckIcon from "../../../svg/CheckIcon";
 import CheckBlackIcon from "../../../svg/CheckBlackIcon";
 import PricingButton from "../../../layout/hover-button/PricingButton";
+import { BubbleBackground } from "./BubbleBackground";
 const pricingboll =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png";
 
@@ -105,12 +106,53 @@ const PricingTableDemo = () => {
             <span id="butMontlyTable">Monthly</span>
           </div> */}
 
-          <div className={` ${style.pricingcards}`}>
+          <div className={`${style.pricingcards}`}>
             {plans.map((plan, index) => (
+              (() => {
+                const isFeatured = index === 1;
+                const cardInlineStyle = {
+                  border: "4px solid black",
+                  borderRadius: "24px",
+                  ...(isFeatured
+                    ? {
+                        background:
+                          "linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%)",
+                      }
+                    : {}),
+                };
+
+                return (
               <div
                 key={index}
-                className={`pricingCardsWrap ${style.pricingcard}`}
+                className={`pricingCardsWrap ${style.pricingcard} ${
+                  isFeatured ? style.pricingcardFeatured : ""
+                }`}
+                style={cardInlineStyle}
               >
+                {isFeatured && (
+                  <BubbleBackground
+                    // aria-hidden="true"
+                    interactive={true}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      zIndex: 0,
+                      pointerEvents: "none",
+                      borderRadius: "24px",
+                    }}
+                    // Keep bubble colors aligned with brand/gradient
+                    colors={{
+                      first: "26,178,255", // #1ab2ff
+                      second: "255,178,88", // #ffb258
+                      third: "26,178,255",
+                      fourth: "255,178,88",
+                      fifth: "26,178,255",
+                      sixth: "255,178,88",
+                    }}
+                  />
+                )}
+
+                <div style={{ position: "relative", zIndex: 1 }}>
                 <div className={style.tophead}>
                   <div className={style.head}>
                     {/* <div className={style.left1}>
@@ -184,6 +226,9 @@ const PricingTableDemo = () => {
                   </div>
                 )}
               </div>
+              </div>
+                );
+              })()
             ))}
           </div>
         </div>
