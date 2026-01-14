@@ -1,6 +1,7 @@
 const ContentSecurityPolicy = `
   default-src 'self'
-  https://www.jotform.com;
+  https://www.jotform.com
+  https://memate-website.s3.ap-southeast-2.amazonaws.com;
 
   script-src 'self' 'unsafe-inline' 'unsafe-eval'
     https://www.googletagmanager.com
