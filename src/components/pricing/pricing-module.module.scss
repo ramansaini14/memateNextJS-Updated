@@ -146,10 +146,22 @@ border: 0.968px solid #EFF0F6;
 background: #FFF;
 box-shadow: 0px 1.936px 51.61px 0px rgba(20, 20, 43, 0.08);
     overflow: hidden;
+    &:nth-child(2){
+      background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
+      p,
+      ul,
+      li,
+      span,
+      h4,
+      h3,
+      h2 {
+        color: #fff !important;
+      }}
+    
 
     /* Apply to featured (index === 1) card via JS */
     &.pricingcardFeatured {
-      /* background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%); */
+      //  background: linear-gradient(to right bottom, #1ab2ff 10.15%, #ffb258 69%);
 
       p,
       ul,

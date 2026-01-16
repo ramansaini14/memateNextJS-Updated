@@ -8,9 +8,25 @@ import { motion } from "framer-motion";
 import ScrollStack from "./ScrollStack";
 const SalesComponentFeature = () => {
   return (
-    <div className="sales-component-feature-wrapperF">
+    <div
+      className="sales-component-feature-wrapperF"
+      style={{
+        "--cmStickyTop": "75px",
+        "--cmStickyHeaderOffset": "clamp(120px, 18vh, 200px)",
+      }}
+    >
       <div
         className="sales-component-featureF"
+        style={{
+          position: "sticky",
+          top: "var(--cmStickyTop)",
+          // zIndex: 50,
+          minHeight: "var(--cmStickyHeaderOffset)",
+          padding: "20px 0 12px",
+          // background: "rgba(255, 255, 255, 0.92)",
+          // backdropFilter: "blur(8px)",
+          // WebkitBackdropFilter: "blur(8px)",
+        }}
         // data-aos="fade-up"
         // data-aos-offset="50"
         // data-aos-delay="50"
@@ -22,7 +38,7 @@ const SalesComponentFeature = () => {
         <motion.h2
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{
             type: "spring",
             stiffness: 180,
@@ -40,7 +56,7 @@ const SalesComponentFeature = () => {
           style={{ display: "inline-block" }}
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: false, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.6 }}
           transition={{
             type: "spring",
             stiffness: 180,
@@ -54,7 +70,6 @@ const SalesComponentFeature = () => {
         </motion.span>
       </div>
       <div className="scroll-stack-wrapper">
-        
         <ScrollStack CardDataComponent={CMIntelligent} color="white" i={1} />
         <ScrollStack CardDataComponent={CMIntuitive} color="white" i={2} />
         <ScrollStack CardDataComponent={CMSmart} color="white" i={3} />
