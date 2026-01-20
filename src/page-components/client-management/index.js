@@ -39,12 +39,12 @@ const ClientPage = () => {
       wrapper.style.backgroundSize = "auto, auto";
       wrapper.style.zIndex = "999";
       // wrapper.style.transform = "translateY(200px)";
-      wrapper.style.animation = "gradientAnimation 10s ease-in-out infinite";
-      const yPositions = ["0%", "25%", "50%", "75%", "100%"]; // 2 above, center, 2 below
+      // wrapper.style.animation = "gradientAnimation 10s ease-in-out infinite";
+      const yPositions = ["0%", "25%", "50%", "75%", "100%"]; 
 
     const images = [
-      ...yPositions.map(() => SKYBLUE_GRADIENT), // left blobs
-      ...yPositions.map(() => ORANGE_GRADIENT),  // right blobs
+      ...yPositions.map(() => SKYBLUE_GRADIENT), 
+      ...yPositions.map(() => ORANGE_GRADIENT), 
     ].join(", ");
 
     const positions = [
