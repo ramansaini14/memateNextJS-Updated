@@ -1,7 +1,8 @@
 "use client";
 
 import LogoDownload from "./LogoDownload";
-
+import LogoImageBox from "./LogoImageBox";
+import ImageClickDownload from "./ImageClickDownload";
 
 export default function LogoGrid() {
   return (
@@ -124,67 +125,44 @@ export default function LogoGrid() {
         </div>
       </section>
         {/* The Logo */}
-      <section>
-        <h3>The Logo</h3>
-        <div className="logo-grid1">
-          <LogoDownload
-            image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/thelogo-memate.png"
-            downloads={{
-             svg: "/downloads/primary/logo-1.svg",
-              ai: "/downloads/primary/logo-1.svg",
-              pdf: "/downloads/primary/logo-1.png",
-              png: "/downloads/primary/logo-1.zip",
-              jpg: "/downloads/primary/logo-1.zip",
-              zip: "/downloads/primary/logo-2.zip",
-            }}
-          />
-        </div>
-      </section>
+     <section>
+  <h3>The Logo</h3>
+  <div className="logo-grid1">
+    <LogoImageBox 
+      image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/thelogo-memate.png"
+    />
+  </div>
+</section>
         {/* Logo safezone */}
       <section>
         <h3>Logo safezone</h3>
-        <div className="logo-grid1">
-          <LogoDownload
-            image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/logosafezone.png"
-            downloads={{
-             svg: "/downloads/primary/logo-1.svg",
-              ai: "/downloads/primary/logo-1.svg",
-              pdf: "/downloads/primary/logo-1.png",
-              png: "/downloads/primary/logo-1.zip",
-              jpg: "/downloads/primary/logo-1.zip",
-              zip: "/downloads/primary/logo-2.zip",
-            }}
-          />
-        </div>
+          <div className="logo-grid1">
+    <LogoImageBox 
+      image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/logosafezone.png"
+    />
+  </div>
       </section>
         {/* Co-branding */}
-      <section>
-        <h3>Co-branding</h3>
-        <div className="logo-grid1">
-          <LogoDownload
-            image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/co-branding.png"
-            downloads={{
-             svg: "/downloads/primary/logo-1.svg",
-              ai: "/downloads/primary/logo-1.svg",
-              pdf: "/downloads/primary/logo-1.png",
-              png: "/downloads/primary/logo-1.zip",
-              jpg: "/downloads/primary/logo-1.zip",
-              zip: "/downloads/primary/logo-2.zip",
-            }}
-          />
-        </div>
+             <section>
+       <h3>Co-branding</h3>
+          <div className="logo-grid1">
+    <LogoImageBox 
+      image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/co-branding.png"
+    />
+  </div>
       </section>
         {/* Animated logo */}
       <section>
         <h3>Animated logo</h3>
         <div className="logo-grid2">
-          <LogoDownload
-            image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/animated-logo.png"
-            downloads={{
-              gif: "https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/animated-logo-memate-312x144-Loop.zip",
-              zip: "https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/animated-logo-memate-312x144-Loop.zip",
-            }}
-          />
+            <ImageClickDownload 
+                      image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/MeMate-312x144-Loop.gif"
+                      download="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/animated-logo-memate-312x144-Loop.zip"
+                      alt="MeMate animated logo"
+                      aria-label="Memate Animated logo"
+                      title="Click to download Memate Animated logo"
+                      />
+
         </div>
       </section>
 

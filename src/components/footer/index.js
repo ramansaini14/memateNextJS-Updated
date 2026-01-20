@@ -182,7 +182,7 @@ const Footer = () => {
             <div className="copyright-links">
               <LazyLoadImage
                 alt="contact MeMate"
-                src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1747717590/Powered-By_logo-stack_CMYK_ew121c.webp"
+                src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/Powered-By_logo-stack_CMYK_ew121c.webp"
                 effect="blur" 
               />
               </div>

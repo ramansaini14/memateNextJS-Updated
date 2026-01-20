@@ -11,12 +11,9 @@ export default function EmailSignatureGrid() {
           <LogoDownload
             image="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/company-letterhead-memate.png"
             downloads={{
-             svg: "/downloads/primary/logo-1.svg",
-              ai: "/downloads/primary/logo-1.svg",
-              pdf: "/downloads/primary/logo-1.png",
-              png: "/downloads/primary/logo-1.zip",
-              jpg: "/downloads/primary/logo-1.zip",
-              zip: "/downloads/primary/logo-2.zip",
+              fig: "https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/company-letterhead-Fig.zip",
+              pdf: "https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/company-letterhead-PDF.zip",
+              zip: "https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/memate-company-letterhead.zip",
             }}
           />
       

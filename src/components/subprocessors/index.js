@@ -7,13 +7,6 @@ const services = [
     location: "United States",
     website: "https://aws.amazon.com"
   },
- 
-  {
-    name: "OpenAI",
-    purpose: "AI language model services",
-    location: "United States",
-    website: "https://openai.com"
-  },
   {
     name: "Twilio",
     purpose: "Email and SMS messaging services",
@@ -42,19 +35,13 @@ const services = [
     name: "QuickBooks",
     purpose: "Accounting and bookkeeping services",
     location: "United States",
-    website: "https://quickbooks.intuit.com/global/login/"
+    website: "https://quickbooks.intuit.com/"
   },
   {
     name: "Google Analytics",
     purpose: "Website analytics and performance tracking services",
     location: "United States",
-    website: "https://marketingplatform.google.com/about/analytics/"
-  },
-  {
-    name: "Amazon S3",
-    purpose: "Secure file storage, backup, and archival services",
-    location: "United States",
-    website: "https://aws.amazon.com/s3/"
+    website: "https://ads.google.com/"
   },
   {
     name: "Stripe",

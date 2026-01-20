@@ -133,7 +133,6 @@ const TryToBestComponent = () => {
             >
               Your browser does not support the video tag.
             </video>
-            {/* <img src="https://res.cloudinary.com/dn0jqjad3/image/upload/v1763701007/trytobest-img_tivit3.jpg" alt="trytobest-img_tivit3" /> */}
           </div>
         </div>
         <div className="trytobestR">

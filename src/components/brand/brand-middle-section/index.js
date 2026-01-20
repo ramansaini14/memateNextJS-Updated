@@ -93,54 +93,32 @@ const MiddleSection = () => {
     // setKnowledge(0);
   }, []);
 
-  useEffect(() => {
-    if (knowledge.length === 0) return;
+useEffect(() => {
+  if (knowledge.length === 0) return;
 
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id.split("-")[1];
-          const ids = entry.target.id.split("-");
-          const childId = Number(ids[3]);
-          setActiveChild(childId);
-          setActiveItem(Number(id));
-
-          if (initialized.current) {
-            // window.history.replaceState(null, null, `#section-${id}`);
-          }
-        }
-      });
-    };
-
-    observerRef.current = new IntersectionObserver(handleIntersection, {
-      root: null,
-      rootMargin: "-14% 0px -40% 0px",
-      threshold: 0.2,
-    });
-
-    const headings = document.querySelectorAll(".b-section-heading");
-    headings.forEach((heading) => observerRef.current.observe(heading));
-
-    requestAnimationFrame(() => {
-      const firstVisible = Array.from(headings).find((heading) => {
-        const rect = heading.getBoundingClientRect();
-        return rect.top <= window.innerHeight * 0.5;
-      });
-
-      setActiveItem(
-        firstVisible
-          ? Number(firstVisible.id.split("-")[1])
-          : knowledgeData[0].id
-      );
-      initialized.current = true;
-    });
-
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = Number(entry.target.id.split("-")[1]);
+        setActiveItem(id);
       }
-    };
-  }, [knowledge]);
+    });
+  };
+
+  observerRef.current = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: "-30% 0px -50% 0px",
+    threshold: 0.1,
+  });
+
+  const headings = document.querySelectorAll(".b-section-headingMain");
+  headings.forEach((heading) =>
+    observerRef.current.observe(heading)
+  );
+
+  return () => observerRef.current.disconnect();
+}, [knowledge]);
+
 
   // const handleClick = (id) => {
   //   setActiveItem(id);
@@ -169,18 +147,16 @@ const MiddleSection = () => {
           }`}
         >
           <Link
-            to={`section-${item.id}`}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onSetActive={() => {
-              setActiveItem(item.id);
-              setActiveChild(null);
-            }}
-            className="ssSBDisFont fontSize16"
-          >
-            {item.name}
-          </Link>
+  to={`section-${item.id}`}
+  smooth={true}
+  spy={true}
+  offset={-120}
+  duration={500}
+  className="ssSBDisFont fontSize16"
+>
+  {item.name}
+</Link>
+
         </li>
 
         {activeItem === item.id && item.children && (
@@ -291,7 +267,7 @@ const MiddleSection = () => {
         item.children.map((child) => (
           <div key={child.id}>
             <h2
-              className="fontSize24 b-section-heading"
+              className="ssSBDisFont fontSize42 b-section-headingMain"
               id={`section-${item.id}-child-${child.id}`}
             >
               {child.name}

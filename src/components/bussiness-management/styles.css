@@ -30,15 +30,7 @@
     align-items: center;
     padding-bottom: 55px;
 }
-/* .home-container-wrapper {
-    background: url(https://res.cloudinary.com/dn0jqjad3/image/upload/v1747310672/banner-bg_baxrae.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-        background-position: top;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-} */
+
  .home-container-wrapper {
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/banner-bg_baxrae-min.jpg);
     width: 100%;

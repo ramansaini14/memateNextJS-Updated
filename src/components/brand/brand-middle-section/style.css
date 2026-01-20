@@ -48,6 +48,21 @@
     width: 100%;
     height: auto;
 }
+.memateLogoIcons {
+    display: flex;
+    gap: 0;
+    padding: 53px 100px;
+}
+.memateLogoIcons img {
+    width: 180px;
+}
+.emailSig-grid {
+    padding: 22px 131px;
+}
+.emailSig-grid img {
+    padding: 57px 0;
+    display: inline-block;
+}
 .typography-grid img.logo-img {
     padding-right: 150px;
     margin: 21px 0;
@@ -1334,6 +1349,38 @@ h1#section-8 {
   width: 223px;
 }
 @media screen and (max-width: 767px) {
+  .memateLogoIcons {
+    gap: 0;
+    padding: 12px 12px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.emailSig-grid {
+    padding: 9px 11px;
+}
+h1#section-6, h1#section-7 ,h1#section-5,h1#section-4,.things-to-avoid-guidelines h5,h1#section-3,.kb-right-section h3{
+    font-size: 25px !important;
+}
+h1.heading-text-blog {
+    text-align: center;
+}
+.emailSig-grid img {
+    padding: 25px 0;
+    display: inline-block;
+}
+.logo-grid1 {
+    background: #f7f8fa;
+    border-radius: 24px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 23px 23px;
+    display: grid;
+}
+.memateLogoIcons img {
+    width: auto;
+    padding: 20px 0;
+}
   /* .kb-main-section.privacy-module_mainHeadinstyle__KLI6V .latest-update-text {
     font-size: 79px;
 } */
