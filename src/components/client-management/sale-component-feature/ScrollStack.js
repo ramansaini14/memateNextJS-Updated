@@ -8,7 +8,7 @@ const ScrollStack = ({CardDataComponent, color, i}) => {
     <div className="cardContainer">
       <div 
         className="card"
-        style={{backgroundColor: color, top:`calc(-5vh + ${i * 25}px)`}}
+        style={{backgroundColor: color, top:`calc(-5vh + ${i * 20}px)`}}
       >
        <CardDataComponent />
       </div>
