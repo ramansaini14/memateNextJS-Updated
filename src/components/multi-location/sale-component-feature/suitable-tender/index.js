@@ -3,7 +3,17 @@ import "./style.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const SuitableTender = () => {
   return (
+<<<<<<< HEAD
     <div className="sales-management-wrapper-dataF">
+=======
+    <div className="sales-management-wrapper-dataF" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="4000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+>>>>>>> ef8a5abf810f9b7aae5a4bbb94c37897e3730277
       <div className="content-wrapperF">
         <p className="sale-titleF">Centralised</p>
         <p className="sales-heading-salesF">Chat & </p>

@@ -3,7 +3,17 @@ import "./style.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const SalesManagement = () => {
   return (
+<<<<<<< HEAD
     <div className="sales-management-wrapper-dataF flextMobile">
+=======
+    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
+    data-aos-offset="50"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-bottom">
+>>>>>>> ef8a5abf810f9b7aae5a4bbb94c37897e3730277
       <div className="sales-imageF">
         <LazyLoadImage
           alt="manage multiple business locations"
