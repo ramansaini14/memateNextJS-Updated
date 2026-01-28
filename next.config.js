@@ -1018,11 +1018,7 @@ const nextConfig = {
         destination: '/news/the-future-of-business-process-management-software-solutions',
         permanent: true,
       },
-      {
-        source: '/news/memate-supporting-australian-small-business',
-        destination: '/news/404',
-        permanent: true,
-      },
+     
 
 
       // Pattern-based redirects
