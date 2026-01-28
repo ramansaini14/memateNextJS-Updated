@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
 import Link from 'next/link';
-import { notFound, useParams, useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
 import ShareComponent from './ShareComponent';
 import { Helmet } from 'react-helmet-async';
 import NewsSchema from '../blog/news-schema';
+import PageNotFound from '../error-page';
 // import ErrorPage from '../../pages/error-page';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
@@ -18,14 +19,9 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
   const router = useRouter();
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
-
-  const toSafeISOString = (value) => {
-    if (!value) return undefined;
-    const d = new Date(value);
-    return Number.isNaN(d.getTime()) ? undefined : d.toISOString();
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +64,9 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
       } else {
         try {
           const data = await blogSingle(slug); 
-          if (!data || data.error) {
+          if (data.error === 'News article not found') {
             setPost(null);
-            router.replace('/news/404');
+            setNotFound(true);
             return;
           }
           setPost(data);
@@ -89,9 +85,12 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
     return <div></div>;
   }
 
+  if (notFound) {
+    return <PageNotFound redirects={1} />;
+  }
+
   if (!post) {
-    notFound()
-    // return <div>Post not found</div>;
+    return <PageNotFound redirects={1} />;
   }
 
   const formatDateWithOrdinal = (dateString) => {
@@ -150,8 +149,15 @@ const breadcrumbList = post ? {
    const article = post ? {
       type: "NewsArticle",
       headline: post.title,
-      datePublished: toSafeISOString(post.publish_date),
-      dateModified: toSafeISOString(post.updated_at || post.publish_date),
+      datePublished: (() => {
+        const d = post.publish_date ? new Date(post.publish_date) : null;
+        return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
+      })(),
+      dateModified: (() => {
+        const raw = post.updated_at || post.publish_date;
+        const d = raw ? new Date(raw) : null;
+        return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
+      })(),
       author: post.author || "MeMate News",
       publisherName: "MeMate Media",
       publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",

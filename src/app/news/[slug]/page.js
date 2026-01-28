@@ -2,12 +2,6 @@ import React from 'react';
 import { blogSingle } from '../../../api/blogAPI';
 import ClientBlogPost from './ClientBlogPost';
 
-function toSafeISOString(value) {
-  if (!value) return undefined;
-  const d = new Date(value);
-  return Number.isNaN(d.getTime()) ? undefined : d.toISOString();
-}
-
 // Generate dynamic metadata for SEO and social sharing
 export async function generateMetadata({ params }) {
   try {
@@ -113,8 +107,8 @@ export async function generateMetadata({ params }) {
         ],
         locale: 'en_AU',
         type: 'article',
-        publishedTime: toSafeISOString(post.publish_date),
-        modifiedTime: toSafeISOString(post.updated_at),
+        publishedTime: post.publish_date ? new Date(post.publish_date).toISOString() : undefined,
+        modifiedTime: post.updated_at ? new Date(post.updated_at).toISOString() : undefined,
         authors: [post.author || 'MeMate'],
         section: post.category?.title || 'News',
         tags: post.meta_keyword ? post.meta_keyword.split(',').map(tag => tag.trim()).filter(Boolean) : [],
