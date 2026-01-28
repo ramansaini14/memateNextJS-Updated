@@ -91,7 +91,7 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
 
   if (!post) {
     notFound()
-    return <div>Post not found</div>;
+    // return <div>Post not found</div>;
   }
 
   const formatDateWithOrdinal = (dateString) => {
