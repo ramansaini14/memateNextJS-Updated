@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./style.css";
 import Link from 'next/link';
-import { useParams, useRouter } from 'next/navigation';
+import { notFound, useParams, useRouter } from 'next/navigation';
 import Images from "../../assests/blog-images";
 import { blogSingle } from '../../api/blogAPI';
 import SubscribeForm from './subscribe';
@@ -20,6 +20,12 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
   const [loading, setLoading] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNearBottom, setIsNearBottom] = useState(false);
+
+  const toSafeISOString = (value) => {
+    if (!value) return undefined;
+    const d = new Date(value);
+    return Number.isNaN(d.getTime()) ? undefined : d.toISOString();
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,10 +68,12 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
       } else {
         try {
           const data = await blogSingle(slug); 
-          setPost(data);
-          if (data.error === 'News article not found') {
-            router.push('/404');
+          if (!data || data.error) {
+            setPost(null);
+            router.replace('/news/404');
+            return;
           }
+          setPost(data);
         } catch (error) {
           console.error("Error fetching post:", error);
         } finally {
@@ -82,6 +90,7 @@ const Single = ({postsSingle, postsLatest, slug: propSlug }) => {
   }
 
   if (!post) {
+    notFound()
     return <div>Post not found</div>;
   }
 
@@ -141,8 +150,8 @@ const breadcrumbList = post ? {
    const article = post ? {
       type: "NewsArticle",
       headline: post.title,
-      datePublished: new Date(post.publish_date).toISOString(),
-      dateModified: new Date(post.updated_at || post.publish_date).toISOString(),
+      datePublished: toSafeISOString(post.publish_date),
+      dateModified: toSafeISOString(post.updated_at || post.publish_date),
       author: post.author || "MeMate News",
       publisherName: "MeMate Media",
       publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
