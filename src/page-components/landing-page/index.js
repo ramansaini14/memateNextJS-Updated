@@ -29,7 +29,7 @@ const LandingPage = ({ postsLatest }) => {
       {/* <AppWrapper> */}
         <Layout>
           <BussinessManagement /> 
-          <LessBusyness /> 
+          <LessBusyness />   
           <FeaturedOn />  
           <FindOneApplication />
           <CommonChallenges />

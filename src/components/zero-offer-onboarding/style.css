@@ -43,11 +43,11 @@
 
 /* Card sizes */
 .card-sm {
-  height: 260px;
+ height: fit-content;
 }
 
 .card-md {
-  height: 320px;
+  height: fit-content;
 }
 
 .card-lg {

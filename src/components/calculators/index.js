@@ -5,5 +5,5 @@ import QuestionAnswer from "./ans-questions-calculator";
 export {
   CalculatorComponent,
   CalculatorsComponentFeature,
-  QuestionAnswer,
+  QuestionAnswer, 
 };

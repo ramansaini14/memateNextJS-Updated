@@ -148,6 +148,7 @@ const LessBusyness = () => {
               ref={modalVideoRef}
               width="100%"
               height="100%"
+              poster="https://res.cloudinary.com/dn0jqjad3/image/upload/v1769929560/videoposter_p3khgg.png"
               style={{ backgroundColor: "white", borderRadius: "40px" }}
               loop
               autoPlay

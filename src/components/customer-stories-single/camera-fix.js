@@ -100,8 +100,8 @@ function CameraFix() {
             </Link>
           </div>
 
-          <div className="customerstoriesGrid">
-            <h1>How Camera Fix Runs Their Repair Business with MeMate</h1>
+          <div className="customerstoriesGrid headingStyleChange">
+            <h1>How Camera Fix Runs <br/>Their Repair Business with MeMate</h1>
             <div className="innerGrid imageOverlyText videoPlayWrap">
               <div>
                 {/* <img
@@ -116,7 +116,7 @@ function CameraFix() {
                                   // autoPlay
                                   // muted
                                   loop
-                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/customersoriesCamera.png"
+                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/camerafixVideoBg.jpg"
                                   ref={videoRef}
                                   playsInline
                                   >
@@ -136,10 +136,10 @@ function CameraFix() {
             </div>
              <div className="customerstoriesDetails customerstoriesDetailsT">
                 <div>
-                  <div className="category">Camera Fix</div>
+                  <div className="category"><img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/camrafixBrandLogo.png" /></div>
                   <div className="date-heading-title mobileTextDecrese">
-                    <span className="textCustomerStories">
-                      Empowering a Boutique Camera Repair Shop to Manage
+                    <span className="camraFixSubHeading">
+                      Empowering a Boutique Camera Repair Shop <br/>to Manage
                       Business and Serve Over 100 Clients Monthly
                     </span>
                   </div>
@@ -148,7 +148,7 @@ function CameraFix() {
               </div>
             <div className="gadientText">
               <h2 className="centeredText">
-                Business management software for Electronics Repair Shop in
+                Business management software for Electronics Repair <br/>Shop in
                 Australia.
               </h2>
             </div>

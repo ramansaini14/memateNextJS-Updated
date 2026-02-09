@@ -74,8 +74,8 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-     @media only screen and (min-width: 1910px) and (max-width: 3000px) {
-      top: -24px;
+     @media only screen and (min-width: 1300px) and (max-width: 1800px) {
+      top: -15px;
 
     }
       @media screen and (max-width: 767px) {
@@ -177,7 +177,7 @@
           width: 874px;
           height: 500px;
           margin: 0 auto;
-           @media only screen and (min-width: 1910px) and (max-width: 3000px) {
+           @media only screen and (min-width: 1300px) and (max-width: 1800px) {
                  width: 713px;
         height: 409px;
         margin: 0 auto 182px;

@@ -54,6 +54,17 @@ export const emailNowAPI = async (formData) => {
 };
 
 
+
+export const DeleteNowAPI = async (formData) => {
+  try {
+    const response = await securePost("/delete-request", formData);
+    return response.data;
+  } catch (error) {
+    console.error("Delete Request Error:", error);
+    throw error;
+  }
+};
+
 export const SubscribeEmail = async (formData) => {
   try {
     const response = await api.post("/subscribe-email", JSON.stringify(formData));

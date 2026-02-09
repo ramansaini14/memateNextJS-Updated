@@ -1,7 +1,9 @@
 .parent {
   max-width: 1000px;
 }
-
+.headingStyleChange h1 {
+    font-size: 48px !important;
+}
 .accounting-text-A {
   color: #29292b;
   font-family: "sequel_sans" !important;
@@ -32,6 +34,7 @@
     justify-content: center;
     pointer-events: none;
     cursor: pointer;
+    opacity: 0;
 }
 .imageOverlyText.videoPlayWrap .customerstoriesDetails {
     color: #fff;
@@ -373,7 +376,7 @@
   border-radius: 30px;
   background: #F7F8FA;
   margin-bottom: 48px;
-  padding: 48px 42px;
+  padding: 35px 42px;
 }
 
 .gadientText2 {
@@ -525,6 +528,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .customerstoriesDetailsT .camraFixSubHeading {
+    margin-top: 14px!important;
+    font-size: 23px !important;
+    line-height: 30px!important;
+}
+.gadientText h2 br {
+    display: none;
+}
+.customerstoriesDetailsT .camraFixSubHeading br {
+    display: none;
+}
   .gadientText3 {
     padding: 30px 0px;
   }
@@ -822,8 +836,16 @@ overflow-wrap: break-word;
 } 
 
 
+.customerstoriesDetailsT .camraFixSubHeading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 420;
+    line-height: 40px;
+    margin-top: 24px;
+    display: inline-block;
+}
 .customerstoriesGrid .innerGrid {
-margin-bottom: 56px;
+margin-bottom: 30px;
 }
 .customerstoriesDetails {
  border-radius: 0px 0px 30px 30px;

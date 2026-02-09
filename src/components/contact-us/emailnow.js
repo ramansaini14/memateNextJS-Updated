@@ -14,6 +14,7 @@ const EmailNow = (props) => {
     const [error, setError] = useState('');
     const [visibleEmail, setVisibleEmail] = useState(false);
     const [captchaValue, setCaptchaValue] = useState(null);
+    const [serverError, setServerError] = useState('');
 
     // Validation schema with all fields
     const schema = yup.object().shape({
@@ -38,6 +39,7 @@ const EmailNow = (props) => {
       }
       try {
           const result = await emailNowAPI({ ...data, token }); 
+          setServerError('');
           console.log("Form submitted successfully:", result);
           reset();
           setVisible(false);
@@ -45,6 +47,7 @@ const EmailNow = (props) => {
           window.location.href = "/thank-you";
       } catch (err) {
           console.error("Error submitting form:", err);
+            setServerError("Server Error. Please try again later.");
         //   if (err.response && err.response.data && err.response.data.errors) {
         //       const serverErrors = err.response.data.errors;
   
@@ -66,9 +69,16 @@ const EmailNow = (props) => {
   
   
 
+    // const handleCaptchaChange = (value) => {
+    //   setCaptchaValue(value);
+    // };
     const handleCaptchaChange = (value) => {
-      setCaptchaValue(value);
-    };
+        setCaptchaValue(value);
+        if (value) {
+            setError('');
+            setServerError('');
+        }
+        };
   
     const footerContent = (
         <div className="flexWrapBoxE">
@@ -184,10 +194,21 @@ const EmailNow = (props) => {
                     <div className={style.marginbotton}>
                     <ReCAPTCHA
                     sitekey={process.env.MAIL_SITE_KEY}
-                    onChange={handleCaptchaChange}/>
-                
+                    onChange={handleCaptchaChange}
+                    />
+                  {error && (
+                        <p className="error-message redmessage">
+                        {error}
+                        </p>
+                    )}
+                 
           </div>
                 </form>
+                 {serverError && (
+                        <p className="error-message redmessage">
+                        {serverError}
+                        </p>
+                    )}
             </Dialog>
         </>
     );

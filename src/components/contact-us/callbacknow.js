@@ -17,6 +17,7 @@ const CallbackNow = () => {
     const [captchaValue, setCaptchaValue] = useState(null);
     const [placeholder, setPlaceholder] = useState("+61");
     const [error, setError] = useState('');
+    const [serverError, setServerError] = useState('');
     // Define your validation schema
     const schema = yup.object().shape({
       name: yup.string().required("Name is required"),
@@ -41,6 +42,7 @@ const CallbackNow = () => {
       }
       try {
         const result = await RequestCallBackAPI({ ...data, token }); 
+         setServerError('');
         console.log("Form submitted successfully:", result);
         reset();
         setVisible(false);
@@ -48,15 +50,22 @@ const CallbackNow = () => {
         window.location.href = "/thank-you";
       } catch (err) {
         console.error("Error submitting form:", err);
+         setServerError("Server Error. Please try again later.");
         setError("Something went wrong. Please try again later.");
       }
     };
     
+    // const handleCaptchaChange = (value) => {
+    //   setCaptchaValue(value);
+    //   setError("");
+    // };
     const handleCaptchaChange = (value) => {
-      setCaptchaValue(value);
-      setError("");
-    };
-    
+        setCaptchaValue(value);
+        if (value) {
+            setError('');
+             setServerError('');
+        }
+        };
     const handleCountryChange = (country) => {
       if (country) {
         const countryCode = getCountryCallingCode(country);
@@ -128,15 +137,23 @@ const CallbackNow = () => {
               />}/>
             {errors.email && <p className="error-message redmessage">{errors.email.message}</p>}
           </div>
-           <div className={style.marginbotton}> 
-            <ReCAPTCHA
-              sitekey={process.env.MAIL_SITE_KEY}
-              onChange={handleCaptchaChange}
-            />
-            {error && <p className="redmessage" style={{ color: 'red' }}>{error}</p>}
-
-          </div> 
+               <div className={style.marginbotton}>
+                    <ReCAPTCHA
+                    sitekey={process.env.MAIL_SITE_KEY}
+                    onChange={handleCaptchaChange}
+                    />
+                  {error && (
+                        <p className="error-message redmessage">
+                        {error}
+                        </p>
+                    )}
+          </div>
         </form>
+         {serverError && (
+                        <p className="error-message redmessage">
+                        {serverError}
+                        </p>
+                    )}
             </Dialog>
     </>
   )

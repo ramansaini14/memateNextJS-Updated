@@ -15,18 +15,26 @@ html {
     position: sticky;
     top: 0;
 }
+.pageBreadcrumbs ul li:last-child a {
+    color: #106b99;
+}
+.p-dialog {
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0px 0px #0000004d;
+}
 .parentSingleBlogMemate a {
     color: #1cb3fe !important;
 }
 .sales-component-featureF h2,.sales-component-featureF span {
     transform: translate(0) !important;
 }
-.pageBreadcrumbs ul li a.MainPageLink {
+/* .pageBreadcrumbs ul li a.MainPageLink {
   -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;
     background-clip: text;
-}
+} */
 .pageBreadcrumbs ul li a {
     color: #212121;
 }

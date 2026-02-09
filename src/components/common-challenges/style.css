@@ -13,6 +13,61 @@
   width: 1200px;
   height: 1521px;
 }
+.gridboxstreamline {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.gridboxstreamline.item1 {
+    height: 413px;
+    border-radius: 30px;
+     background: #F7F8FA;
+}
+.gridboxstreamline.item1 .bg-scroll{
+  top: 40px;
+}
+.gridboxstreamline.item3 {
+    height: 412px;
+    border-radius: 30px;
+     background: #F7F8FA;
+}
+
+.bg-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 200%;
+  /* height: 100%; */
+  animation: infiniteScroll 18s linear infinite;
+  z-index: 1;
+}
+
+/* .bg-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+} */
+.streamlineimggrid.streamlineimggrid12 img {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+.gridboxstreamline h4 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  margin: 0;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 .overcome-pro-content {
   width: 80%;
@@ -434,6 +489,9 @@ p.graph-business {
   top: 135px;
 }
 @media screen and (max-width: 767px) {
+  .gridboxstreamline.item1 {
+    height: 336px;
+}
   .gridboxstreamline.item2 h4,.gridboxstreamline.item1 h4, .gridboxstreamline.item3 h4, .gridboxstreamline.item4 h4 {
     padding: 18px;
     font-size: 20px;
