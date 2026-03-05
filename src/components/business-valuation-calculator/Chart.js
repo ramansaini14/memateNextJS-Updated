@@ -100,7 +100,8 @@ export default function Chart({ valuation, uplift, tradingYears = 5 }) {
     }
   }, []);
 
-  const clipPlugin = {
+  
+  const clipPlugin = { 
     id: "smoothClip",
     beforeDatasetsDraw(chart) {
       const progress = drawProgressRef.current;
