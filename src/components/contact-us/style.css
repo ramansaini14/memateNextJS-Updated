@@ -5,6 +5,26 @@
     flex-direction: column;
     align-items: center;
 }
+.query-cards .query-card .query-button:hover button {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #1ab2ff 0%, #ffb258 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    color: #000;
+}
+.query-cards .query-card .query-button.query-button-color button{
+    color: #29292b;
+    border: 1px solid #29292b;
+}
+.query-cards .query-card .query-button.query-button-color:hover button{
+   border: 2px solid transparent;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #1ab2ff 0%, #ffb258 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    color: #000;
+}
 .mid-headingc h1 {
     color: #29292B;
     text-align: center;
@@ -359,10 +379,7 @@ input:focus-visible {
     background: transparent;
     font-family: 'sequel_sans' !important;
 }
-.query-cards .query-card .query-button.query-button-color button{
-    color: #29292b;
-    border: 1px solid #29292b;
-}
+
 
 
 .query-cards .query-card .query-main .query-color p {

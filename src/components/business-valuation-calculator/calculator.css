@@ -262,6 +262,61 @@ p.profitabilityCount {
   outline: none;
   cursor: pointer;
 }
+.mainChatWrapper {
+  position: relative;
+  overflow: visible;   /* IMPORTANT */
+}
+.chart-tooltip {
+  position: absolute;
+  background: #fff;
+  border-radius: 7px;
+  padding: 16px 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.555);
+  pointer-events: none;
+  transition: all .15s ease;
+  z-index: 1000;
+}
+/* .chart-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+.chart-tooltip.tooltip-bottom::after {
+  bottom: auto;
+  top: -8px;
+
+  border-top: none;
+  border-bottom: 10px solid #fff;
+} */
+.chart-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: var(--arrow-left, 50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+/* flipped arrow */
+.chart-tooltip.tooltip-bottom::after {
+  bottom: auto;
+  top: -8px;
+  border-top: none;
+  border-bottom: 10px solid #fff;
+}
 .custom-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -271,6 +326,25 @@ p.profitabilityCount {
   background: white;
   border: 6px solid #475467;
   cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+
+
+
+
+
+
+.custom-range::-webkit-slider-thumb:hover {
+  transform: scale(1.3);
+}
+.profitabilityCount {
+    color: #2f3a46;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: -37px;
+    transform: translateX(30%);
 }
 .results-area .value-block p {
     font-weight: 375;
@@ -297,6 +371,16 @@ p.profitabilityCount {
     text-align: center;
     font-family: 'sequel_sans_roman_head' !important;
     color: rgba(136, 142, 158, 1);
+}
+.step-area select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* move arrow left */
+  padding-right: 40px;
 }
 .memateCalbox .bottom-bar p {
     font-weight: 360;
@@ -851,6 +935,10 @@ p.profitabilityCount {
   .memate-tabs {
     display: block;
 }
+ .chart-container {
+    height: 210px;
+    margin-left: -80px;
+  }
 .tab-hover-wrapper:last-child .memate-tab-btn.active-tab1 {
     border: 2px solid #29292b !important;
     border-radius: 0 0px 12px 12px !important;

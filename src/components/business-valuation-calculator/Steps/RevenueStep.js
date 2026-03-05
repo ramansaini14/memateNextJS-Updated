@@ -62,17 +62,30 @@ export default function RevenueStep({ form, update }) {
 
         </div>
       </div>
-      <div className="slider">
-        <label>Operational Profitability %</label>
-        <div style={{ width: "100%", padding: "0px" }}> 
-          <input type="range" min="0" max="100" value={form.profitability} 
-          onChange={(e) => update("profitability", Number(e.target.value))}
-          className="custom-range" 
-        style={{ 
-          background: `linear-gradient(to right, #2f3a46 0%, #2f3a46 ${form.profitability}%, #e6e6e6 ${form.profitability}%, #e6e6e6 100%)` }} /> 
-          </div>
-          <p className="profitabilityCount">{form.profitability}%</p>
-      </div>
+    <div className="slider">
+  <label>Operational Profitability %</label>
+
+  <div className="range-wrapper">
+    <input
+      type="range"
+      min="0"
+      max="100"
+      value={form.profitability}
+      onChange={(e) => update("profitability", Number(e.target.value))}
+      className="custom-range"
+      style={{
+        background: `linear-gradient(to right, #2f3a46 0%, #2f3a46 ${form.profitability}%, #e6e6e6 ${form.profitability}%, #e6e6e6 100%)`
+      }}
+    />
+
+    <span
+      className="profitabilityCount"
+      style={{ left: `calc(${form.profitability}% - 15px)` }}
+    >
+      {form.profitability}%
+    </span>
+  </div>
+</div>
     </>
   );
 }
