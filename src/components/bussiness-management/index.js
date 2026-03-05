@@ -44,7 +44,7 @@ const BussinessManagement = () => {
         </p>
       </div>
       <div className="businesses-mode fontFamilyRomanHead">
-        <span>
+       <span>
           Made for Small to Medium Businesses & Business Projects, Offering
           Simplicity & Control
         </span>

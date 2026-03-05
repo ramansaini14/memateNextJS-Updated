@@ -12,20 +12,8 @@ const MeMateFeatureStreamline = () => {
   return (
     <div className="feature-section-container request-btn-update">
       <div className="features-section">
-        <div className="memate heading-margin">
-          <div className="mainHeadingH2">Memate</div>
-          <span className="gradientAnimenate">features</span>
-        </div>
         <div
-          className="all-in-one"
-          data-aos="fade-up"
-          data-aos-offset="50"
-          data-aos-delay="50"
-          data-aos-duration="1200"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="top-bottom"
-        >
+          className="all-in-one">
           <div className="stream-line">
             <div className="main-operation shadowRightline shadowLeftline">
               <div className="operation-left">

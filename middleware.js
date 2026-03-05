@@ -161,6 +161,7 @@ export function middleware(request) {
     '/client-management': '/features/client-management-software',
     '/construction': '/industries/business-software-for-construction-industry',
     '/news/page/7/': '/news',   
+    '/news/australias-business-owners/': '/news',   
  
   };
 

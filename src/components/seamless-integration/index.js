@@ -175,6 +175,13 @@ const SeamlessInegration = () => {
   }, []);
 
   return (
+    <>
+    <div className="introTextTop introTextTopIntegration">
+      <h4>Built for Modern Australian Businesses</h4>
+      <p>MeMate is powerful software for business management designed for service-based businesses, agencies, trades, and professional teams that need complete visibility and control over daily operations. From project tracking and team coordination to invoicing and client management, MeMate centralizes your workflows in one streamlined platform—helping you save time, improve efficiency, and make smarter business decisions.
+</p>
+
+    </div>
     <section className="integrationOuter">
       <div className="integrationWrapperAni" ref={wrapperRef}>
         <svg className="svg-lines">
@@ -227,6 +234,13 @@ const SeamlessInegration = () => {
         </div>
       </div>
     </section>
+    <div className="introTextTop introTextTopBottom">
+      <h4>Replace Multiple Tools with One Smart System</h4>
+      <p>Stop managing your business across spreadsheets, CRMs, accounting tools, and task apps.</p>
+      <p>MeMate is powerful small business management software designed to replace fragmented tools with one unified platform. It centralises your operations, streamlines team collaboration, and connects projects, clients, finances, and communication in a single dashboard.
+</p>
+    </div>
+    </>
   );
 };
 

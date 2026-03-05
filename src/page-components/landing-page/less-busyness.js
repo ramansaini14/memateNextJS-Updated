@@ -86,7 +86,7 @@ const LessBusyness = () => {
         <div className={`${style.shelfgradient} ${style.videoOverlyWrap} `}>
           <div className={style.lessContainers}>
             <h3>More Business - Less Busyness</h3>
-            <p>
+             <p>
               You can send a quote in just a few clicks, convert it into a
               project, and assign team members instantly.
               <br />
@@ -148,7 +148,7 @@ const LessBusyness = () => {
               ref={modalVideoRef}
               width="100%"
               height="100%"
-              poster="https://res.cloudinary.com/dn0jqjad3/image/upload/v1769929560/videoposter_p3khgg.png"
+              poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter_p3khgg.png"
               style={{ backgroundColor: "white", borderRadius: "40px" }}
               loop
               autoPlay

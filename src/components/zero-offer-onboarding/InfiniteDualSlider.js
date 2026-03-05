@@ -21,6 +21,7 @@ export default function InfiniteDualSlider() {
   const col1Ref = useRef(null);
   const col2Ref = useRef(null);
   const col3Ref = useRef(null);
+
   const pausedRef = useRef(false);
 
   useEffect(() => {
@@ -30,14 +31,21 @@ export default function InfiniteDualSlider() {
       { ref: col3Ref, speed: 40 },
     ];
 
-
-    let lastTime = performance.now();
     let rafId;
+    let lastTime = performance.now();
 
     const positions = tracks.map(() => 0);
-    const heights = tracks.map(
-      (t) => (t.ref.current?.scrollHeight || 0) / 2
-    );
+    let heights = tracks.map(() => 0);
+
+    // ✅ Wait until images load properly
+    const updateHeights = () => {
+      heights = tracks.map(
+        (t) => (t.ref.current?.scrollHeight || 0) / 2
+      );
+    };
+
+    // Run once after full render
+    setTimeout(updateHeights, 500);
 
     const animate = (now) => {
       const delta = now - lastTime;
@@ -47,12 +55,12 @@ export default function InfiniteDualSlider() {
         tracks.forEach((track, i) => {
           positions[i] -= (track.speed * delta) / 1000;
 
-          if (Math.abs(positions[i]) >= heights[i]) {
-            positions[i] = 0;
+          // ✅ Smooth infinite loop reset (no jump)
+          if (positions[i] <= -heights[i]) {
+            positions[i] += heights[i];
           }
 
-          track.ref.current.style.transform =
-            `translate3d(0, ${positions[i]}px, 0)`;
+          track.ref.current.style.transform = `translate3d(0, ${positions[i]}px, 0)`;
         });
       }
 
@@ -61,6 +69,7 @@ export default function InfiniteDualSlider() {
 
     rafId = requestAnimationFrame(animate);
 
+    // Pause on hover
     const pause = () => (pausedRef.current = true);
     const resume = () => (pausedRef.current = false);
 
@@ -81,6 +90,7 @@ export default function InfiniteDualSlider() {
   return (
     <div className="bg_slider">
       <div className="ui-grid">
+        {/* Column 1 */}
         <div className="ui-col">
           <div className="slide_track" ref={col1Ref}>
             {images.map((img, i) => (
@@ -91,6 +101,7 @@ export default function InfiniteDualSlider() {
           </div>
         </div>
 
+        {/* Column 2 */}
         <div className="ui-col">
           <div className="slide_track" ref={col2Ref}>
             {images.map((img, i) => (
@@ -101,6 +112,7 @@ export default function InfiniteDualSlider() {
           </div>
         </div>
 
+        {/* Column 3 */}
         <div className="ui-col">
           <div className="slide_track" ref={col3Ref}>
             {images.map((img, i) => (

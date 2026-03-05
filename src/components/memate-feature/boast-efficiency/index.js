@@ -6,15 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const MemateFeatureBoastEfficiency = () => {
   return (
     <div
-      className="efficiency-section-container mainOperationRight"
-      data-aos="fade-up"
-      data-aos-offset="50"
-      data-aos-delay="50"
-      data-aos-duration="1300"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-bottom"
-    >
+      className="efficiency-section-container mainOperationRight">
       <div className="efficiency-section">
         <FeatureCard
           subHeading="Dashboard"

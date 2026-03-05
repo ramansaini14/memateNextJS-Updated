@@ -4,11 +4,11 @@
 import SubprocessorsPage from '../../page-components/subprocessors';
 
 export const metadata = {
-  title: '',
-  description: '',
+  title: 'Subprocessors & Data Partners | Trusted List | MeMate',
+  description: 'Discover how MeMate securely manages subprocessors to protect your data & privacy. Learn what we use, why it matters, and take control today! Visit us now.',
   openGraph: {
-    title: '',
-    description: '',
+    title: 'Subprocessors & Data Partners | Trusted List | MeMate',
+    description: 'Discover how MeMate securely manages subprocessors to protect your data & privacy. Learn what we use, why it matters, and take control today! Visit us now.',
   },
 }
 

@@ -85,7 +85,7 @@ export default function RootLayout({ children }) {
   }}
 />
 
-<Script
+{/* <Script
   id="ld-organization"
   type="application/ld+json"
   strategy="afterInteractive"
@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
       "@type": "Organization",
       "@id": "https://memate.com.au/#org",
       "name": "MeMate",
-      "alternateName": "Best Business Management Software, ERP & CRM Tools | MeMate",
+      "alternateName": "All-in-One Company & Business Management Software | MeMate",
       "url": "https://memate.com.au",
       "logo": "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
       "sameAs": [
@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
       ]
     })
   }}
-/>
+/> */}
 <Script
   id="ld-softwareapp"
   type="application/ld+json"
@@ -217,7 +217,7 @@ export default function RootLayout({ children }) {
             document.body.appendChild(jotScript);
           `}
         </Script>
-        
+     
       </head>
       <body>
         <noscript>
@@ -227,6 +227,7 @@ export default function RootLayout({ children }) {
             width="0"
             style={{ display: "none", visibility: "hidden" }}
           />
+          
         </noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Providers>{children}</Providers>

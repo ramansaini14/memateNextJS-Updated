@@ -34,7 +34,6 @@
     justify-content: center;
     pointer-events: none;
     cursor: pointer;
-    opacity: 0;
 }
 .imageOverlyText.videoPlayWrap .customerstoriesDetails {
     color: #fff;
@@ -936,6 +935,9 @@ font-size:14px;
     width: 60px;
     height: 60px;
     font-size: 25px;
+}
+.video-wrapperCamera .play-icon img {
+    width: 100%;
 }
 .customerstoriesGrid {
  width: 100%;

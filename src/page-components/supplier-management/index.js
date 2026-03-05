@@ -68,7 +68,7 @@ const SupplierManagementPage = () => {
 
         <div className="bgshadowwrapper">
           <SalesComponent />
-        </div>
+        </div> 
 
         <div className="bgshadowwrapper salesFeatureBg">
           <SalesComponentFeature />

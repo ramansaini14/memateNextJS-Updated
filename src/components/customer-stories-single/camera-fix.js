@@ -116,7 +116,7 @@ function CameraFix() {
                                   // autoPlay
                                   // muted
                                   loop
-                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/camerafixVideoBg.jpg"
+                                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/camrafixVideo.jpg"
                                   ref={videoRef}
                                   playsInline
                                   >
@@ -127,9 +127,7 @@ function CameraFix() {
                                   Your browser does not support the video tag.
                                 </video>
 
-            {!isPlaying && <div className="play-icon"><svg width="80" height="80" viewBox="0 0 24 24" fill="white">
-  <path d="M8 5v14l11-7z" />
-</svg></div>}
+            {!isPlaying && <div className="play-icon"><img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/Play.png" alt="Play Icon" /></div>}
           </div>
               </div>
              

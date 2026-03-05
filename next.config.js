@@ -558,6 +558,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/news/australias-business-owners',
+        destination: '/news',
+        permanent: true,
+      },
+      {
         source: '/fusion_tb_category/header/',
         destination: '/news',
         permanent: true,

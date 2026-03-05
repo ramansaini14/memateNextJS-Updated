@@ -1,6 +1,21 @@
 
 
 @media screen and (max-width: 767px) {
+    .cardContainer12 {
+    height: auto !important;
+}
+.cardContainer12 p {
+    padding: 0 20px;
+}
+.integrationOuter .row {
+    gap: 10px !important;
+}
+.integrationOuter .center-box {
+    height: 212px !important;
+}
+.integrationOuter {
+    margin-top: 0 !important;
+}
 .cardContainer .card {
     transform-origin: top;
     border-radius: 25px;

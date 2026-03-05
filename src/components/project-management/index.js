@@ -5,5 +5,5 @@ import QuestionAnswer from "./ans-questions";
 export {
   SalesComponent,
   SalesComponentFeature,
-  QuestionAnswer,
+  QuestionAnswer,  
 };
