@@ -27,7 +27,7 @@ ChartJS.register(
 
 function getChartLabels(tradingYears) {
   const years = Number(tradingYears);
-  if (!years) return ["Now", "Year 1", "Year 2", "Year 3", "Year 5"];
+ if (!years) return ["Now", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5"];
   const labels = ["Now"];
   for (let i = 1; i <= years; i++) {
     labels.push(`Year ${i}`);
@@ -47,15 +47,19 @@ export default function Chart({ valuation, uplift, tradingYears = 5 }) {
 
   const labels = getChartLabels(tradingYears);
 
-  const baseData =
-    safeVal === 0
-      ? labels.map(() => 0)
-      : labels.map((_, i) => Math.round(safeVal * (1 + i * 0.03)));
+const baseData =
+  safeVal === 0
+    ? [80, 100, 70, 90, 60, 85]
+    : labels.map((_, i) =>
+        Math.round(safeVal * Math.pow(1.05, i))
+      );
 
-  const upliftData =
-    safeUp === 0
-      ? labels.map(() => 0)
-      : labels.map((_, i) => Math.round(safeUp * (1 + i * 0.06)));
+const upliftData =
+  safeUp === 0
+    ? [85, 110, 75, 95, 70, 95]
+    : labels.map((_, i) =>
+        Math.round(safeUp * Math.pow(1.07, i))
+      );
 
   useEffect(() => {
     drawProgressRef.current = 0;
@@ -218,10 +222,14 @@ const projectedLabelPlugin = {
     datasets: [
       {
         label: "Projected Value",
-        data: baseData,
-        borderColor: "black",
-        borderWidth: 2.5,
-        tension: 0,
+  data: baseData,
+  borderColor: "black",
+  borderWidth: 3,
+  tension: 0.45,
+  cubicInterpolationMode: "monotone",
+  borderCapStyle: "round",
+  borderJoinStyle: "round",
+  pointRadius: 0,
         // pointRadius: (ctx) =>
         // ctx.dataIndex === labels.length - 1 ? 7 : 0,
         pointBackgroundColor: "transparent",
@@ -233,9 +241,12 @@ const projectedLabelPlugin = {
         : [
             {
               label: "With MeMate",
-              data: upliftData,
-              borderWidth: 4,
-              tension: 0,
+  data: upliftData,
+  borderWidth: 4,
+  tension: 0.45,
+  cubicInterpolationMode: "monotone",
+  fill: false,
+  pointRadius: 0,
 
               borderColor: (ctx) => {
                 const chart = ctx.chart;
@@ -400,13 +411,13 @@ tooltipEl.style.setProperty("--arrow-left", arrowLeft + "px");
         },
         ticks: { display: true },
       },
-      y: {
-        min: 0,
-        max: safeVal === 0 && safeUp === 0 ? 1 : undefined,
-        beginAtZero: true,
-        grid: { display: false },
-        ticks: { display: false },
-      },
+     y: {
+  min: safeVal === 0 ? 50 : undefined,
+  max: safeVal === 0 ? 110 : undefined,
+  beginAtZero: false,
+  grid: { display: false },
+  ticks: { display: false },
+},
     },
 
     layout: {
