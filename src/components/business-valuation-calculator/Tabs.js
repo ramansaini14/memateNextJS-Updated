@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 export default function Tabs({ steps, activeStep, setActiveStep }) {
   const tooltips = [
@@ -16,38 +17,63 @@ export default function Tabs({ steps, activeStep, setActiveStep }) {
   const [tooltip, setTooltip] = useState({
     visible: false,
     text: "",
+    above: true,
+    left: 0,
+    top: 0,
+    arrowLeft: 0,
   });
 
- const handleMouseMove = (e,index)=>{
+  const TOOLTIP_OFFSET = 12;
+  const TOOLTIP_EST_HEIGHT = 80;
 
-const tooltipEl = tooltipRef.current;
-const arrowEl = arrowRef.current;
+  const lastCursorRef = useRef({ x: 0, y: 0 });
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
-if(!tooltipEl) return;
+  const handleMouseMove = (e, index) => {
+    const tooltipEl = tooltipRef.current;
+    const arrowEl = arrowRef.current;
 
-const cursorX = e.clientX;
-const cursorY = e.clientY;
+    if (!tooltipEl || !arrowEl) return;
 
-tooltipEl.style.left = cursorX + "px";
-tooltipEl.style.top = (cursorY - 20) + "px";
+    const cursorX = e.clientX;
+    const cursorY = e.clientY;
+    lastCursorRef.current = { x: cursorX, y: cursorY };
 
-const rect = tooltipEl.getBoundingClientRect();
+    // Prefer above cursor; only show below when there's no space above
+    const spaceAbove = cursorY - TOOLTIP_EST_HEIGHT - TOOLTIP_OFFSET;
+    const showAbove = spaceAbove >= 0;
 
-let arrowX = cursorX - rect.left;
+    const top = showAbove
+      ? cursorY - TOOLTIP_EST_HEIGHT - TOOLTIP_OFFSET
+      : cursorY + TOOLTIP_OFFSET;
 
-arrowX = Math.max(12, Math.min(rect.width - 12, arrowX));
+    setTooltip({
+      visible: true,
+      text: tooltips[index],
+      above: showAbove,
+      left: cursorX,
+      top,
+      arrowLeft: 0,
+    });
+  };
 
-arrowEl.style.left = arrowX + "px";
+  // Update arrow position after tooltip renders with new content
+  useEffect(() => {
+    if (!tooltip.visible || !tooltipRef.current || !arrowRef.current) return;
 
-setTooltip({
-visible:true,
-text:tooltips[index]
-});
+    const { x: cursorX } = lastCursorRef.current;
+    const rect = tooltipRef.current.getBoundingClientRect();
+    let arrowX = cursorX - rect.left;
+    arrowX = Math.max(12, Math.min(rect.width - 12, arrowX));
 
-};
+    arrowRef.current.style.left = arrowX + "px";
+    arrowRef.current.classList.toggle("tooltip-arrow-below", !tooltip.above);
+  }, [tooltip.visible, tooltip.text, tooltip.above]);
 
   const handleLeave = () => {
     setTooltip((prev) => ({ ...prev, visible: false }));
+    arrowRef.current?.classList.remove("tooltip-arrow-below");
   };
 
   return (
@@ -99,13 +125,24 @@ text:tooltips[index]
           </div>
         ))}
       </div>
-      <div
-        ref={tooltipRef}
-        className="tab-tooltip-popup"
-        style={{ opacity: tooltip.visible ? 1 : 0 }}>
-        {tooltip.text}
-        <div ref={arrowRef} className="tooltip-arrow"></div>
-      </div>
+      {mounted &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <div
+            ref={tooltipRef}
+            className="tab-tooltip-popup"
+            style={{
+              position: "fixed",
+              left: tooltip.left,
+              top: tooltip.top,
+              opacity: tooltip.visible ? 1 : 0,
+              visibility: tooltip.visible ? "visible" : "hidden",
+            }}>
+            {tooltip.text}
+            <div ref={arrowRef} className="tooltip-arrow"></div>
+          </div>,
+          document.body
+        )}
     </div>
   );
 }

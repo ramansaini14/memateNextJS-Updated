@@ -79,6 +79,12 @@ transform:translateX(-50%) rotate(45deg);
 transition:left .12s ease;
 }
 
+.tooltip-arrow.tooltip-arrow-below {
+  bottom: auto;
+  top: -6px;
+  transform: translateX(-50%) rotate(-135deg);
+}
+
 
 
 
