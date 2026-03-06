@@ -27,11 +27,21 @@ ChartJS.register(
 
 function getChartLabels(tradingYears) {
   const years = Number(tradingYears);
- if (!years) return ["Now", "Year 1", "Year 2", "Year 3", "Year 4", "Year 5"];
-  const labels = ["Now"];
-  for (let i = 1; i <= years; i++) {
-    labels.push(`Year ${i}`);
+
+  if (!years) return ["Now", "", "", "", "", "Year 5"];
+
+  const labels = [];
+
+  for (let i = 0; i <= years; i++) {
+    if (i === 0) {
+      labels.push("Now");
+    } else if (i === years) {
+      labels.push(`Year ${years}`);
+    } else {
+      labels.push(""); // hide middle labels
+    }
   }
+
   return labels;
 }
 
@@ -201,7 +211,7 @@ const projectedLabelPlugin = {
     const textWidth = ctx.measureText(text).width;
 
     let x = lastPoint.x + 12;
-    let y = lastPoint.y + 30;
+    let y = lastPoint.y + 60;
 
     if (x + textWidth > chartArea.right) {
       x = chartArea.right - textWidth - 10;

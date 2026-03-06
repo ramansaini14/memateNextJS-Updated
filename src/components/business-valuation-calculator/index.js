@@ -19,7 +19,7 @@ export default function MeMateCalculator() {
  revenue1: 1356488,
  revenue2: 956000,
  revenue3: 875230,
- tradingYears: 5,
+ tradingYears: 15,
  employees: 3,
  contractors: 6,
  profitability: 15,
